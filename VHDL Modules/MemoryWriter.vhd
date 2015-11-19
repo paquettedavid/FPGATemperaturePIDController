@@ -1,8 +1,8 @@
 --------------------------------------------------------------------------------
 -- Company: 
--- Engineer:
+-- Engineer: David Paquette
 --
--- Create Date:    
+-- Create Date: 11/19/15   
 -- Design Name:    
 -- Module Name:    
 -- Project Name:   
@@ -37,8 +37,9 @@ entity MemoryWriter is
           cyc_o : out std_logic;
           stb_o : out std_logic;
           we_o  : out std_logic;
-			 irq_i : in std_logic;
-			 irqv_i: in std_logic_vector(1 downto 0)
+			 currentTemperature: in integer range 0 to 100;
+			 desiredTemperature : in integer range 0 to 100;
+			 fanSpeedPercent : in integer range 0 to 100
 			 );
 end MemoryWriter;
 
@@ -81,8 +82,8 @@ begin
 						shift => shift,
 						ctrl => ctrl,
 						alt => alt );
-   -- FSM process to initialize memory, wait for interrupt, read keyboard,
-	-- convert scancode to ascii, write pixels to memory
+
+
 	process( clk_i, rst_i, state)
 		variable extended, keyup : std_logic;
 		variable shift_l_down, ctrl_l_down, alt_l_down : std_logic; 
@@ -147,9 +148,9 @@ begin
 				when waitForKeyBoardInterrupt=>
 					cyc_o<='0';
 					stb_o<='0';
-					if(irq_i='1') then
+					--if(irq_i='1') then
 						state<=readKeyboardData;
-					end if;
+					--end if;
 				when readKeyboardData=>
 					stb_o<='1';
 					we_o <='0';

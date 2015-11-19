@@ -35,10 +35,6 @@ entity TemperatureControlProject is
           VGA_HS : out std_logic;
           VGA_VS : out std_logic;
 
-			--LED : out std_logic_vector(15 downto 0);
-			PS2_CLK : inout std_logic;
-			PS2_DATA : inout std_logic;
-
       -- DDR2 interface
 			DDR2_ADDR            : out   std_logic_vector(12 downto 0);
          DDR2_BA              : out   std_logic_vector(2 downto 0);
@@ -113,15 +109,11 @@ begin
 					  irq_o_s => irq_o_s, irq_i_m => irq_i_m, irqv_i_m => irqv_i_m,
 					  cyc_o_m => cyc_o_m, stb_o_m => stb_o_m, stb_i_s => stb_i_s, we_o_m => we_o_m, we => we );
 		
-	-- videomem_master is the master module that waits for interrupts 
-	-- from the ps2_kb module and then reads the scancode from the ps2_kb module
-	-- and then converts the scancode to a ascii code which is then written to
-	-- the SRAM
 	temperatureControlMaster : entity work.TemperatureControlMaster
 		port map ( clk_i => sys_clk, rst_i => sys_rst, 
 					  adr_o => adr_o_m0, dat_i => drd, dat_o => dat_o_m0,
 					  ack_i => ack_i_m(0), cyc_o => cyc_o_m(0), stb_o => stb_o_m(0), 
-					  we_o => we_o_m(0), irq_i => irq_i_m, irqv_i => irqv_i_m);
+					  we_o => we_o_m(0));
 
 	vga : entity work.wb_vga640x480 
 		port map ( clk_i => sys_clk, rst_i => sys_rst, 

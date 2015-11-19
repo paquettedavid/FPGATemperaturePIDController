@@ -1,0 +1,260 @@
+Release 14.5 par P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+ENGR-LC-001::  Thu Nov 19 18:24:30 2015
+
+par -w -intstyle ise -ol high -mt off TemperatureControlProject_map.ncd
+TemperatureControlProject.ncd TemperatureControlProject.pcf 
+
+
+Constraints file: TemperatureControlProject.pcf.
+Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.5\ISE_DS\ISE\.
+   "TemperatureControlProject" is an NCD, version 3.2, device xc7a100t, package csg324, speed -1
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to '2100@ECS-LICENSE1.ENGR.UCONN.EDU'.
+INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:54 - 'xc7a100t' is a WebPack part.
+WARNING:Security:43 - No license file was found in the standard Xilinx license directory.
+WARNING:Security:44 - Since no license file was found,
+       please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses")
+       to assist in obtaining a license.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue
+to function, but you no longer qualify for Xilinx software updates or new releases.
+
+----------------------------------------------------------------------
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.08 2013-03-26".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                   213 out of 126,800    1%
+    Number used as Flip Flops:                 172
+    Number used as Latches:                     32
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                9
+  Number of Slice LUTs:                      1,965 out of  63,400    3%
+    Number used as logic:                    1,883 out of  63,400    2%
+      Number using O6 output only:           1,732
+      Number using O5 output only:              41
+      Number using O5 and O6:                  110
+      Number used as ROM:                        0
+    Number used as Memory:                      76 out of  19,000    1%
+      Number used as Dual Port RAM:             76
+        Number using O6 output only:            44
+        Number using O5 output only:             0
+        Number using O5 and O6:                 32
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:             0
+    Number used exclusively as route-thrus:      6
+      Number with same-slice register load:      4
+      Number with same-slice carry load:         2
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   878 out of  15,850    5%
+  Number of LUT Flip Flop pairs used:        1,990
+    Number with an unused Flip Flop:         1,795 out of   1,990   90%
+    Number with an unused LUT:                  25 out of   1,990    1%
+    Number of fully used LUT-FF pairs:         170 out of   1,990    8%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of 126,800    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        16 out of     210    7%
+    Number of LOCed IOBs:                       16 out of      16  100%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                127 out of     135   94%
+    Number using RAMB36E1 only:                127
+    Number using FIFO36E1 only:                  0
+  Number of RAMB18E1/FIFO18E1s:                  2 out of     270    1%
+    Number using RAMB18E1 only:                  2
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                      4 out of      32   12%
+    Number used as BUFGs:                        4
+    Number used as BUFGCTRLs:                    0
+  Number of IDELAYE2/IDELAYE2_FINEDELAYs:        0 out of     300    0%
+  Number of ILOGICE2/ILOGICE3/ISERDESE2s:        0 out of     300    0%
+  Number of ODELAYE2/ODELAYE2_FINEDELAYs:        0
+  Number of OLOGICE2/OLOGICE3/OSERDESE2s:        0 out of     300    0%
+  Number of PHASER_IN/PHASER_IN_PHYs:            0 out of      24    0%
+  Number of PHASER_OUT/PHASER_OUT_PHYs:          0 out of      24    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of      96    0%
+  Number of BUFRs:                               0 out of      24    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DNA_PORTs:                           0 out of       1    0%
+  Number of DSP48E1s:                            1 out of     240    1%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of IBUFDS_GTE2s:                        0 out of       4    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of       6    0%
+  Number of IN_FIFOs:                            0 out of      24    0%
+  Number of MMCME2_ADVs:                         1 out of       6   16%
+  Number of OUT_FIFOs:                           0 out of      24    0%
+  Number of PCIE_2_1s:                           0 out of       1    0%
+  Number of PHASER_REFs:                         0 out of       6    0%
+  Number of PHY_CONTROLs:                        0 out of       6    0%
+  Number of PLLE2_ADVs:                          0 out of       6    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of XADCs:                               0 out of       1    0%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 25 secs 
+Finished initial Timing Analysis.  REAL time: 25 secs 
+
+WARNING:Par:288 - The signal vga/Mram_line_buffer1_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal vga/Mram_line_buffer2_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal vga/Mram_line_buffer3_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal vga/Mram_line_buffer5_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal vga/Mram_line_buffer4_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal vga/Mram_line_buffer10_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal vga/Mram_line_buffer6_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal vga/Mram_line_buffer9_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal vga/Mram_line_buffer7_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal vga/Mram_line_buffer8_RAMD_O has no load.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 30594 unrouted;      REAL time: 27 secs 
+
+Phase  2  : 21102 unrouted;      REAL time: 27 secs 
+
+Phase  3  : 6304 unrouted;      REAL time: 1 mins 8 secs 
+
+Phase  4  : 6304 unrouted; (Setup:0, Hold:8350, Component Switching Limit:0)     REAL time: 1 mins 13 secs 
+
+Updating file: TemperatureControlProject.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:8347, Component Switching Limit:0)     REAL time: 1 mins 28 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:8347, Component Switching Limit:0)     REAL time: 1 mins 28 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:8347, Component Switching Limit:0)     REAL time: 1 mins 28 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:8347, Component Switching Limit:0)     REAL time: 1 mins 28 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 29 secs 
+Total REAL time to Router completion: 1 mins 29 secs 
+Total CPU time to Router completion: 1 mins 21 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|             sys_clk |BUFGCTRL_X0Y30| No   |  339 |  0.281     |  1.899      |
++---------------------+--------------+------+------+------------+-------------+
+|vga/clk_divider/clk_ |              |      |      |            |             |
+|                BUFG | BUFGCTRL_X0Y0| No   |    6 |  0.006     |  1.625      |
++---------------------+--------------+------+------+------------+-------------+
+|clock200_inst/clkfbo |              |      |      |            |             |
+|              ut_buf |BUFGCTRL_X0Y31| No   |    1 |  0.000     |  1.627      |
++---------------------+--------------+------+------+------------+-------------+
+|wb_bram/bram_select[ |              |      |      |            |             |
+| 6]_GND_69_o_Mux_6_o | BUFGCTRL_X0Y1| No   |   32 |  0.021     |  1.633      |
++---------------------+--------------+------+------+------------+-------------+
+|clock200_inst/clkin1 |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  1.233      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 1
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_clock200_inst_clkout0 = PERIOD TIMEGRP | SETUP       |     0.061ns|     9.939ns|       0|           0
+   "clock200_inst_clkout0"         TS_sys_c | HOLD        |     0.008ns|            |       0|           0
+  lk_pin HIGH 50%                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | MINLOWPULSE |     6.000ns|     4.000ns|       0|           0
+  pin" 100 MHz HIGH 50%                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |     10.000ns|      4.000ns|      9.939ns|            0|            0|            0|        51201|
+| TS_clock200_inst_clkout0      |     10.000ns|      9.939ns|          N/A|            0|            0|        51201|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 10 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 1 mins 41 secs 
+Total CPU time to PAR completion: 1 mins 24 secs 
+
+Peak Memory Usage:  806 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 12
+Number of info messages: 0
+
+Writing design to file TemperatureControlProject.ncd
+
+
+
+PAR done!

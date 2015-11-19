@@ -1,0 +1,995 @@
+Release 14.5 Map P.58f (nt64)
+Xilinx Mapping Report File for Design 'TemperatureControlProject'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off
+-power off -o TemperatureControlProject_map.ncd TemperatureControlProject.ngd
+TemperatureControlProject.pcf 
+Target Device  : xc7a100t
+Target Package : csg324
+Target Speed   : -1
+Mapper Version : artix7 -- $Revision: 1.55 $
+Mapped Date    : Thu Nov 19 18:22:33 2015
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   15
+Slice Logic Utilization:
+  Number of Slice Registers:                   213 out of 126,800    1%
+    Number used as Flip Flops:                 172
+    Number used as Latches:                     32
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                9
+  Number of Slice LUTs:                      1,965 out of  63,400    3%
+    Number used as logic:                    1,883 out of  63,400    2%
+      Number using O6 output only:           1,732
+      Number using O5 output only:              41
+      Number using O5 and O6:                  110
+      Number used as ROM:                        0
+    Number used as Memory:                      76 out of  19,000    1%
+      Number used as Dual Port RAM:             76
+        Number using O6 output only:            44
+        Number using O5 output only:             0
+        Number using O5 and O6:                 32
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:             0
+    Number used exclusively as route-thrus:      6
+      Number with same-slice register load:      4
+      Number with same-slice carry load:         2
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   878 out of  15,850    5%
+  Number of LUT Flip Flop pairs used:        1,990
+    Number with an unused Flip Flop:         1,795 out of   1,990   90%
+    Number with an unused LUT:                  25 out of   1,990    1%
+    Number of fully used LUT-FF pairs:         170 out of   1,990    8%
+    Number of unique control sets:              28
+    Number of slice register sites lost
+      to control set restrictions:             128 out of 126,800    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        16 out of     210    7%
+    Number of LOCed IOBs:                       16 out of      16  100%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                127 out of     135   94%
+    Number using RAMB36E1 only:                127
+    Number using FIFO36E1 only:                  0
+  Number of RAMB18E1/FIFO18E1s:                  2 out of     270    1%
+    Number using RAMB18E1 only:                  2
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                      4 out of      32   12%
+    Number used as BUFGs:                        4
+    Number used as BUFGCTRLs:                    0
+  Number of IDELAYE2/IDELAYE2_FINEDELAYs:        0 out of     300    0%
+  Number of ILOGICE2/ILOGICE3/ISERDESE2s:        0 out of     300    0%
+  Number of ODELAYE2/ODELAYE2_FINEDELAYs:        0
+  Number of OLOGICE2/OLOGICE3/OSERDESE2s:        0 out of     300    0%
+  Number of PHASER_IN/PHASER_IN_PHYs:            0 out of      24    0%
+  Number of PHASER_OUT/PHASER_OUT_PHYs:          0 out of      24    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of      96    0%
+  Number of BUFRs:                               0 out of      24    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DNA_PORTs:                           0 out of       1    0%
+  Number of DSP48E1s:                            1 out of     240    1%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of IBUFDS_GTE2s:                        0 out of       4    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of       6    0%
+  Number of IN_FIFOs:                            0 out of      24    0%
+  Number of MMCME2_ADVs:                         1 out of       6   16%
+  Number of OUT_FIFOs:                           0 out of      24    0%
+  Number of PCIE_2_1s:                           0 out of       1    0%
+  Number of PHASER_REFs:                         0 out of       6    0%
+  Number of PHY_CONTROLs:                        0 out of       6    0%
+  Number of PLLE2_ADVs:                          0 out of       6    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of XADCs:                               0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                3.13
+
+Peak Memory Usage:  903 MB
+Total REAL time to MAP completion:  1 mins 53 secs 
+Total CPU time to MAP completion:   1 mins 49 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - Since no license file was found,
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+WARNING:MapLib:328 - Block temperatureControlMaster/temperatureSensor is not a
+   recognized logical block. The mapper will continue to process the design but
+   there may be design problems if this block does not get trimmed.
+WARNING:MapLib:328 - Block temperatureControlMaster/temperatureSetPointControl
+   is not a recognized logical block. The mapper will continue to process the
+   design but there may be design problems if this block does not get trimmed.
+WARNING:MapLib:328 - Block temperatureControlMaster/pwmControl is not a
+   recognized logical block. The mapper will continue to process the design but
+   there may be design problems if this block does not get trimmed.
+WARNING:MapLib:328 - Block temperatureControlMaster/dcFanInterface is not a
+   recognized logical block. The mapper will continue to process the design but
+   there may be design problems if this block does not get trimmed.
+WARNING:MapLib:328 - Block temperatureControlMaster/pidController is not a
+   recognized logical block. The mapper will continue to process the design but
+   there may be design problems if this block does not get trimmed.
+WARNING:PhysDesignRules:367 - The signal <vga/Mram_line_buffer1_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vga/Mram_line_buffer2_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vga/Mram_line_buffer3_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vga/Mram_line_buffer5_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vga/Mram_line_buffer4_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vga/Mram_line_buffer10_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vga/Mram_line_buffer6_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vga/Mram_line_buffer9_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vga/Mram_line_buffer7_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vga/Mram_line_buffer8_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
+'2100@ECS-LICENSE1.ENGR.UCONN.EDU'.
+INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:54 - 'xc7a100t' is a WebPack part.
+INFO:LIT:243 - Logical network DDR2_ADDR<12> has no load.
+INFO:LIT:395 - The above info message is repeated 625 more times for the
+   following (max. 5 shown):
+   DDR2_ADDR<11>,
+   DDR2_ADDR<10>,
+   DDR2_ADDR<9>,
+   DDR2_ADDR<8>,
+   DDR2_ADDR<7>
+   To see the details of these info messages, please use the -detail switch.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   4 block(s) removed
+ 134 block(s) optimized away
+ 678 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "clock200_inst/clkout2_buf" (CKBUF) removed.
+ The signal "clock200_inst/clkout1" is loadless and has been removed.
+The signal "temperatureControlMaster/memoryWriter/lut/bram1/DOP<0>" is
+sourceless and has been removed.
+The signal "temperatureControlMaster/memoryWriter/lut/bram1/GND" is sourceless
+and has been removed.
+The signal "temperatureControlMaster/memoryWriter/lut/bram2/DOP<0>" is
+sourceless and has been removed.
+The signal "temperatureControlMaster/memoryWriter/lut/bram2/GND" is sourceless
+and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<31>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<30>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<29>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<28>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<27>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<26>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<25>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<24>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<23>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<22>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<21>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<20>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<19>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<18>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<17>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<16>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<15>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<14>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<13>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<12>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<11>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<10>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<9>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<8>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<7>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<6>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<5>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<4>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DO<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[127].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[126].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[126].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[126].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[126].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[126].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[125].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[125].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[125].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[125].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[125].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[124].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[124].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[124].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[124].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[124].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[123].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[123].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[123].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[123].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[123].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[122].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[122].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[122].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[122].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[122].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[121].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[121].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[121].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[121].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[121].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[120].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[120].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[120].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[120].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[120].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[119].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[119].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[119].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[119].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[119].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[118].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[118].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[118].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[118].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[118].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[117].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[117].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[117].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[117].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[117].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[116].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[116].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[116].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[116].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[116].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[115].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[115].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[115].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[115].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[115].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[114].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[114].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[114].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[114].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[114].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[113].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[113].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[113].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[113].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[113].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[112].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[112].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[112].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[112].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[112].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[111].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[111].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[111].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[111].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[111].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[110].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[110].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[110].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[110].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[110].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[109].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[109].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[109].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[109].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[109].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[108].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[108].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[108].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[108].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[108].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[107].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[107].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[107].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[107].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[107].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[106].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[106].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[106].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[106].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[106].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[105].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[105].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[105].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[105].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[105].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[104].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[104].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[104].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[104].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[104].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[103].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[103].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[103].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[103].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[103].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[102].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[102].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[102].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[102].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[102].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[101].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[101].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[101].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[101].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[101].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[100].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[100].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[100].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[100].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[100].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[99].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[99].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[99].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[99].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[99].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[98].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[98].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[98].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[98].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[98].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[97].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[97].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[97].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[97].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[97].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[96].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[96].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[96].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[96].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[96].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[95].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[95].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[95].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[95].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[95].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[94].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[94].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[94].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[94].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[94].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[93].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[93].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[93].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[93].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[93].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[92].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[92].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[92].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[92].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[92].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[91].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[91].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[91].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[91].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[91].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[90].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[90].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[90].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[90].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[90].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[89].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[89].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[89].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[89].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[89].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[88].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[88].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[88].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[88].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[88].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[87].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[87].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[87].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[87].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[87].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[86].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[86].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[86].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[86].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[86].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[85].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[85].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[85].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[85].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[85].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[84].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[84].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[84].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[84].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[84].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[83].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[83].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[83].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[83].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[83].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[82].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[82].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[82].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[82].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[82].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[81].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[81].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[81].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[81].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[81].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[80].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[80].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[80].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[80].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[80].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[79].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[79].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[79].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[79].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[79].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[78].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[78].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[78].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[78].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[78].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[77].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[77].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[77].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[77].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[77].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[76].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[76].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[76].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[76].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[76].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[75].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[75].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[75].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[75].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[75].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[74].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[74].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[74].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[74].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[74].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[73].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[73].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[73].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[73].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[73].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[72].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[72].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[72].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[72].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[72].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[71].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[71].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[71].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[71].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[71].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[70].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[70].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[70].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[70].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[70].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[69].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[69].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[69].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[69].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[69].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[68].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[68].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[68].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[68].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[68].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[67].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[67].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[67].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[67].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[67].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[66].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[66].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[66].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[66].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[66].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[65].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[65].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[65].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[65].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[65].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[64].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[64].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[64].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[64].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[64].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[63].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[63].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[63].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[63].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[63].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[62].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[62].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[62].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[62].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[62].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[61].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[61].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[61].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[61].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[61].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[60].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[60].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[60].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[60].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[60].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[59].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[59].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[59].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[59].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[59].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[58].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[58].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[58].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[58].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[58].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[57].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[57].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[57].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[57].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[57].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[56].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[56].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[56].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[56].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[56].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[55].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[55].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[55].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[55].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[55].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[54].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[54].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[54].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[54].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[54].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[53].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[53].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[53].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[53].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[53].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[52].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[52].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[52].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[52].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[52].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[51].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[51].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[51].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[51].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[51].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[50].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[50].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[50].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[50].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[50].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[49].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[49].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[49].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[49].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[49].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[48].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[48].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[48].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[48].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[48].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[47].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[47].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[47].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[47].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[47].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[46].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[46].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[46].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[46].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[46].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[45].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[45].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[45].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[45].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[45].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[44].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[44].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[44].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[44].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[44].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[43].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[43].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[43].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[43].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[43].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[42].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[42].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[42].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[42].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[42].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[41].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[41].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[41].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[41].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[41].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[40].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[40].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[40].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[40].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[40].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[39].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[39].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[39].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[39].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[39].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[38].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[38].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[38].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[38].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[38].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[37].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[37].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[37].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[37].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[37].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[36].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[36].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[36].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[36].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[36].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[35].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[35].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[35].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[35].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[35].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[34].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[34].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[34].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[34].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[34].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[33].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[33].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[33].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[33].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[33].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[32].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[32].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[32].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[32].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[32].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[31].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[31].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[31].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[31].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[31].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[30].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[30].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[30].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[30].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[30].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[29].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[29].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[29].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[29].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[29].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[28].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[28].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[28].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[28].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[28].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[27].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[27].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[27].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[27].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[27].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[26].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[26].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[26].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[26].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[26].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[25].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[25].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[25].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[25].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[25].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[24].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[24].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[24].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[24].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[24].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[23].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[23].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[23].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[23].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[23].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[22].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[22].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[22].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[22].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[22].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[21].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[21].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[21].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[21].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[21].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[20].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[20].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[20].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[20].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[20].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[19].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[19].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[19].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[19].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[19].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[18].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[18].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[18].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[18].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[18].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[17].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[17].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[17].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[17].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[17].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[16].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[16].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[16].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[16].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[16].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[15].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[15].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[15].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[15].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[15].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[14].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[14].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[14].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[14].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[14].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[13].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[13].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[13].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[13].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[13].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[12].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[12].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[12].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[12].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[12].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[11].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[11].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[11].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[11].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[11].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[10].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[10].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[10].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[10].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[10].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[9].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[9].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[9].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[9].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[9].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[8].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[8].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[8].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[8].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[8].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[7].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[7].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[7].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[7].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[7].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[6].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[6].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[6].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[6].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[6].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[5].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[5].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[5].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[5].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[5].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[4].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[4].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[4].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[4].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[4].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[3].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[3].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[3].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[3].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[3].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[2].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[2].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[2].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[2].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[2].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[1].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[1].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[1].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[1].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[1].bram/GND" is sourceless and has been removed.
+The signal "wb_bram/gen1[0].bram/DOP<3>" is sourceless and has been removed.
+The signal "wb_bram/gen1[0].bram/DOP<2>" is sourceless and has been removed.
+The signal "wb_bram/gen1[0].bram/DOP<1>" is sourceless and has been removed.
+The signal "wb_bram/gen1[0].bram/DOP<0>" is sourceless and has been removed.
+The signal "wb_bram/gen1[0].bram/GND" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "wb_bram/bram_en<127>" is unused and has been removed.
+ Unused block "wb_bram/Mmux_bram_en311" (ROM) removed.
+Unused block "wb_bram/gen1[127].bram/RAMB16" (RAMB16) removed.
+Unused block "wb_bram/gen1[127].bram/GND" (ZERO) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+LUT3 		temperatureControlMaster/memoryWriter/Madd_n0304[19:0]1
+   optimized to 0
+LUT3 		temperatureControlMaster/memoryWriter/Madd_n0304[19:0]2
+   optimized to 0
+LUT3 		temperatureControlMaster/memoryWriter/Madd_n0304[19:0]3
+   optimized to 0
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CLK100MHZ                          | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| CPU_RESETN                         | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| VGA_B<0>                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| VGA_B<1>                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| VGA_B<2>                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| VGA_B<3>                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| VGA_G<0>                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| VGA_G<1>                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| VGA_G<2>                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| VGA_G<3>                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| VGA_HS                             | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| VGA_R<0>                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| VGA_R<1>                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| VGA_R<2>                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| VGA_R<3>                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| VGA_VS                             | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

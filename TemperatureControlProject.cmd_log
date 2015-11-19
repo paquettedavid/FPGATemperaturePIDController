@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "H:/ECE4401/FinalProject/FinalProject/TemperatureControlProject.xst" -ofn "H:/ECE4401/FinalProject/FinalProject/TemperatureControlProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -i -p xc7a100t-csg324-1 TemperatureControlProject.ngc TemperatureControlProject.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TemperatureControlProject_map.ncd TemperatureControlProject.ngd TemperatureControlProject.pcf 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc NexysConfigFiles/Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 TemperatureControlProject.ngc TemperatureControlProject.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TemperatureControlProject_map.ncd TemperatureControlProject.ngd TemperatureControlProject.pcf 
+par -w -intstyle ise -ol high -mt off TemperatureControlProject_map.ncd TemperatureControlProject.ncd TemperatureControlProject.pcf 
+bitgen -intstyle ise -f TemperatureControlProject.ut TemperatureControlProject.ncd 

@@ -30,6 +30,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity PIDController is
+	Port ( 	proportionalGain : in integer range 0 to 10;
+				integralGain: in integer range 0 to 10;
+				derivativeGain: in integer range 0 to 10;
+				setpoint: in integer range 0 to 100;
+				sensorFeedbackValue : in integer range 0 to 100;
+				controlOutput : out integer range 0 to 100
+		);
 end PIDController;
 
 architecture Behavioral of PIDController is

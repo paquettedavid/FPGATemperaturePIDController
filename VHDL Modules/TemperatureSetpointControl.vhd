@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: David Paquette
 -- 
 -- Create Date:    17:02:39 11/19/2015 
 -- Design Name: 
@@ -30,6 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity TemperatureSetpointControl is
+	Port(selectedTemperature : out integer range 0 to 100);
 end TemperatureSetpointControl;
 
 architecture Behavioral of TemperatureSetpointControl is

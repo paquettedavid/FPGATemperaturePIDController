@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: David Paquette
 -- 
 -- Create Date:    17:27:40 11/19/2015 
 -- Design Name: 
@@ -30,6 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity TemperatureSensorInterface is
+	Port (temperatureCelcius : out integer range 0 to 100 );
 end TemperatureSensorInterface;
 
 architecture Behavioral of TemperatureSensorInterface is

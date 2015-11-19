@@ -1,8 +1,8 @@
 --------------------------------------------------------------------------------
 -- Company: 
--- Engineer:
+-- Engineer: David Paquette
 --
--- Create Date:    15:59:15 11/01/06
+-- Create Date:    15:59:15 11/19/15
 -- Design Name:    
 -- Module Name:    
 -- Project Name:   
@@ -41,12 +41,39 @@ entity TemperatureControlMaster is
 end TemperatureControlMaster;
 
 architecture Behavioral of TemperatureControlMaster is
+	signal currentTemperature : integer range 0 to 100:=45;
+	signal desiredTemperature : integer range 0 to 100:=37;
+	signal fanSpeedPercent : integer range 0 to 100:=23;
+	
+	signal pidProportionalGain : integer range 0 to 10:=1;
+	signal pidIntegralGain: integer range 0 to 10:=1;
+	signal pidDerivativeGain: integer range 0 to 10:=1;
 begin
 
-pidController : entity work.PIDController;
-dcFanInterface: entity work.dcFanInterface;
-memoryWriter : entity work.MemoryWriter;
-pwmControl : entity work.PWMControl;
-temperatureSetPointControl : entity work.TemperatureSetpointControl;
-temperatureSensor : entity worl.TemperatureSensorInterface;
+	pidController : entity work.PIDController
+		port map( proportionalGain=>pidProportionalGain,
+				integralGain=>pidIntegralGain,
+				derivativeGain=>pidDerivativeGain,
+				setpoint=>desiredTemperatur,
+				sensorFeedbackValue=>currentTemperature,
+				controlOutput =>fanSpeedPercent );
+				
+	memoryWriter : entity work.MemoryWriter
+		port map ( clk_i => clk_i, rst_i => rst_i , 
+		  adr_o => adr_o, dat_i => dat_i, dat_o => dat_o,
+		  ack_i => ack_i, cyc_o => cyc_o, stb_o => stb_o, 
+		  we_o => we_o, currentTemperature=> currentTemperature,
+		  desiredTemperature=> desiredTemperature,
+		  fanSpeedPercent=> fanSpeedPercent
+		);
+			
+	temperatureSetPointControl : entity work.TemperatureSetpointControl
+		port map(selectedTemperature=>desiredTemperature);
+		
+	temperatureSensor : entity work.TemperatureSensorInterface
+		port map (temperatureCelcius=>currentTemperature);
+		
+	dcFanInterface: entity work.dcFanInterface
+		port map(fanSpeed=>fanSpeedPercent);
+
 end Behavioral;

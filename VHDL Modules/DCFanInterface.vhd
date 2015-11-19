@@ -30,12 +30,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity DCFanInterface is
+	Port(fanSpeed : in integer range 0 to 100);
 end DCFanInterface;
 
 architecture Behavioral of DCFanInterface is
 
 begin
-
+	pwmControl : entity work.PWMControl;
 
 end Behavioral;
 
