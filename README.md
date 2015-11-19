@@ -7,3 +7,4 @@ The desired temperature, current temperature and PWM fan speed percent is writte
 
 Module communication is handled by the Wishbone bus.
 
+All code is located in the folder: VDHL Modules
