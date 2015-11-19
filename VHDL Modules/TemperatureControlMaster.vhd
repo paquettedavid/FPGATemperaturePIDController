@@ -48,5 +48,5 @@ dcFanInterface: entity work.dcFanInterface;
 memoryWriter : entity work.MemoryWriter;
 pwmControl : entity work.PWMControl;
 temperatureSetPointControl : entity work.TemperatureSetpointControl;
-
+temperatureSensor : entity worl.TemperatureSensorInterface;
 end Behavioral;
