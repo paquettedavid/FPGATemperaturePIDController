@@ -4,11 +4,10 @@ use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity ValuesToSerial is
-    port 
-    (  
-        -- General
+    port
+    (
         CLOCK                   :   in      std_logic;
-        RESET                   :   in      std_logic;    
+        RESET                   :   in      std_logic;
         RX                      :   in      std_logic;
         TX                      :   out     std_logic
 		  );
@@ -17,7 +16,7 @@ end ValuesToSerial;
 architecture RTL of ValuesToSerial is
     constant BAUD_RATE              : positive := 115200;
     constant CLOCK_FREQUENCY        : positive := 100000000;
-    
+
     signal uart_data_in             : std_logic_vector(7 downto 0);
     signal uart_data_out            : std_logic_vector(7 downto 0);
     signal uart_data_in_stb         : std_logic;
@@ -29,7 +28,7 @@ architecture RTL of ValuesToSerial is
 	signal s_clk: std_logic;
 	type StateType is (start, writeTemperatureData, writeComma, writeFanSpeedData, writeNewline, waitForOneSecondTick);
 	signal state : StateType := start;
-	
+
 	signal temperature: std_logic_vector(7 downto 0):=x"44";
 	signal fanSpeed: std_logic_vector(7 downto 0):=x"56";
 	signal oneSecondCounter :std_logic_vector(31 downto 0):=(others=>'0');
@@ -42,7 +41,7 @@ begin
             BAUD_RATE           => BAUD_RATE,
             CLOCK_FREQUENCY     => CLOCK_FREQUENCY
     )
-    port map    (  
+    port map    (
             -- General
             CLOCK               => CLOCK,
             RESET               => RESET,
@@ -55,7 +54,7 @@ begin
             TX                  => TX,
             RX                  => RX
     );
-    
+
 	 process(s_clk,RESET)
 	 begin
 		if(RESET='1') then
@@ -74,7 +73,7 @@ begin
 					if(uart_data_in_ack = '1') then
 						state<=writeComma;
 						uart_data_in_stb <= '0';
-					else 
+					else
 						uart_data_in_stb <= '1';
 						uart_data_in<= x"35";
 					end if;
@@ -82,7 +81,7 @@ begin
 					if(uart_data_in_ack = '1') then
 						state<=writeFanSpeedData;
 						uart_data_in_stb <= '0';
-					else 
+					else
 						uart_data_in_stb <= '1';
 						uart_data_in<= x"2c";
 					end if;
@@ -90,7 +89,7 @@ begin
 					if(uart_data_in_ack = '1') then
 						state<=writeNewLine;
 						uart_data_in_stb <= '0';
-					else 
+					else
 						uart_data_in_stb <= '1';
 						uart_data_in<= x"32";
 					end if;
@@ -98,7 +97,7 @@ begin
 					if(uart_data_in_ack = '1') then
 						state<=waitForOneSecondTick;
 						uart_data_in_stb <= '0';
-					else 
+					else
 						uart_data_in_stb <= '1';
 						uart_data_in<= x"0A";
 					end if;
@@ -111,6 +110,6 @@ begin
 			end case;
 		end if;
 	 end process;
-	 
+
 
 end RTL;
