@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-11-19T18:14:06</DateModified>
+  <DateModified>2015-11-20T02:07:22</DateModified>
   <ModuleName>TemperatureControlProject</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>H:/ECE4401/FinalProject/FinalProject/iseconfig/TemperatureControlProject.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>H:/ECE4401/FinalProject/FinalProject</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>H:/ECE4401/FinalProject/FinalProject\</ImplementationReportsDirectory>
   <DateInitialized>2015-11-19T18:14:06</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

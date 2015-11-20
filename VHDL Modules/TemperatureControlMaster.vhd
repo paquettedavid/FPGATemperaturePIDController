@@ -36,7 +36,9 @@ entity TemperatureControlMaster is
           ack_i : in std_logic;
           cyc_o : out std_logic;
           stb_o : out std_logic;
-          we_o  : out std_logic
+          we_o  : out std_logic;
+			 rx_out : out std_logic;
+			 tx_in :  in std_logic
 		);
 end TemperatureControlMaster;
 
@@ -48,6 +50,7 @@ architecture Behavioral of TemperatureControlMaster is
 	signal pidProportionalGain : integer range 0 to 10:=1;
 	signal pidIntegralGain: integer range 0 to 10:=1;
 	signal pidDerivativeGain: integer range 0 to 10:=1;
+	signal tx, rx, rx_sync, reset, reset_sync,tx_sig : std_logic;
 begin
 
 	pidController : entity work.PIDController
@@ -75,5 +78,26 @@ begin
 		
 	dcFanInterface: entity work.dcFanInterface
 		port map(fanSpeed=>fanSpeedPercent);
+		
+	tx_sig <= tx_in;
+	serialController : entity work.ValuesToSerial
+    port map    (  
+            CLOCK       => sys_clk,
+            RESET       => reset, 
+            RX          => rx,
+            TX          => tx
+    );
+
+	process (sys_clk, sys_rst)
+    begin
+			if(sys_rst='0') then
+				reset <= '1'; -- the nexys4ddr is active low, so invert reset to use with this serial lib
+        elsif (sys_clk'event and sys_clk = '1') then
+            reset <='0';
+				rx_sync <= tx_sig; -- the perspective of the tx and rx is reversed for the nexys
+            rx   <= rx_sync;
+            rx_out <= tx;
+        end if;
+    end process;
 
 end Behavioral;

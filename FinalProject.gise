@@ -104,96 +104,80 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="TemperatureControlProject.lso"/>
-      <outfile xil_pn:name="TemperatureControlProject.ngc"/>
-      <outfile xil_pn:name="TemperatureControlProject.ngr"/>
-      <outfile xil_pn:name="TemperatureControlProject.prj"/>
-      <outfile xil_pn:name="TemperatureControlProject.stx"/>
-      <outfile xil_pn:name="TemperatureControlProject.syr"/>
-      <outfile xil_pn:name="TemperatureControlProject.xst"/>
-      <outfile xil_pn:name="TemperatureControlProject_xst.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1447975330" xil_pn:in_ck="-2187455795494326165" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4495156609217869470" xil_pn:start_ts="1447975330">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1447975351" xil_pn:in_ck="706083539932550839" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1220059097699532093" xil_pn:start_ts="1447975330">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="TemperatureControlProject.bld"/>
-      <outfile xil_pn:name="TemperatureControlProject.ngd"/>
-      <outfile xil_pn:name="TemperatureControlProject_ngdbuild.xrpt"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1447975469" xil_pn:in_ck="706083539932550840" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="-7188367874928765557" xil_pn:start_ts="1447975351">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="TemperatureControlProject.pcf"/>
-      <outfile xil_pn:name="TemperatureControlProject_map.map"/>
-      <outfile xil_pn:name="TemperatureControlProject_map.mrp"/>
-      <outfile xil_pn:name="TemperatureControlProject_map.ncd"/>
-      <outfile xil_pn:name="TemperatureControlProject_map.ngm"/>
-      <outfile xil_pn:name="TemperatureControlProject_map.xrpt"/>
-      <outfile xil_pn:name="TemperatureControlProject_summary.xml"/>
-      <outfile xil_pn:name="TemperatureControlProject_usage.xml"/>
-      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1447975576" xil_pn:in_ck="6244024539741651409" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1447975469">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="TemperatureControlProject.ncd"/>
-      <outfile xil_pn:name="TemperatureControlProject.pad"/>
-      <outfile xil_pn:name="TemperatureControlProject.par"/>
-      <outfile xil_pn:name="TemperatureControlProject.ptwx"/>
-      <outfile xil_pn:name="TemperatureControlProject.unroutes"/>
-      <outfile xil_pn:name="TemperatureControlProject.xpi"/>
-      <outfile xil_pn:name="TemperatureControlProject_pad.csv"/>
-      <outfile xil_pn:name="TemperatureControlProject_pad.txt"/>
-      <outfile xil_pn:name="TemperatureControlProject_par.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1447975689" xil_pn:in_ck="1876822123616262633" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="-7544416716831264894" xil_pn:start_ts="1447975576">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="TemperatureControlProject.ut"/>
-      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="temperaturecontrolproject.bgn"/>
-      <outfile xil_pn:name="temperaturecontrolproject.bit"/>
-      <outfile xil_pn:name="temperaturecontrolproject.drc"/>
-      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1447975743" xil_pn:in_ck="139283041747338259" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6383737364629502382" xil_pn:start_ts="1447975742">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputRemoved"/>
     </transform>
     <transform xil_pn:name="TRAN_postRouteTrce">
       <status xil_pn:value="AbortedRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
     </transform>
   </transforms>
 

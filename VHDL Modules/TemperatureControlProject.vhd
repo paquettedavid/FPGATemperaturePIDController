@@ -34,22 +34,8 @@ entity TemperatureControlProject is
     		 VGA_B  : out std_logic_vector(3 downto 0);
           VGA_HS : out std_logic;
           VGA_VS : out std_logic;
-
-      -- DDR2 interface
-			DDR2_ADDR            : out   std_logic_vector(12 downto 0);
-         DDR2_BA              : out   std_logic_vector(2 downto 0);
-         DDR2_RAS_N           : out   std_logic;
-         DDR2_CAS_N           : out   std_logic;
-         DDR2_WE_N            : out   std_logic;
-         DDR2_CK_P            : out   std_logic_vector(0 downto 0);
-         DDR2_CK_N            : out   std_logic_vector(0 downto 0);
-         DDR2_CKE             : out   std_logic_vector(0 downto 0);
-         DDR2_CS_N            : out   std_logic_vector(0 downto 0);
-			DDR2_DM              : out   std_logic_vector(1 downto 0);
-			DDR2_ODT             : out   std_logic_vector(0 downto 0);
-			DDR2_DQ              : inout std_logic_vector(15 downto 0);
-			DDR2_DQS_P           : inout std_logic_vector(1 downto 0);
-			DDR2_DQS_N           : inout std_logic_vector(1 downto 0);
+			 uart_rxd_out : out std_logic;
+			 uart_txd_in :  in std_logic;
 
 			CPU_RESETN : in std_logic;
 			CLK100MHZ : in std_logic
@@ -92,9 +78,13 @@ architecture Behavioral of TemperatureControlProject is
 	signal sys_clk, sys_rst : std_logic;
 	signal clk200	 : std_logic;
 
+
+
+
 begin
 
  	sys_rst <= cpu_resetn;
+
 
 	clock200_inst : entity work.clk200
 		port map ( clk_in1 => clk100mhz, clk_out1 => sys_clk, clk_out2 => clk200 ); 
@@ -113,7 +103,7 @@ begin
 		port map ( clk_i => sys_clk, rst_i => sys_rst, 
 					  adr_o => adr_o_m0, dat_i => drd, dat_o => dat_o_m0,
 					  ack_i => ack_i_m(0), cyc_o => cyc_o_m(0), stb_o => stb_o_m(0), 
-					  we_o => we_o_m(0));
+					  we_o => we_o_m(0), tx_in=>uart_txd_in, rx_out=>uart_rxd_out);
 
 	vga : entity work.wb_vga640x480 
 		port map ( clk_i => sys_clk, rst_i => sys_rst, 
@@ -130,5 +120,6 @@ begin
 	
 	cyc_o_m(3) <= '0';
 	cyc_o_m(2) <= '0';
+	
 	
 end Behavioral;

@@ -8,7 +8,10 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/DCFanInterface - Behavioral H:|ECE4401|FinalProject|FinalProject|DCFanInterface.vhd</ClosedNode>
+         <ClosedNode>/TemperatureControlProject - Behavioral H:|ECE4401|FinalProject|FinalProject|VHDL Modules|TemperatureControlProject.vhd/temperatureControlMaster - TemperatureControlMaster - Behavioral/dcFanInterface - DCFanInterface - Behavioral</ClosedNode>
          <ClosedNode>/TemperatureControlProject - Behavioral H:|ECE4401|FinalProject|FinalProject|VHDL Modules|TemperatureControlProject.vhd/temperatureControlMaster - TemperatureControlMaster - Behavioral/memoryWriter - MemoryWriter - Behavioral</ClosedNode>
+         <ClosedNode>/TemperatureControlProject - Behavioral H:|ECE4401|FinalProject|FinalProject|VHDL Modules|TemperatureControlProject.vhd/temperatureControlMaster - TemperatureControlMaster - Behavioral/serialController - ValuesToSerial - RTL</ClosedNode>
+         <ClosedNode>/TemperatureControlProject - Behavioral H:|ECE4401|FinalProject|FinalProject|VHDL Modules|TemperatureControlProject.vhd/vga - wb_vga640x480 - Behavioral</ClosedNode>
          <ClosedNode>/videomemlab - Behavioral H:|ECE4401|FinalProject|FinalProject|TemperatureControlProject.vhd</ClosedNode>
          <ClosedNode>/videomemlab - Behavioral H:|ECE4401|FinalProject|FinalProject|VHDL Modules|TemperatureControlProject.vhd/vga - wb_vga640x480 - Behavioral</ClosedNode>
          <ClosedNode>/videomemlab - Behavioral H:|ECE4401|FinalProject|FinalProject|videomemlab.vhd/vga - wb_vga640x480 - Behavioral</ClosedNode>
@@ -16,13 +19,13 @@
          <ClosedNode>/videomemlab - Behavioral H:|ECE4401|FinalProject|FinalProject|videomemlab.vhd/wb_intercon - wb_intercon - ICN0002a1</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>U08 - wb_arbiter - ARB0001a1 (H:/ECE4401/FinalProject/FinalProject/VHDL Modules/WishboneLibrary/wb_arbiter.vhd)</SelectedItem>
+         <SelectedItem>serialController - ValuesToSerial - RTL (H:/ECE4401/FinalProject/FinalProject/VHDL Modules/UARTSerialLibrary/ValuesToSerial.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000026a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000026a0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>U08 - wb_arbiter - ARB0001a1 (H:/ECE4401/FinalProject/FinalProject/VHDL Modules/WishboneLibrary/wb_arbiter.vhd)</CurrentItem>
+      <CurrentItem>serialController - ValuesToSerial - RTL (H:/ECE4401/FinalProject/FinalProject/VHDL Modules/UARTSerialLibrary/ValuesToSerial.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -45,9 +48,9 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000001b4000000040101000100000000000000000000000064ffffffff000000810000000000000004000000c60000000100000000000000240000000100000000000000660000000100000000000000640000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000261000000040101000100000000000000000000000064ffffffff000000810000000000000004000000c60000000100000000000000240000000100000000000000660000000100000000000001110000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>char8x12_lookup_table.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
