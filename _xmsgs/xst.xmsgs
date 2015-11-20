@@ -1,0 +1,1510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlMaster.vhd" Line 91: Actual for formal port <arg fmt="%s" index="1">temperaturein</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlMaster.vhd" Line 92: Actual for formal port <arg fmt="%s" index="1">fanspeedin</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlMaster.vhd" Line 46: Using initial value <arg fmt="%s" index="1">45</arg> for <arg fmt="%s" index="2">currenttemperature</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlMaster.vhd" Line 47: Using initial value <arg fmt="%s" index="1">37</arg> for <arg fmt="%s" index="2">desiredtemperature</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlMaster.vhd" Line 48: Using initial value <arg fmt="%s" index="1">23</arg> for <arg fmt="%s" index="2">fanspeedpercent</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlMaster.vhd" Line 55: Using initial value <arg fmt="%s" index="1">&quot;00000000&quot;</arg> for <arg fmt="%s" index="2">eightbitbuffer</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\MemoryWriter.vhd" Line 50: Using initial value <arg fmt="%s" index="1">&quot;00000000000000000000000000000000&quot;</arg> for <arg fmt="%s" index="2">buffer_base</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\MemoryWriter.vhd" Line 52: Using initial value <arg fmt="%s" index="1">&quot;1111&quot;</arg> for <arg fmt="%s" index="2">txtcolor</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\MemoryWriter.vhd" Line 53: Using initial value <arg fmt="%s" index="1">&quot;0001&quot;</arg> for <arg fmt="%s" index="2">bgcolor</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\char8x12_lookup_table.vhd" Line 39: Net &lt;<arg fmt="%s" index="1">bram_di[7]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\char8x12_lookup_table.vhd" Line 42: Net &lt;<arg fmt="%s" index="1">bram_dip[0]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\MemoryWriter.vhd" Line 47: Net &lt;<arg fmt="%s" index="1">ascii[7]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 71: Assignment to <arg fmt="%s" index="1">bram_we_vector</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 135: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 140: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 146: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 152: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 158: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 164: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 170: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 176: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 182: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 188: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 194: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 200: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 206: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 212: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 218: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 224: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 230: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 236: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 242: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 248: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 254: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 260: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 266: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 272: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 278: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 284: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 290: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 296: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 302: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 308: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 314: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 320: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 326: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 332: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 338: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 344: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 350: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 356: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 362: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 368: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 374: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 380: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 386: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 392: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 398: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 404: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 410: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 416: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 422: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 428: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 434: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 440: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 446: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 452: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 458: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 464: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 470: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 476: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 482: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 488: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 494: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 500: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 506: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 512: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 518: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 524: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 530: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 536: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 542: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 548: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 554: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 560: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 566: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 572: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 578: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 584: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 590: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 596: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 602: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 608: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 614: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 620: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 626: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 632: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 638: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 644: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 650: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 656: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 662: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 668: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 674: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 680: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 686: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 692: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 698: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 704: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 710: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 716: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 722: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 728: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 734: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 740: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 746: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 752: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 758: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 764: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 770: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 776: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 782: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 788: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 794: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 800: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 806: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 812: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 818: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 824: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 830: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 836: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 842: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 848: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 854: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 860: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 866: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 872: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 878: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 884: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 890: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 894: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 894: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 895: <arg fmt="%s" index="1">bram_enable</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\VGALibrary\wb_bram.vhd" Line 54: Net &lt;<arg fmt="%s" index="1">bram_dip[3]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlProject.vhd" Line 48: Net &lt;<arg fmt="%s" index="1">ACK_O_S[3]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlProject.vhd" Line 51: Net &lt;<arg fmt="%s" index="1">ADR_O_M2[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlProject.vhd" Line 52: Net &lt;<arg fmt="%s" index="1">ADR_O_M3[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlProject.vhd" Line 57: Net &lt;<arg fmt="%s" index="1">DAT_O_M2[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlProject.vhd" Line 58: Net &lt;<arg fmt="%s" index="1">DAT_O_M3[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlProject.vhd" Line 61: Net &lt;<arg fmt="%s" index="1">DAT_O_S1[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlProject.vhd" Line 62: Net &lt;<arg fmt="%s" index="1">DAT_O_S2[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlProject.vhd" Line 63: Net &lt;<arg fmt="%s" index="1">DAT_O_S3[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlProject.vhd" Line 65: Net &lt;<arg fmt="%s" index="1">IRQ_O_S[3]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlProject.vhd" Line 69: Net &lt;<arg fmt="%s" index="1">STB_O_M[3]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlProject.vhd" Line 70: Net &lt;<arg fmt="%s" index="1">WE_O_M[3]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlProject.vhd</arg>&quot; line <arg fmt="%s" index="2">89</arg>: Output port &lt;<arg fmt="%s" index="3">CLK_OUT2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clock200_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlProject.vhd</arg>&quot; line <arg fmt="%s" index="2">92</arg>: Output port &lt;<arg fmt="%s" index="3">IRQV_I_M</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">wb_intercon</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlProject.vhd</arg>&quot; line <arg fmt="%s" index="2">92</arg>: Output port &lt;<arg fmt="%s" index="3">IRQ_I_M</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">wb_intercon</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">ACK_O_S&lt;3:1&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">ADR_O_M2</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">ADR_O_M3</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">DAT_O_M2</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">DAT_O_M3</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">DAT_O_S1</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">DAT_O_S2</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">DAT_O_S3</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">IRQ_O_S</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">STB_O_M&lt;3:2&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">WE_O_M&lt;3:2&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">dat_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">currentTemperature</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">desiredTemperature</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">fanSpeedPercent</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">ascii</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">writepixeltomemory</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">getpixeldata</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">bram_di</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">bram_dip</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">fanSpeed</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\UARTSerialLibrary\ValuesToSerial.vhd</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">DATA_STREAM_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">UART_inst1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\UARTSerialLibrary\ValuesToSerial.vhd</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">DATA_STREAM_OUT_STB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">UART_inst1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">dat_o</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="3035" delta="old" >Index value(s) does not match array range for signal &lt;<arg fmt="%s" index="1">line_buffer</arg>&gt;, simulation mismatch.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">extrawait</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">adr_i&lt;1:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">adr_i&lt;31:18&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">bram_dip</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;30&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;29&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;28&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;27&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;26&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;25&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;24&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;23&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;22&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;21&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;20&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;19&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;18&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;17&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;16&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;15&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;14&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;13&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;12&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;11&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;10&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;9&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;8&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;7&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;6&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;5&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;4&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">bram_data_out&lt;31&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">dcFanInterface</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">temperatureControlMaster</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">adr_o_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">memoryWriter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">11 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;adr_o_1&gt; &lt;adr_o_22&gt; &lt;adr_o_23&gt; &lt;adr_o_24&gt; &lt;adr_o_25&gt; &lt;adr_o_26&gt; &lt;adr_o_27&gt; &lt;adr_o_28&gt; &lt;adr_o_29&gt; &lt;adr_o_30&gt; &lt;adr_o_31&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">uart_data_in_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">serialController</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;uart_data_in_7&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">adr_o_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">memoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_data_in_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">serialController</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">LGNT2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">U08</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">LGNT3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">U08</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">LMAS1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">U08</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">bram_addr_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_bram</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">bram_addr_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_bram</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">bram_addr_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_bram</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">bram_addr_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_bram</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">bram_addr_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_bram</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">bram_addr_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_bram</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">bram_addr_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_bram</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">adr_o</arg>&lt;<arg fmt="%d" index="2">31</arg>:<arg fmt="%d" index="3">22</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">MemoryWriter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">uart_data_in</arg>&lt;<arg fmt="%d" index="2">7</arg>:<arg fmt="%d" index="3">6</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">ValuesToSerial</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">bram_addr</arg>&lt;<arg fmt="%d" index="2">15</arg>:<arg fmt="%d" index="3">9</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_bram</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_bram_select[6]_GND_82_o_Mux_6_o</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_line_buffer</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">adr_o_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">adr_o_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">LGNT2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_arbiter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">LGNT3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_arbiter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">LMAS1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_arbiter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">dat_o_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dat_o_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dat_o_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dat_o_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dat_o_16</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dat_o_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dat_o_24</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dat_o_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">uart_tx_data_block_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">UART</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">uart_tx_data_block_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">UART</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">lut/bram2</arg> in unit <arg fmt="%s" index="2">lut/bram2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">lut/bram1</arg> in unit <arg fmt="%s" index="2">lut/bram1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[0].bram</arg> in unit <arg fmt="%s" index="2">gen1[0].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[1].bram</arg> in unit <arg fmt="%s" index="2">gen1[1].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[2].bram</arg> in unit <arg fmt="%s" index="2">gen1[2].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[3].bram</arg> in unit <arg fmt="%s" index="2">gen1[3].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[4].bram</arg> in unit <arg fmt="%s" index="2">gen1[4].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[5].bram</arg> in unit <arg fmt="%s" index="2">gen1[5].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[6].bram</arg> in unit <arg fmt="%s" index="2">gen1[6].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[7].bram</arg> in unit <arg fmt="%s" index="2">gen1[7].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[8].bram</arg> in unit <arg fmt="%s" index="2">gen1[8].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[9].bram</arg> in unit <arg fmt="%s" index="2">gen1[9].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[10].bram</arg> in unit <arg fmt="%s" index="2">gen1[10].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[11].bram</arg> in unit <arg fmt="%s" index="2">gen1[11].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[12].bram</arg> in unit <arg fmt="%s" index="2">gen1[12].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[13].bram</arg> in unit <arg fmt="%s" index="2">gen1[13].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[14].bram</arg> in unit <arg fmt="%s" index="2">gen1[14].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[15].bram</arg> in unit <arg fmt="%s" index="2">gen1[15].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[16].bram</arg> in unit <arg fmt="%s" index="2">gen1[16].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[17].bram</arg> in unit <arg fmt="%s" index="2">gen1[17].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[18].bram</arg> in unit <arg fmt="%s" index="2">gen1[18].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[19].bram</arg> in unit <arg fmt="%s" index="2">gen1[19].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[20].bram</arg> in unit <arg fmt="%s" index="2">gen1[20].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[21].bram</arg> in unit <arg fmt="%s" index="2">gen1[21].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[22].bram</arg> in unit <arg fmt="%s" index="2">gen1[22].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[23].bram</arg> in unit <arg fmt="%s" index="2">gen1[23].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[24].bram</arg> in unit <arg fmt="%s" index="2">gen1[24].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[25].bram</arg> in unit <arg fmt="%s" index="2">gen1[25].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[26].bram</arg> in unit <arg fmt="%s" index="2">gen1[26].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[27].bram</arg> in unit <arg fmt="%s" index="2">gen1[27].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[28].bram</arg> in unit <arg fmt="%s" index="2">gen1[28].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[29].bram</arg> in unit <arg fmt="%s" index="2">gen1[29].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[30].bram</arg> in unit <arg fmt="%s" index="2">gen1[30].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[31].bram</arg> in unit <arg fmt="%s" index="2">gen1[31].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[32].bram</arg> in unit <arg fmt="%s" index="2">gen1[32].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[33].bram</arg> in unit <arg fmt="%s" index="2">gen1[33].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[34].bram</arg> in unit <arg fmt="%s" index="2">gen1[34].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[35].bram</arg> in unit <arg fmt="%s" index="2">gen1[35].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[36].bram</arg> in unit <arg fmt="%s" index="2">gen1[36].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[37].bram</arg> in unit <arg fmt="%s" index="2">gen1[37].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[38].bram</arg> in unit <arg fmt="%s" index="2">gen1[38].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[39].bram</arg> in unit <arg fmt="%s" index="2">gen1[39].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[40].bram</arg> in unit <arg fmt="%s" index="2">gen1[40].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[41].bram</arg> in unit <arg fmt="%s" index="2">gen1[41].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[42].bram</arg> in unit <arg fmt="%s" index="2">gen1[42].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[43].bram</arg> in unit <arg fmt="%s" index="2">gen1[43].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[44].bram</arg> in unit <arg fmt="%s" index="2">gen1[44].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[45].bram</arg> in unit <arg fmt="%s" index="2">gen1[45].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[46].bram</arg> in unit <arg fmt="%s" index="2">gen1[46].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[47].bram</arg> in unit <arg fmt="%s" index="2">gen1[47].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[48].bram</arg> in unit <arg fmt="%s" index="2">gen1[48].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[49].bram</arg> in unit <arg fmt="%s" index="2">gen1[49].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[50].bram</arg> in unit <arg fmt="%s" index="2">gen1[50].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[51].bram</arg> in unit <arg fmt="%s" index="2">gen1[51].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[52].bram</arg> in unit <arg fmt="%s" index="2">gen1[52].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[53].bram</arg> in unit <arg fmt="%s" index="2">gen1[53].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[54].bram</arg> in unit <arg fmt="%s" index="2">gen1[54].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[55].bram</arg> in unit <arg fmt="%s" index="2">gen1[55].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[56].bram</arg> in unit <arg fmt="%s" index="2">gen1[56].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[57].bram</arg> in unit <arg fmt="%s" index="2">gen1[57].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[58].bram</arg> in unit <arg fmt="%s" index="2">gen1[58].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[59].bram</arg> in unit <arg fmt="%s" index="2">gen1[59].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[60].bram</arg> in unit <arg fmt="%s" index="2">gen1[60].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[61].bram</arg> in unit <arg fmt="%s" index="2">gen1[61].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[62].bram</arg> in unit <arg fmt="%s" index="2">gen1[62].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[63].bram</arg> in unit <arg fmt="%s" index="2">gen1[63].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[64].bram</arg> in unit <arg fmt="%s" index="2">gen1[64].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[65].bram</arg> in unit <arg fmt="%s" index="2">gen1[65].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[66].bram</arg> in unit <arg fmt="%s" index="2">gen1[66].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[67].bram</arg> in unit <arg fmt="%s" index="2">gen1[67].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[68].bram</arg> in unit <arg fmt="%s" index="2">gen1[68].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[69].bram</arg> in unit <arg fmt="%s" index="2">gen1[69].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[70].bram</arg> in unit <arg fmt="%s" index="2">gen1[70].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[71].bram</arg> in unit <arg fmt="%s" index="2">gen1[71].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[72].bram</arg> in unit <arg fmt="%s" index="2">gen1[72].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[73].bram</arg> in unit <arg fmt="%s" index="2">gen1[73].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[74].bram</arg> in unit <arg fmt="%s" index="2">gen1[74].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[75].bram</arg> in unit <arg fmt="%s" index="2">gen1[75].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[76].bram</arg> in unit <arg fmt="%s" index="2">gen1[76].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[77].bram</arg> in unit <arg fmt="%s" index="2">gen1[77].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[78].bram</arg> in unit <arg fmt="%s" index="2">gen1[78].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[79].bram</arg> in unit <arg fmt="%s" index="2">gen1[79].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[80].bram</arg> in unit <arg fmt="%s" index="2">gen1[80].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[81].bram</arg> in unit <arg fmt="%s" index="2">gen1[81].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[82].bram</arg> in unit <arg fmt="%s" index="2">gen1[82].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[83].bram</arg> in unit <arg fmt="%s" index="2">gen1[83].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[84].bram</arg> in unit <arg fmt="%s" index="2">gen1[84].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[85].bram</arg> in unit <arg fmt="%s" index="2">gen1[85].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[86].bram</arg> in unit <arg fmt="%s" index="2">gen1[86].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[87].bram</arg> in unit <arg fmt="%s" index="2">gen1[87].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[88].bram</arg> in unit <arg fmt="%s" index="2">gen1[88].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[89].bram</arg> in unit <arg fmt="%s" index="2">gen1[89].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[90].bram</arg> in unit <arg fmt="%s" index="2">gen1[90].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[91].bram</arg> in unit <arg fmt="%s" index="2">gen1[91].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[92].bram</arg> in unit <arg fmt="%s" index="2">gen1[92].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[93].bram</arg> in unit <arg fmt="%s" index="2">gen1[93].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[94].bram</arg> in unit <arg fmt="%s" index="2">gen1[94].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[95].bram</arg> in unit <arg fmt="%s" index="2">gen1[95].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[96].bram</arg> in unit <arg fmt="%s" index="2">gen1[96].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[97].bram</arg> in unit <arg fmt="%s" index="2">gen1[97].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[98].bram</arg> in unit <arg fmt="%s" index="2">gen1[98].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[99].bram</arg> in unit <arg fmt="%s" index="2">gen1[99].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[100].bram</arg> in unit <arg fmt="%s" index="2">gen1[100].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[101].bram</arg> in unit <arg fmt="%s" index="2">gen1[101].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[102].bram</arg> in unit <arg fmt="%s" index="2">gen1[102].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[103].bram</arg> in unit <arg fmt="%s" index="2">gen1[103].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[104].bram</arg> in unit <arg fmt="%s" index="2">gen1[104].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[105].bram</arg> in unit <arg fmt="%s" index="2">gen1[105].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[106].bram</arg> in unit <arg fmt="%s" index="2">gen1[106].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[107].bram</arg> in unit <arg fmt="%s" index="2">gen1[107].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[108].bram</arg> in unit <arg fmt="%s" index="2">gen1[108].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[109].bram</arg> in unit <arg fmt="%s" index="2">gen1[109].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[110].bram</arg> in unit <arg fmt="%s" index="2">gen1[110].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[111].bram</arg> in unit <arg fmt="%s" index="2">gen1[111].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[112].bram</arg> in unit <arg fmt="%s" index="2">gen1[112].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[113].bram</arg> in unit <arg fmt="%s" index="2">gen1[113].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[114].bram</arg> in unit <arg fmt="%s" index="2">gen1[114].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[115].bram</arg> in unit <arg fmt="%s" index="2">gen1[115].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[116].bram</arg> in unit <arg fmt="%s" index="2">gen1[116].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[117].bram</arg> in unit <arg fmt="%s" index="2">gen1[117].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[118].bram</arg> in unit <arg fmt="%s" index="2">gen1[118].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[119].bram</arg> in unit <arg fmt="%s" index="2">gen1[119].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[120].bram</arg> in unit <arg fmt="%s" index="2">gen1[120].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[121].bram</arg> in unit <arg fmt="%s" index="2">gen1[121].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[122].bram</arg> in unit <arg fmt="%s" index="2">gen1[122].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[123].bram</arg> in unit <arg fmt="%s" index="2">gen1[123].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[124].bram</arg> in unit <arg fmt="%s" index="2">gen1[124].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[125].bram</arg> in unit <arg fmt="%s" index="2">gen1[125].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[126].bram</arg> in unit <arg fmt="%s" index="2">gen1[126].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">gen1[127].bram</arg> in unit <arg fmt="%s" index="2">gen1[127].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dat_o_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MemoryWriter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dat_o_2&gt; &lt;dat_o_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dat_o_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MemoryWriter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dat_o_6&gt; &lt;dat_o_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dat_o_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MemoryWriter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dat_o_10&gt; &lt;dat_o_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dat_o_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MemoryWriter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dat_o_14&gt; &lt;dat_o_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dat_o_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MemoryWriter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dat_o_22&gt; &lt;dat_o_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dat_o_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MemoryWriter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dat_o_18&gt; &lt;dat_o_19&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dat_o_25</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MemoryWriter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dat_o_26&gt; &lt;dat_o_27&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dat_o_29</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MemoryWriter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dat_o_30&gt; &lt;dat_o_31&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/rx</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/rx_sync</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/memoryWriter/adr_o_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/memoryWriter/adr_o_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/memoryWriter/adr_o_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/memoryWriter/adr_o_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_filter_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_filter_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_state_FSM_FFd2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_count_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_count_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_count_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_state_FSM_FFd1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_sync_clock_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_sync_clock_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_sync_clock_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_sync_clock_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_data_out_stb</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_data_block_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_data_block_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_data_block_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_data_block_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_data_block_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_data_block_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_data_block_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_data_block_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/serialController/UART_inst1/uart_rx_bit</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_25</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_23</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_21</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_19</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/memoryWriter/dat_o_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/memoryWriter/dat_o_25</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/memoryWriter/dat_o_21</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/memoryWriter/dat_o_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/memoryWriter/dat_o_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/memoryWriter/dat_o_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/memoryWriter/dat_o_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/memoryWriter/dat_o_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;31&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;30&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;30&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;30&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;29&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;29&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;29&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;27&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;27&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;27&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;26&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;26&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;26&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;25&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;25&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;25&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;23&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;23&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;23&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;22&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;22&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;22&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;21&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;21&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;21&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;19&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;19&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;19&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;18&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;18&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;18&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;17&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;17&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;17&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;15&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;15&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;15&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;14&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;14&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;14&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;13&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;13&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;13&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;11&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;11&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;11&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;10&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;10&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;10&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;9&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;9&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;10&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;7&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;7&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;10&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;6&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;6&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;10&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;5&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;5&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;10&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;3&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;3&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;10&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;2&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;2&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;10&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;1&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;1&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_we</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">8 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wb_bram/bram_di_28&gt; &lt;wb_bram/bram_di_24&gt; &lt;wb_bram/bram_di_20&gt; &lt;wb_bram/bram_di_16&gt; &lt;wb_bram/bram_di_12&gt; &lt;wb_bram/bram_di_8&gt; &lt;wb_bram/bram_di_4&gt; &lt;wb_bram/bram_di_0&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_we</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;28&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;28&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;28&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;24&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;24&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;24&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;20&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;20&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;20&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;16&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;16&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;16&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;12&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;12&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;12&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;8&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;8&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;12&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;4&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;4&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;12&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;0&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;0&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/memoryWriter/stb_o</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;temperatureControlMaster/memoryWriter/we_o&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+
