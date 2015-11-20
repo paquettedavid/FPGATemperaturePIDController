@@ -9,6 +9,7 @@ DC fan used: (link here)
 PWM motor driver used: (link here)  
 Power supply used: (link here)  
 Serial UART comm chip: located on the FPGA  
+Any stanard VGA display should work fine  
 
 ###Bus Info
 Module communication is handled by the Wishbone bus.  
