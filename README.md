@@ -7,4 +7,6 @@ The desired temperature, current temperature and PWM fan speed percent is writte
 
 Module communication is handled by the Wishbone bus.
 
+Current temperature and fan speed are sent through uart serial over the rs232 micro-usb port, UART library from: https://github.com/pabennett/uart
+
 All code is located in the folder: VDHL Modules
