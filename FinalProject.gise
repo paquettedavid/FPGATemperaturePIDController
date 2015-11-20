@@ -40,6 +40,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="TemperatureControlProject.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="TemperatureControlProject.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="TemperatureControlProject.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="TemperatureControlProject_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="TemperatureControlProject_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="TemperatureControlProject_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="TemperatureControlProject_map.mrp" xil_pn:subbranch="Map"/>
@@ -99,14 +100,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1447975200" xil_pn:in_ck="-2771296183332007121" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-4627305808403969868" xil_pn:start_ts="1447975116">
+    <transform xil_pn:end_ts="1447977545" xil_pn:in_ck="-2771296183332007121" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-4627305808403969868" xil_pn:start_ts="1447977478">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TemperatureControlProject.lso"/>
       <outfile xil_pn:name="TemperatureControlProject.ngc"/>
       <outfile xil_pn:name="TemperatureControlProject.ngr"/>
@@ -126,7 +123,10 @@
     <transform xil_pn:end_ts="1447975351" xil_pn:in_ck="706083539932550839" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1220059097699532093" xil_pn:start_ts="1447975330">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TemperatureControlProject.bld"/>
       <outfile xil_pn:name="TemperatureControlProject.ngd"/>
       <outfile xil_pn:name="TemperatureControlProject_ngdbuild.xrpt"/>
@@ -171,6 +171,8 @@
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TemperatureControlProject.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="temperaturecontrolproject.bgn"/>

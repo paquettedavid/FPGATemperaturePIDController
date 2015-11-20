@@ -54,7 +54,7 @@ begin
 		port map( proportionalGain=>pidProportionalGain,
 				integralGain=>pidIntegralGain,
 				derivativeGain=>pidDerivativeGain,
-				setpoint=>desiredTemperatur,
+				setpoint=>desiredTemperature,
 				sensorFeedbackValue=>currentTemperature,
 				controlOutput =>fanSpeedPercent );
 				

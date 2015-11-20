@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: TemperatureControlProject.prj
 
@@ -105,12 +105,12 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\VGALibrary\scancode2ascii.vhd" into library work
-Parsing entity <scancode2ascii>.
-Parsing architecture <Behavioral> of entity <scancode2ascii>.
 Parsing VHDL file "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\VGALibrary\char8x12_lookup_table.vhd" into library work
 Parsing entity <char8x12_lookup_table>.
 Parsing architecture <Behavioral> of entity <char8x12_lookup_table>.
+Parsing VHDL file "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\PWMControl.vhd" into library work
+Parsing entity <PWMControl>.
+Parsing architecture <Behavioral> of entity <pwmcontrol>.
 Parsing VHDL file "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\WishboneLibrary\wb_arbiter.vhd" into library work
 Parsing entity <wb_arbiter>.
 Parsing architecture <ARB0001a1> of entity <wb_arbiter>.
@@ -123,9 +123,6 @@ Parsing architecture <Behavioral> of entity <temperaturesetpointcontrol>.
 Parsing VHDL file "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\TemperatureSensorInterface.vhd" into library work
 Parsing entity <TemperatureSensorInterface>.
 Parsing architecture <Behavioral> of entity <temperaturesensorinterface>.
-Parsing VHDL file "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\PWMControl.vhd" into library work
-Parsing entity <PWMControl>.
-Parsing architecture <Behavioral> of entity <pwmcontrol>.
 Parsing VHDL file "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\PIDController.vhd" into library work
 Parsing entity <PIDController>.
 Parsing architecture <Behavioral> of entity <pidcontroller>.
@@ -167,30 +164,29 @@ Elaborating entity <wb_intercon> (architecture <ICN0002a1>) with generics from l
 Elaborating entity <wb_arbiter> (architecture <ARB0001a1>) from library <work>.
 
 Elaborating entity <TemperatureControlMaster> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\TemperatureControlMaster.vhd" Line 44: Using initial value 45 for currenttemperature since it is never assigned
-WARNING:HDLCompiler:871 - "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\TemperatureControlMaster.vhd" Line 45: Using initial value 37 for desiredtemperature since it is never assigned
-WARNING:HDLCompiler:871 - "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\TemperatureControlMaster.vhd" Line 46: Using initial value 23 for fanspeedpercent since it is never assigned
+WARNING:HDLCompiler:871 - "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\TemperatureControlMaster.vhd" Line 48: Using initial value 1 for pidproportionalgain since it is never assigned
+WARNING:HDLCompiler:871 - "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\TemperatureControlMaster.vhd" Line 49: Using initial value 1 for pidintegralgain since it is never assigned
+WARNING:HDLCompiler:871 - "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\TemperatureControlMaster.vhd" Line 50: Using initial value 1 for pidderivativegain since it is never assigned
 
 Elaborating entity <PIDController> (architecture <Behavioral>) from library <work>.
 
-Elaborating entity <DCFanInterface> (architecture <Behavioral>) from library <work>.
-
 Elaborating entity <MemoryWriter> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\MemoryWriter.vhd" Line 54: Using initial value "00000000000000000000000000000000" for buffer_base since it is never assigned
-WARNING:HDLCompiler:871 - "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\MemoryWriter.vhd" Line 56: Using initial value "1111" for txtcolor since it is never assigned
-WARNING:HDLCompiler:871 - "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\MemoryWriter.vhd" Line 57: Using initial value "0001" for bgcolor since it is never assigned
+WARNING:HDLCompiler:871 - "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\MemoryWriter.vhd" Line 50: Using initial value "00000000000000000000000000000000" for buffer_base since it is never assigned
+WARNING:HDLCompiler:871 - "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\MemoryWriter.vhd" Line 52: Using initial value "1111" for txtcolor since it is never assigned
+WARNING:HDLCompiler:871 - "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\MemoryWriter.vhd" Line 53: Using initial value "0001" for bgcolor since it is never assigned
 
 Elaborating entity <char8x12_lookup_table> (architecture <Behavioral>) from library <work>.
 WARNING:HDLCompiler:634 - "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\VGALibrary\char8x12_lookup_table.vhd" Line 39: Net <bram_di[7]> does not have a driver.
 WARNING:HDLCompiler:634 - "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\VGALibrary\char8x12_lookup_table.vhd" Line 42: Net <bram_dip[0]> does not have a driver.
-
-Elaborating entity <scancode2ascii> (architecture <Behavioral>) from library <work>.
-
-Elaborating entity <PWMControl> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:634 - "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\MemoryWriter.vhd" Line 47: Net <ascii[7]> does not have a driver.
 
 Elaborating entity <TemperatureSetpointControl> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <TemperatureSensorInterface> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <DCFanInterface> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <PWMControl> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <wb_vga640x480> (architecture <Behavioral>) from library <work>.
 
@@ -406,10 +402,11 @@ Unit <TemperatureControlMaster> synthesized.
 
 Synthesizing Unit <MemoryWriter>.
     Related source file is "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\MemoryWriter.vhd".
-WARNING:Xst:647 - Input <dat_i<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dat_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <currentTemperature> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <desiredTemperature> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <fanSpeedPercent> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <ascii> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 7-bit register for signal <column>.
     Found 7-bit register for signal <line>.
     Found 7-bit register for signal <row>.
@@ -417,27 +414,16 @@ WARNING:Xst:647 - Input <fanSpeedPercent> is never used. This port will be prese
     Found 1-bit register for signal <stb_o>.
     Found 1-bit register for signal <cyc_o>.
     Found 1-bit register for signal <we_o>.
-    Found 1-bit register for signal <shift_l_down>.
-    Found 1-bit register for signal <ctrl_l_down>.
-    Found 1-bit register for signal <alt_l_down>.
-    Found 1-bit register for signal <shift_r_down>.
-    Found 1-bit register for signal <ctrl_r_down>.
-    Found 1-bit register for signal <alt_r_down>.
-    Found 1-bit register for signal <keyup>.
-    Found 1-bit register for signal <extended>.
-    Found 1-bit register for signal <isBackspace>.
     Found 32-bit register for signal <adr_o>.
     Found 32-bit register for signal <dat_o>.
-    Found 8-bit register for signal <code>.
-    Found 1-bit register for signal <shift>.
-    Found 1-bit register for signal <ctrl>.
-    Found 1-bit register for signal <alt>.
+INFO:Xst:1799 - State writepixeltomemory is never reached in FSM <state>.
+INFO:Xst:1799 - State getpixeldata is never reached in FSM <state>.
     Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
-    | States             | 8                                              |
-    | Transitions        | 24                                             |
-    | Inputs             | 14                                             |
-    | Outputs            | 7                                              |
+    | States             | 5                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 5                                              |
+    | Outputs            | 5                                              |
     | Clock              | clk_i (rising_edge)                            |
     | Reset              | rst_i (negative)                               |
     | Reset type         | asynchronous                                   |
@@ -446,26 +432,21 @@ WARNING:Xst:647 - Input <fanSpeedPercent> is never used. This port will be prese
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 8-bit subtractor for signal <GND_46_o_GND_46_o_sub_67_OUT> created at line 242.
-    Found 7-bit adder for signal <line[6]_GND_46_o_add_49_OUT> created at line 217.
-    Found 7-bit adder for signal <column[6]_GND_46_o_add_52_OUT> created at line 224.
-    Found 20-bit adder for signal <n0294> created at line 242.
-    Found 21-bit adder for signal <n0297> created at line 242.
-    Found 19-bit adder for signal <n0301[18:0]> created at line 245.
-    Found 20-bit adder for signal <n0304[19:0]> created at line 245.
-    Found 7-bit adder for signal <row[6]_GND_46_o_add_80_OUT> created at line 259.
-    Found 7x7-bit multiplier for signal <row[6]_PWR_15_o_MuLt_71_OUT> created at line 245.
-    Found 14x4-bit multiplier for signal <row[6]_PWR_15_o_MuLt_72_OUT> created at line 245.
-    Found 7x7-bit multiplier for signal <PWR_15_o_line[6]_MuLt_74_OUT> created at line 245.
-    Found 7-bit comparator greater for signal <n0122> created at line 218
-    Found 7-bit comparator greater for signal <n0127> created at line 227
-    Found 7-bit comparator lessequal for signal <n0129> created at line 230
+    Found 7-bit adder for signal <line[6]_GND_54_o_add_22_OUT> created at line 121.
+    Found 7-bit adder for signal <column[6]_GND_54_o_add_24_OUT> created at line 124.
+    Found 7-bit adder for signal <row[6]_GND_54_o_add_26_OUT> created at line 127.
+    Found 19-bit adder for signal <n0120[18:0]> created at line 140.
+    Found 20-bit adder for signal <n0123[19:0]> created at line 140.
+    Found 7x7-bit multiplier for signal <row[6]_PWR_17_o_MuLt_35_OUT> created at line 140.
+    Found 14x4-bit multiplier for signal <row[6]_PWR_17_o_MuLt_36_OUT> created at line 140.
+    Found 7x7-bit multiplier for signal <PWR_17_o_line[6]_MuLt_38_OUT> created at line 140.
+    Found 7-bit comparator greater for signal <n0015> created at line 122
     Summary:
 	inferred   3 Multiplier(s).
-	inferred   8 Adder/Subtractor(s).
-	inferred 108 D-type flip-flop(s).
-	inferred   3 Comparator(s).
-	inferred  78 Multiplexer(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  88 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   7 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <MemoryWriter> synthesized.
 
@@ -474,14 +455,15 @@ Synthesizing Unit <char8x12_lookup_table>.
 WARNING:Xst:653 - Signal <bram_di> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <bram_dip> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
-	inferred   1 Multiplexer(s).
+	no macro.
 Unit <char8x12_lookup_table> synthesized.
 
-Synthesizing Unit <scancode2ascii>.
-    Related source file is "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\VGALibrary\scancode2ascii.vhd".
+Synthesizing Unit <DCFanInterface>.
+    Related source file is "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\DCFanInterface.vhd".
+WARNING:Xst:647 - Input <fanSpeed> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
-	inferred   1 Multiplexer(s).
-Unit <scancode2ascii> synthesized.
+	no macro.
+Unit <DCFanInterface> synthesized.
 
 Synthesizing Unit <wb_vga640x480>.
     Related source file is "\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\VHDL Modules\VGALibrary\wb_vga640x480.vhd".
@@ -507,29 +489,29 @@ INFO:Xst:1799 - State extrawait is never reached in FSM <state>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 11-bit subtractor for signal <GND_64_o_GND_64_o_sub_28_OUT> created at line 299.
+    Found 11-bit subtractor for signal <GND_62_o_GND_62_o_sub_28_OUT> created at line 299.
     Found 7-bit subtractor for signal <n0112> created at line 306.
-    Found 7-bit adder for signal <word_count[6]_GND_64_o_add_6_OUT> created at line 236.
-    Found 10-bit adder for signal <pixel_count[9]_GND_64_o_add_18_OUT> created at line 263.
-    Found 19-bit adder for signal <GND_64_o_GND_64_o_add_30_OUT> created at line 299.
+    Found 7-bit adder for signal <word_count[6]_GND_62_o_add_6_OUT> created at line 236.
+    Found 10-bit adder for signal <pixel_count[9]_GND_62_o_add_18_OUT> created at line 263.
+    Found 19-bit adder for signal <GND_62_o_GND_62_o_add_30_OUT> created at line 299.
     Found 20-bit adder for signal <n0146> created at line 299.
     Found 6-bit adder for signal <n0149[5:0]> created at line 306.
-    Found 10-bit adder for signal <line_count[9]_GND_64_o_add_64_OUT> created at line 330.
+    Found 10-bit adder for signal <line_count[9]_GND_62_o_add_64_OUT> created at line 330.
     Found 10-bit subtractor for signal <offset> created at line 137.
-    Found 11x11-bit multiplier for signal <GND_64_o_GND_64_o_MuLt_28_OUT> created at line 299.
-    Found 7-bit 3-to-1 multiplexer for signal <state[1]_X_20_o_wide_mux_13_OUT> created at line 214.
+    Found 11x11-bit multiplier for signal <GND_62_o_GND_62_o_MuLt_28_OUT> created at line 299.
+    Found 7-bit 3-to-1 multiplexer for signal <state[1]_X_19_o_wide_mux_13_OUT> created at line 214.
     Found 1-bit 8-to-1 multiplexer for signal <pixel<3>> created at line 306.
     Found 1-bit 8-to-1 multiplexer for signal <pixel<2>> created at line 306.
     Found 1-bit 8-to-1 multiplexer for signal <pixel<1>> created at line 306.
     Found 1-bit 8-to-1 multiplexer for signal <pixel<0>> created at line 306.
-    Found 10-bit comparator greater for signal <line_count[9]_GND_64_o_LessThan_26_o> created at line 294
+    Found 10-bit comparator greater for signal <line_count[9]_GND_62_o_LessThan_26_o> created at line 294
     Found 10-bit comparator lessequal for signal <n0054> created at line 308
     Found 10-bit comparator lessequal for signal <n0057> created at line 309
     Found 10-bit comparator lessequal for signal <n0059> created at line 309
     Found 10-bit comparator lessequal for signal <n0066> created at line 318
-    Found 10-bit comparator greater for signal <pixel_count[9]_GND_64_o_LessThan_62_o> created at line 318
+    Found 10-bit comparator greater for signal <pixel_count[9]_GND_62_o_LessThan_62_o> created at line 318
     Found 10-bit comparator lessequal for signal <n0077> created at line 336
-    Found 10-bit comparator greater for signal <line_count[9]_GND_64_o_LessThan_70_o> created at line 336
+    Found 10-bit comparator greater for signal <line_count[9]_GND_62_o_LessThan_70_o> created at line 336
     Summary:
 	inferred   1 RAM(s).
 	inferred   1 Multiplier(s).
@@ -545,7 +527,7 @@ Synthesizing Unit <clock_divider>.
         divisor = 2
     Found 16-bit register for signal <counter>.
     Found 1-bit register for signal <clk>.
-    Found 16-bit adder for signal <counter[15]_GND_65_o_add_0_OUT> created at line 42.
+    Found 16-bit adder for signal <counter[15]_GND_63_o_add_0_OUT> created at line 42.
     Found 16-bit comparator greater for signal <n0002> created at line 43
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -580,7 +562,7 @@ WARNING:Xst:653 - Signal <bram_dip> is used but never assigned. This sourceless 
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 128x1-bit Read Only RAM for signal <bram_select[6]_GND_69_o_Mux_6_o>
+    Found 128x1-bit Read Only RAM for signal <bram_select[6]_GND_67_o_Mux_6_o>
     Found 128-bit 128-to-1 multiplexer for signal <bram_en> created at line 131.
     Found 1-bit 127-to-1 multiplexer for signal <bram_select[6]_bram_data_out[31]_Mux_3_o> created at line 131.
     Found 1-bit 127-to-1 multiplexer for signal <bram_select[6]_bram_data_out[30]_Mux_5_o> created at line 131.
@@ -665,51 +647,45 @@ Macro Statistics
  11x11-bit multiplier                                  : 1
  14x4-bit multiplier                                   : 1
  7x7-bit multiplier                                    : 2
-# Adders/Subtractors                                   : 18
+# Adders/Subtractors                                   : 15
  10-bit adder                                          : 2
  10-bit subtractor                                     : 1
  11-bit subtractor                                     : 1
  16-bit adder                                          : 1
  19-bit adder                                          : 2
- 20-bit adder                                          : 3
- 21-bit adder                                          : 1
+ 20-bit adder                                          : 2
  6-bit adder                                           : 1
  7-bit adder                                           : 4
  7-bit subtractor                                      : 1
- 8-bit subtractor                                      : 1
-# Registers                                            : 40
- 1-bit register                                        : 26
+# Registers                                            : 27
+ 1-bit register                                        : 14
  10-bit register                                       : 2
  16-bit register                                       : 2
  32-bit register                                       : 4
  7-bit register                                        : 5
- 8-bit register                                        : 1
 # Latches                                              : 32
  1-bit latch                                           : 32
-# Comparators                                          : 12
+# Comparators                                          : 10
  10-bit comparator greater                             : 3
  10-bit comparator lessequal                           : 5
  16-bit comparator greater                             : 1
- 7-bit comparator greater                              : 2
- 7-bit comparator lessequal                            : 1
-# Multiplexers                                         : 133
+ 7-bit comparator greater                              : 1
+# Multiplexers                                         : 60
  1-bit 127-to-1 multiplexer                            : 32
- 1-bit 2-to-1 multiplexer                              : 60
+ 1-bit 2-to-1 multiplexer                              : 2
  1-bit 4-to-1 multiplexer                              : 2
  1-bit 8-to-1 multiplexer                              : 4
  10-bit 2-to-1 multiplexer                             : 2
  128-bit 128-to-1 multiplexer                          : 1
  16-bit 2-to-1 multiplexer                             : 1
- 2-bit 2-to-1 multiplexer                              : 1
- 32-bit 2-to-1 multiplexer                             : 6
+ 32-bit 2-to-1 multiplexer                             : 2
  32-bit 3-to-1 multiplexer                             : 2
  4-bit 2-to-1 multiplexer                              : 3
- 7-bit 2-to-1 multiplexer                              : 17
+ 7-bit 2-to-1 multiplexer                              : 8
  7-bit 3-to-1 multiplexer                              : 1
- 8-bit 2-to-1 multiplexer                              : 1
 # FSMs                                                 : 3
-# Xors                                                 : 3
- 1-bit xor2                                            : 3
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
 
 =========================================================================
 
@@ -717,9 +693,13 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1290 - Hierarchical block <dcFanInterface> is unconnected in block <temperatureControlMaster>.
+   It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <adr_o_0> in Unit <memoryWriter> is equivalent to the following 11 FFs/Latches, which will be removed : <adr_o_1> <adr_o_22> <adr_o_23> <adr_o_24> <adr_o_25> <adr_o_26> <adr_o_27> <adr_o_28> <adr_o_29> <adr_o_30> <adr_o_31> 
 WARNING:Xst:1710 - FF/Latch <LGNT2> (without init value) has a constant value of 0 in block <U08>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <LGNT3> (without init value) has a constant value of 0 in block <U08>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <LMAS1> (without init value) has a constant value of 0 in block <U08>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <adr_o_0> (without init value) has a constant value of 0 in block <memoryWriter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <bram_addr_9> of sequential type is unconnected in block <wb_bram>.
 WARNING:Xst:2677 - Node <bram_addr_10> of sequential type is unconnected in block <wb_bram>.
 WARNING:Xst:2677 - Node <bram_addr_11> of sequential type is unconnected in block <wb_bram>.
@@ -727,14 +707,20 @@ WARNING:Xst:2677 - Node <bram_addr_12> of sequential type is unconnected in bloc
 WARNING:Xst:2677 - Node <bram_addr_13> of sequential type is unconnected in block <wb_bram>.
 WARNING:Xst:2677 - Node <bram_addr_14> of sequential type is unconnected in block <wb_bram>.
 WARNING:Xst:2677 - Node <bram_addr_15> of sequential type is unconnected in block <wb_bram>.
+WARNING:Xst:2404 -  FFs/Latches <adr_o<31:22>> (without init value) have a constant value of 0 in block <MemoryWriter>.
 WARNING:Xst:2404 -  FFs/Latches <bram_addr<15:9>> (without init value) have a constant value of 0 in block <wb_bram>.
+
+Synthesizing (advanced) Unit <MemoryWriter>.
+	Multiplier <Mmult_PWR_17_o_line[6]_MuLt_38_OUT> in block <MemoryWriter> and adder/subtractor <Madd_n0123[19:0]> in block <MemoryWriter> are combined into a MAC<Maddsub_PWR_17_o_line[6]_MuLt_38_OUT>.
+	Multiplier <Mmult_row[6]_PWR_17_o_MuLt_36_OUT> in block <MemoryWriter> and adder/subtractor <Madd_n0120[18:0]> in block <MemoryWriter> are combined into a MAC<Maddsub_row[6]_PWR_17_o_MuLt_36_OUT>.
+Unit <MemoryWriter> synthesized (advanced).
 
 Synthesizing (advanced) Unit <clock_divider>.
 The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
 Unit <clock_divider> synthesized (advanced).
 
 Synthesizing (advanced) Unit <wb_bram>.
-INFO:Xst:3231 - The small RAM <Mram_bram_select[6]_GND_69_o_Mux_6_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3231 - The small RAM <Mram_bram_select[6]_GND_67_o_Mux_6_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -775,68 +761,65 @@ Macro Statistics
 # RAMs                                                 : 2
  128x1-bit single-port distributed Read Only RAM       : 1
  80x32-bit dual-port distributed RAM                   : 1
-# Multipliers                                          : 4
+# MACs                                                 : 2
+ 14x4-to-19-bit MAC                                    : 1
+ 7x7-to-20-bit MAC                                     : 1
+# Multipliers                                          : 2
  11x11-bit multiplier                                  : 1
- 14x4-bit multiplier                                   : 1
- 7x7-bit multiplier                                    : 2
-# Adders/Subtractors                                   : 14
+ 7x7-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 9
  10-bit subtractor                                     : 1
  11-bit subtractor                                     : 1
- 19-bit adder                                          : 2
- 20-bit adder                                          : 3
- 21-bit adder                                          : 1
+ 19-bit adder                                          : 1
+ 20-bit adder                                          : 1
  5-bit adder                                           : 1
  7-bit adder                                           : 4
- 8-bit subtractor                                      : 1
 # Counters                                             : 3
  10-bit up counter                                     : 2
  16-bit up counter                                     : 1
-# Registers                                            : 206
- Flip-Flops                                            : 206
-# Comparators                                          : 12
+# Registers                                            : 176
+ Flip-Flops                                            : 176
+# Comparators                                          : 10
  10-bit comparator greater                             : 3
  10-bit comparator lessequal                           : 5
  16-bit comparator greater                             : 1
- 7-bit comparator greater                              : 2
- 7-bit comparator lessequal                            : 1
-# Multiplexers                                         : 129
+ 7-bit comparator greater                              : 1
+# Multiplexers                                         : 57
  1-bit 127-to-1 multiplexer                            : 32
- 1-bit 2-to-1 multiplexer                              : 60
+ 1-bit 2-to-1 multiplexer                              : 2
  1-bit 4-to-1 multiplexer                              : 2
  1-bit 8-to-1 multiplexer                              : 4
  128-bit 128-to-1 multiplexer                          : 1
- 32-bit 2-to-1 multiplexer                             : 6
+ 32-bit 2-to-1 multiplexer                             : 2
  32-bit 3-to-1 multiplexer                             : 2
  4-bit 2-to-1 multiplexer                              : 3
- 7-bit 2-to-1 multiplexer                              : 17
+ 7-bit 2-to-1 multiplexer                              : 8
  7-bit 3-to-1 multiplexer                              : 1
- 8-bit 2-to-1 multiplexer                              : 1
 # FSMs                                                 : 3
-# Xors                                                 : 3
- 1-bit xor2                                            : 3
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1710 - FF/Latch <adr_o_0> (without init value) has a constant value of 0 in block <MemoryWriter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_o_1> (without init value) has a constant value of 0 in block <MemoryWriter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <LGNT2> (without init value) has a constant value of 0 in block <wb_arbiter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LGNT3> (without init value) has a constant value of 0 in block <wb_arbiter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <LMAS1> (without init value) has a constant value of 0 in block <wb_arbiter>. This FF/Latch will be trimmed during the optimization process.
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <temperatureControlMaster/memoryWriter/FSM_0> on signal <state[1:3]> with user encoding.
---------------------------------------
- State                    | Encoding
---------------------------------------
- initialzememorystate     | 000
- writeintialmemorystate   | 001
- startstate               | 010
- waitforkeyboardinterrupt | 011
- readkeyboarddata         | 100
- writepixeltomemory       | 101
- getpixeldata             | 110
- enterstate               | 111
---------------------------------------
+Optimizing FSM <temperatureControlMaster/memoryWriter/FSM_0> on signal <state[1:2]> with gray encoding.
+------------------------------------
+ State                  | Encoding
+------------------------------------
+ initialzememorystate   | 00
+ writeintialmemorystate | 01
+ startstate             | 11
+ writepixeltomemory     | unreached
+ getpixeldata           | unreached
+------------------------------------
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <vga/FSM_1> on signal <state[1:1]> with sequential encoding.
 -----------------------
@@ -864,8 +847,6 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dat_o_16> (without 
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dat_o_20> (without init value) has a constant value of 1 in block <MemoryWriter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dat_o_24> (without init value) has a constant value of 1 in block <MemoryWriter>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dat_o_28> (without init value) has a constant value of 1 in block <MemoryWriter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_o_0> (without init value) has a constant value of 0 in block <MemoryWriter>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <adr_o_1> (without init value) has a constant value of 0 in block <MemoryWriter>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:1901 - Instance lut/bram2 in unit lut/bram2 of type RAMB16_S9 has been replaced by RAMB18E1
 INFO:Xst:1901 - Instance lut/bram1 in unit lut/bram1 of type RAMB16_S9 has been replaced by RAMB18E1
 INFO:Xst:1901 - Instance gen1[0].bram in unit gen1[0].bram of type RAMB16_S36 has been replaced by RAMB36E1
@@ -996,15 +977,14 @@ INFO:Xst:1901 - Instance gen1[124].bram in unit gen1[124].bram of type RAMB16_S3
 INFO:Xst:1901 - Instance gen1[125].bram in unit gen1[125].bram of type RAMB16_S36 has been replaced by RAMB36E1
 INFO:Xst:1901 - Instance gen1[126].bram in unit gen1[126].bram of type RAMB16_S36 has been replaced by RAMB36E1
 INFO:Xst:1901 - Instance gen1[127].bram in unit gen1[127].bram of type RAMB16_S36 has been replaced by RAMB36E1
-INFO:Xst:2261 - The FF/Latch <dat_o_29> in Unit <MemoryWriter> is equivalent to the following 2 FFs/Latches, which will be removed : <dat_o_30> <dat_o_31> 
 INFO:Xst:2261 - The FF/Latch <dat_o_1> in Unit <MemoryWriter> is equivalent to the following 2 FFs/Latches, which will be removed : <dat_o_2> <dat_o_3> 
 INFO:Xst:2261 - The FF/Latch <dat_o_5> in Unit <MemoryWriter> is equivalent to the following 2 FFs/Latches, which will be removed : <dat_o_6> <dat_o_7> 
-INFO:Xst:2261 - The FF/Latch <adr_o_22> in Unit <MemoryWriter> is equivalent to the following 8 FFs/Latches, which will be removed : <adr_o_23> <adr_o_24> <adr_o_25> <adr_o_26> <adr_o_27> <adr_o_28> <adr_o_29> <adr_o_31> 
 INFO:Xst:2261 - The FF/Latch <dat_o_9> in Unit <MemoryWriter> is equivalent to the following 2 FFs/Latches, which will be removed : <dat_o_10> <dat_o_11> 
 INFO:Xst:2261 - The FF/Latch <dat_o_13> in Unit <MemoryWriter> is equivalent to the following 2 FFs/Latches, which will be removed : <dat_o_14> <dat_o_15> 
 INFO:Xst:2261 - The FF/Latch <dat_o_21> in Unit <MemoryWriter> is equivalent to the following 2 FFs/Latches, which will be removed : <dat_o_22> <dat_o_23> 
 INFO:Xst:2261 - The FF/Latch <dat_o_17> in Unit <MemoryWriter> is equivalent to the following 2 FFs/Latches, which will be removed : <dat_o_18> <dat_o_19> 
 INFO:Xst:2261 - The FF/Latch <dat_o_25> in Unit <MemoryWriter> is equivalent to the following 2 FFs/Latches, which will be removed : <dat_o_26> <dat_o_27> 
+INFO:Xst:2261 - The FF/Latch <dat_o_29> in Unit <MemoryWriter> is equivalent to the following 2 FFs/Latches, which will be removed : <dat_o_30> <dat_o_31> 
 
 Optimizing unit <TemperatureControlProject> ...
 
@@ -1023,6 +1003,37 @@ WARNING:Xst:2677 - Node <temperatureControlMaster/memoryWriter/adr_o_21> of sequ
 WARNING:Xst:2677 - Node <temperatureControlMaster/memoryWriter/adr_o_20> of sequential type is unconnected in block <TemperatureControlProject>.
 WARNING:Xst:2677 - Node <temperatureControlMaster/memoryWriter/adr_o_19> of sequential type is unconnected in block <TemperatureControlProject>.
 WARNING:Xst:2677 - Node <temperatureControlMaster/memoryWriter/adr_o_18> of sequential type is unconnected in block <TemperatureControlProject>.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_30> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_29> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_27> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_26> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_25> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_23> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_22> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_21> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_19> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_18> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_17> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_15> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_14> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_13> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_11> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_10> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_9> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_7> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_6> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_5> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_3> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_2> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_1> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <temperatureControlMaster/memoryWriter/dat_o_29> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <temperatureControlMaster/memoryWriter/dat_o_25> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <temperatureControlMaster/memoryWriter/dat_o_21> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <temperatureControlMaster/memoryWriter/dat_o_17> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <temperatureControlMaster/memoryWriter/dat_o_13> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <temperatureControlMaster/memoryWriter/dat_o_9> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <temperatureControlMaster/memoryWriter/dat_o_5> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <temperatureControlMaster/memoryWriter/dat_o_1> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <vga/clk_divider/counter_15> has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <vga/clk_divider/counter_14> has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <vga/clk_divider/counter_13> has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
@@ -1038,31 +1049,32 @@ WARNING:Xst:1293 - FF/Latch <vga/clk_divider/counter_4> has a constant value of 
 WARNING:Xst:1293 - FF/Latch <vga/clk_divider/counter_3> has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <vga/clk_divider/counter_2> has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <vga/clk_divider/counter_1> has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <wb_bram/bram_di_11> in Unit <TemperatureControlProject> is equivalent to the following 2 FFs/Latches, which will be removed : <wb_bram/bram_di_10> <wb_bram/bram_di_9> 
-WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<11> and wb_bram/bram_di<10> wb_bram/bram_di<10> signal will be lost.
-WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<10> and wb_bram/bram_di<9> wb_bram/bram_di<9> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <wb_bram/bram_di_15> in Unit <TemperatureControlProject> is equivalent to the following 2 FFs/Latches, which will be removed : <wb_bram/bram_di_14> <wb_bram/bram_di_13> 
-WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<15> and wb_bram/bram_di<14> wb_bram/bram_di<14> signal will be lost.
-WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<14> and wb_bram/bram_di<13> wb_bram/bram_di<13> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <wb_bram/bram_di_23> in Unit <TemperatureControlProject> is equivalent to the following 2 FFs/Latches, which will be removed : <wb_bram/bram_di_22> <wb_bram/bram_di_21> 
-WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<23> and wb_bram/bram_di<22> wb_bram/bram_di<22> signal will be lost.
-WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<22> and wb_bram/bram_di<21> wb_bram/bram_di<21> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <wb_bram/bram_di_3> in Unit <TemperatureControlProject> is equivalent to the following 2 FFs/Latches, which will be removed : <wb_bram/bram_di_2> <wb_bram/bram_di_1> 
-WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<3> and wb_bram/bram_di<2> wb_bram/bram_di<2> signal will be lost.
-WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<2> and wb_bram/bram_di<1> wb_bram/bram_di<1> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <wb_bram/bram_di_19> in Unit <TemperatureControlProject> is equivalent to the following 2 FFs/Latches, which will be removed : <wb_bram/bram_di_18> <wb_bram/bram_di_17> 
-WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<19> and wb_bram/bram_di<18> wb_bram/bram_di<18> signal will be lost.
-WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<18> and wb_bram/bram_di<17> wb_bram/bram_di<17> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <wb_bram/bram_di_31> in Unit <TemperatureControlProject> is equivalent to the following 2 FFs/Latches, which will be removed : <wb_bram/bram_di_30> <wb_bram/bram_di_29> 
+WARNING:Xst:1710 - FF/Latch <wb_bram/bram_di_31> (without init value) has a constant value of 0 in block <TemperatureControlProject>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<31> and wb_bram/bram_di<30> wb_bram/bram_di<30> signal will be lost.
 WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<30> and wb_bram/bram_di<29> wb_bram/bram_di<29> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <wb_bram/bram_di_27> in Unit <TemperatureControlProject> is equivalent to the following 2 FFs/Latches, which will be removed : <wb_bram/bram_di_26> <wb_bram/bram_di_25> 
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<29> and wb_bram/bram_di<27> wb_bram/bram_di<27> signal will be lost.
 WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<27> and wb_bram/bram_di<26> wb_bram/bram_di<26> signal will be lost.
 WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<26> and wb_bram/bram_di<25> wb_bram/bram_di<25> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <wb_bram/bram_di_7> in Unit <TemperatureControlProject> is equivalent to the following 2 FFs/Latches, which will be removed : <wb_bram/bram_di_6> <wb_bram/bram_di_5> 
-WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<7> and wb_bram/bram_di<6> wb_bram/bram_di<6> signal will be lost.
-WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<6> and wb_bram/bram_di<5> wb_bram/bram_di<5> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <wb_bram/bram_di_28> in Unit <TemperatureControlProject> is equivalent to the following 7 FFs/Latches, which will be removed : <wb_bram/bram_di_24> <wb_bram/bram_di_20> <wb_bram/bram_di_16> <wb_bram/bram_di_12> <wb_bram/bram_di_8> <wb_bram/bram_di_4> <wb_bram/bram_di_0> 
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<25> and wb_bram/bram_di<23> wb_bram/bram_di<23> signal will be lost.
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<23> and wb_bram/bram_di<22> wb_bram/bram_di<22> signal will be lost.
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<22> and wb_bram/bram_di<21> wb_bram/bram_di<21> signal will be lost.
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<21> and wb_bram/bram_di<19> wb_bram/bram_di<19> signal will be lost.
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<19> and wb_bram/bram_di<18> wb_bram/bram_di<18> signal will be lost.
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<18> and wb_bram/bram_di<17> wb_bram/bram_di<17> signal will be lost.
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<17> and wb_bram/bram_di<15> wb_bram/bram_di<15> signal will be lost.
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<15> and wb_bram/bram_di<14> wb_bram/bram_di<14> signal will be lost.
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<14> and wb_bram/bram_di<13> wb_bram/bram_di<13> signal will be lost.
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<13> and wb_bram/bram_di<11> wb_bram/bram_di<11> signal will be lost.
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<11> and wb_bram/bram_di<10> wb_bram/bram_di<10> signal will be lost.
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<10> and wb_bram/bram_di<9> wb_bram/bram_di<9> signal will be lost.
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<10> and wb_bram/bram_di<7> wb_bram/bram_di<7> signal will be lost.
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<10> and wb_bram/bram_di<6> wb_bram/bram_di<6> signal will be lost.
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<10> and wb_bram/bram_di<5> wb_bram/bram_di<5> signal will be lost.
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<10> and wb_bram/bram_di<3> wb_bram/bram_di<3> signal will be lost.
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<10> and wb_bram/bram_di<2> wb_bram/bram_di<2> signal will be lost.
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<10> and wb_bram/bram_di<1> wb_bram/bram_di<1> signal will be lost.
+INFO:Xst:2261 - The FF/Latch <wb_bram/bram_we> in Unit <TemperatureControlProject> is equivalent to the following 8 FFs/Latches, which will be removed : <wb_bram/bram_di_28> <wb_bram/bram_di_24> <wb_bram/bram_di_20> <wb_bram/bram_di_16> <wb_bram/bram_di_12> <wb_bram/bram_di_8> <wb_bram/bram_di_4> <wb_bram/bram_di_0> 
+WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_we and wb_bram/bram_di<28> wb_bram/bram_di<28> signal will be lost.
 WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<28> and wb_bram/bram_di<24> wb_bram/bram_di<24> signal will be lost.
 WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<24> and wb_bram/bram_di<20> wb_bram/bram_di<20> signal will be lost.
 WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<20> and wb_bram/bram_di<16> wb_bram/bram_di<16> signal will be lost.
@@ -1070,13 +1082,11 @@ WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on
 WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<12> and wb_bram/bram_di<8> wb_bram/bram_di<8> signal will be lost.
 WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<12> and wb_bram/bram_di<4> wb_bram/bram_di<4> signal will be lost.
 WARNING:Xst:638 - in unit TemperatureControlProject Conflict on KEEP property on signal wb_bram/bram_di<12> and wb_bram/bram_di<0> wb_bram/bram_di<0> signal will be lost.
+INFO:Xst:2261 - The FF/Latch <temperatureControlMaster/memoryWriter/stb_o> in Unit <TemperatureControlProject> is equivalent to the following FF/Latch, which will be removed : <temperatureControlMaster/memoryWriter/we_o> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block TemperatureControlProject, actual ratio is 4.
-FlipFlop temperatureControlMaster/memoryWriter/row_3 has been replicated 1 time(s)
-FlipFlop vga/word_count_0 has been replicated 1 time(s)
-FlipFlop vga/word_count_1 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -1084,8 +1094,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 172
- Flip-Flops                                            : 172
+# Registers                                            : 128
+ Flip-Flops                                            : 128
 
 =========================================================================
 
@@ -1108,24 +1118,24 @@ Top Level Output File Name         : TemperatureControlProject.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2500
+# BELS                             : 2245
 #      GND                         : 131
-#      INV                         : 12
-#      LUT1                        : 40
-#      LUT2                        : 54
-#      LUT3                        : 104
-#      LUT4                        : 41
-#      LUT5                        : 124
-#      LUT6                        : 1607
-#      MUXCY                       : 109
-#      MUXF7                       : 40
+#      INV                         : 9
+#      LUT1                        : 42
+#      LUT2                        : 30
+#      LUT3                        : 80
+#      LUT4                        : 50
+#      LUT5                        : 66
+#      LUT6                        : 1500
+#      MUXCY                       : 83
+#      MUXF7                       : 36
 #      VCC                         : 131
-#      XORCY                       : 107
-# FlipFlops/Latches                : 204
-#      FD                          : 3
-#      FDC                         : 26
-#      FDCE                        : 44
-#      FDE                         : 97
+#      XORCY                       : 87
+# FlipFlops/Latches                : 160
+#      FD                          : 4
+#      FDC                         : 24
+#      FDCE                        : 32
+#      FDE                         : 66
 #      FDR                         : 1
 #      FDRE                        : 1
 #      LD                          : 32
@@ -1143,8 +1153,7 @@ Primitive and Black Box Usage:
 #      OBUF                        : 14
 # DSPs                             : 1
 #      DSP48E1                     : 1
-# Others                           : 6
-#      DCFanInterface              : 1
+# Others                           : 5
 #      MMCME2_ADV                  : 1
 #      PIDController               : 1
 #      PWMControl                  : 1
@@ -1158,18 +1167,18 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             204  out of  126800     0%  
- Number of Slice LUTs:                 2090  out of  63400     3%  
-    Number used as Logic:              1982  out of  63400     3%  
+ Number of Slice Registers:             160  out of  126800     0%  
+ Number of Slice LUTs:                 1885  out of  63400     2%  
+    Number used as Logic:              1777  out of  63400     2%  
     Number used as Memory:              108  out of  19000     0%  
        Number used as RAM:              108
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2134
-   Number with an unused Flip Flop:    1930  out of   2134    90%  
-   Number with an unused LUT:            44  out of   2134     2%  
-   Number of fully used LUT-FF pairs:   160  out of   2134     7%  
-   Number of unique control sets:        26
+ Number of LUT Flip Flop pairs used:   1926
+   Number with an unused Flip Flop:    1766  out of   1926    91%  
+   Number with an unused LUT:            41  out of   1926     2%  
+   Number of fully used LUT-FF pairs:   119  out of   1926     6%  
+   Number of unique control sets:        16
 
 IO Utilization: 
  Number of IOs:                          62
@@ -1202,7 +1211,7 @@ Clock Information:
 ----------------------------------------------------------------------------------------+----------------------------------------------------------------+-------+
 Clock Signal                                                                            | Clock buffer(FF name)                                          | Load  |
 ----------------------------------------------------------------------------------------+----------------------------------------------------------------+-------+
-clock200_inst/clkout0                                                                   | BUFG                                                           | 326   |
+clock200_inst/clkout0                                                                   | BUFG                                                           | 282   |
 temperatureControlMaster/memoryWriter/lut/bram1/N0                                      | NONE(temperatureControlMaster/memoryWriter/lut/bram1/lut/bram1)| 1     |
 temperatureControlMaster/memoryWriter/lut/bram2/N0                                      | NONE(temperatureControlMaster/memoryWriter/lut/bram2/lut/bram2)| 1     |
 vga/clk_divider/clk                                                                     | BUFG                                                           | 20    |
@@ -1334,7 +1343,7 @@ wb_bram/gen1[3].bram/N0                                                         
 wb_bram/gen1[2].bram/N0                                                                 | NONE(wb_bram/gen1[2].bram/gen1[2].bram)                        | 1     |
 wb_bram/gen1[1].bram/N0                                                                 | NONE(wb_bram/gen1[1].bram/gen1[1].bram)                        | 1     |
 wb_bram/gen1[0].bram/N0                                                                 | NONE(wb_bram/gen1[0].bram/gen1[0].bram)                        | 1     |
-wb_bram_bram_select[6]_GND_69_o_Mux_6_o(wb_bram_Mram_bram_select[6]_GND_69_o_Mux_6_o1:O)| BUFG(*)(wb_bram/bram_data_out_0)                               | 32    |
+wb_bram_bram_select[6]_GND_67_o_Mux_6_o(wb_bram_Mram_bram_select[6]_GND_67_o_Mux_6_o1:O)| BUFG(*)(wb_bram/bram_data_out_0)                               | 32    |
 ----------------------------------------------------------------------------------------+----------------------------------------------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -1614,8 +1623,8 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 6.737ns (Maximum Frequency: 148.434MHz)
-   Minimum input arrival time before clock: 2.041ns
+   Minimum period: 6.244ns (Maximum Frequency: 160.154MHz)
+   Minimum input arrival time before clock: 2.513ns
    Maximum output required time after clock: 4.765ns
    Maximum combinational path delay: 0.001ns
 
@@ -1625,35 +1634,34 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock200_inst/clkout0'
-  Clock period: 6.737ns (frequency: 148.434MHz)
-  Total number of paths / destination ports: 44448 / 4681
+  Clock period: 6.244ns (frequency: 160.154MHz)
+  Total number of paths / destination ports: 8103 / 1506
 -------------------------------------------------------------------------
-Delay:               6.737ns (Levels of Logic = 11)
-  Source:            temperatureControlMaster/memoryWriter/row_3_1 (FF)
+Delay:               6.244ns (Levels of Logic = 10)
+  Source:            temperatureControlMaster/memoryWriter/row_4 (FF)
   Destination:       temperatureControlMaster/memoryWriter/adr_o_17 (FF)
   Source Clock:      clock200_inst/clkout0 rising
   Destination Clock: clock200_inst/clkout0 rising
 
-  Data Path: temperatureControlMaster/memoryWriter/row_3_1 to temperatureControlMaster/memoryWriter/adr_o_17
+  Data Path: temperatureControlMaster/memoryWriter/row_4 to temperatureControlMaster/memoryWriter/adr_o_17
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             1   0.478   0.919  temperatureControlMaster/memoryWriter/row_3_1 (temperatureControlMaster/memoryWriter/row_3_1)
-     LUT5:I0->O            8   0.124   0.467  temperatureControlMaster/memoryWriter/Mmult_row[6]_PWR_15_o_MuLt_71_OUT_Madd_cy<6>11 (temperatureControlMaster/memoryWriter/Mmult_row[6]_PWR_15_o_MuLt_71_OUT_Madd_cy<6>)
-     LUT5:I4->O            1   0.124   0.000  temperatureControlMaster/memoryWriter/Mmult_row[6]_PWR_15_o_MuLt_72_OUT_Madd_lut<8> (temperatureControlMaster/memoryWriter/Mmult_row[6]_PWR_15_o_MuLt_72_OUT_Madd_lut<8>)
-     MUXCY:S->O            1   0.472   0.000  temperatureControlMaster/memoryWriter/Mmult_row[6]_PWR_15_o_MuLt_72_OUT_Madd_cy<8> (temperatureControlMaster/memoryWriter/Mmult_row[6]_PWR_15_o_MuLt_72_OUT_Madd_cy<8>)
-     XORCY:CI->O           3   0.510   0.435  temperatureControlMaster/memoryWriter/Mmult_row[6]_PWR_15_o_MuLt_72_OUT_Madd_xor<9> (temperatureControlMaster/memoryWriter/row[6]_PWR_15_o_MuLt_72_OUT<13>)
-     LUT6:I5->O            1   0.124   0.000  temperatureControlMaster/memoryWriter/Madd_n0294_lut<13> (temperatureControlMaster/memoryWriter/Madd_n0294_lut<13>)
-     MUXCY:S->O            1   0.472   0.000  temperatureControlMaster/memoryWriter/Madd_n0294_cy<13> (temperatureControlMaster/memoryWriter/Madd_n0294_cy<13>)
-     XORCY:CI->O           1   0.510   0.421  temperatureControlMaster/memoryWriter/Madd_n0294_xor<14> (temperatureControlMaster/memoryWriter/n0294<14>)
-     LUT1:I0->O            1   0.124   0.000  temperatureControlMaster/memoryWriter/Madd_n0297_cy<14>_rt (temperatureControlMaster/memoryWriter/Madd_n0297_cy<14>_rt)
-     MUXCY:S->O            1   0.472   0.000  temperatureControlMaster/memoryWriter/Madd_n0297_cy<14> (temperatureControlMaster/memoryWriter/Madd_n0297_cy<14>)
-     XORCY:CI->O           1   0.510   0.421  temperatureControlMaster/memoryWriter/Madd_n0297_xor<15> (temperatureControlMaster/memoryWriter/n0297<15>)
-     LUT5:I4->O            1   0.124   0.000  temperatureControlMaster/memoryWriter/Mmux_state[2]_adr_o[31]_wide_mux_88_OUT81 (temperatureControlMaster/memoryWriter/state[2]_adr_o[31]_wide_mux_88_OUT<17>)
+     FDCE:C->Q            16   0.478   1.017  temperatureControlMaster/memoryWriter/row_4 (temperatureControlMaster/memoryWriter/row_4)
+     LUT5:I0->O            3   0.124   0.435  temperatureControlMaster/memoryWriter/Mmult_row[6]_PWR_17_o_MuLt_35_OUT_Madd_xor<10>121 (temperatureControlMaster/memoryWriter/Mmult_row[6]_PWR_17_o_MuLt_35_OUT_Madd_xor<10>12)
+     LUT5:I4->O            1   0.124   0.000  temperatureControlMaster/memoryWriter/Maddsub_row[6]_PWR_17_o_MuLt_36_OUT_Madd1_lut<8> (temperatureControlMaster/memoryWriter/Maddsub_row[6]_PWR_17_o_MuLt_36_OUT_Madd1_lut<8>)
+     MUXCY:S->O            1   0.472   0.000  temperatureControlMaster/memoryWriter/Maddsub_row[6]_PWR_17_o_MuLt_36_OUT_Madd1_cy<8> (temperatureControlMaster/memoryWriter/Maddsub_row[6]_PWR_17_o_MuLt_36_OUT_Madd1_cy<8>)
+     XORCY:CI->O           1   0.510   0.421  temperatureControlMaster/memoryWriter/Maddsub_row[6]_PWR_17_o_MuLt_36_OUT_Madd1_xor<9> (temperatureControlMaster/memoryWriter/Maddsub_row[6]_PWR_17_o_MuLt_36_OUT_13)
+     LUT1:I0->O            1   0.124   0.000  temperatureControlMaster/memoryWriter/Maddsub_row[6]_PWR_17_o_MuLt_36_OUT_Madd_cy<13>_rt (temperatureControlMaster/memoryWriter/Maddsub_row[6]_PWR_17_o_MuLt_36_OUT_Madd_cy<13>_rt)
+     MUXCY:S->O            1   0.472   0.000  temperatureControlMaster/memoryWriter/Maddsub_row[6]_PWR_17_o_MuLt_36_OUT_Madd_cy<13> (temperatureControlMaster/memoryWriter/Maddsub_row[6]_PWR_17_o_MuLt_36_OUT_Madd_cy<13>)
+     XORCY:CI->O           1   0.510   0.421  temperatureControlMaster/memoryWriter/Maddsub_row[6]_PWR_17_o_MuLt_36_OUT_Madd_xor<14> (temperatureControlMaster/memoryWriter/n0120[18:0]<14>)
+     LUT1:I0->O            1   0.124   0.000  temperatureControlMaster/memoryWriter/Maddsub_PWR_17_o_line[6]_MuLt_38_OUT_Madd_cy<14>_rt (temperatureControlMaster/memoryWriter/Maddsub_PWR_17_o_line[6]_MuLt_38_OUT_Madd_cy<14>_rt)
+     MUXCY:S->O            0   0.472   0.000  temperatureControlMaster/memoryWriter/Maddsub_PWR_17_o_line[6]_MuLt_38_OUT_Madd_cy<14> (temperatureControlMaster/memoryWriter/Maddsub_PWR_17_o_line[6]_MuLt_38_OUT_Madd_cy<14>)
+     XORCY:CI->O           1   0.510   0.000  temperatureControlMaster/memoryWriter/Maddsub_PWR_17_o_line[6]_MuLt_38_OUT_Madd_xor<15> (temperatureControlMaster/memoryWriter/n0123[19:0]<15>)
      FDE:D                     0.030          temperatureControlMaster/memoryWriter/adr_o_17
     ----------------------------------------
-    Total                      6.737ns (4.074ns logic, 2.663ns route)
-                                       (60.5% logic, 39.5% route)
+    Total                      6.244ns (3.950ns logic, 2.294ns route)
+                                       (63.3% logic, 36.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'vga/clk_divider/clk'
@@ -1671,8 +1679,8 @@ Delay:               4.605ns (Levels of Logic = 13)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              6   0.478   0.952  vga/pixel_count_9 (vga/pixel_count_9)
-     LUT5:I0->O            2   0.124   0.782  vga/PWR_33_o_pixel_count[9]_equal_18_o<9>_SW0 (N36)
-     LUT6:I2->O           10   0.124   0.775  vga/PWR_33_o_pixel_count[9]_equal_18_o<9> (vga/PWR_33_o_pixel_count[9]_equal_18_o)
+     LUT5:I0->O            2   0.124   0.782  vga/PWR_23_o_pixel_count[9]_equal_18_o<9>_SW0 (N30)
+     LUT6:I2->O           10   0.124   0.775  vga/PWR_23_o_pixel_count[9]_equal_18_o<9> (vga/PWR_23_o_pixel_count[9]_equal_18_o)
      LUT3:I0->O            1   0.124   0.000  vga/Mcount_pixel_count_lut<0> (vga/Mcount_pixel_count_lut<0>)
      MUXCY:S->O            1   0.472   0.000  vga/Mcount_pixel_count_cy<0> (vga/Mcount_pixel_count_cy<0>)
      MUXCY:CI->O           1   0.029   0.000  vga/Mcount_pixel_count_cy<1> (vga/Mcount_pixel_count_cy<1>)
@@ -1691,9 +1699,9 @@ Delay:               4.605ns (Levels of Logic = 13)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock200_inst/clkout0'
-  Total number of paths / destination ports: 196 / 196
+  Total number of paths / destination ports: 152 / 152
 -------------------------------------------------------------------------
-Offset:              2.041ns (Levels of Logic = 2)
+Offset:              2.513ns (Levels of Logic = 3)
   Source:            CPU_RESETN (PAD)
   Destination:       vga/Mram_line_buffer221 (RAM)
   Destination Clock: clock200_inst/clkout0 rising
@@ -1702,18 +1710,19 @@ Offset:              2.041ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            14   0.001   0.861  CPU_RESETN_IBUF (CPU_RESETN_IBUF)
-     LUT4:I0->O           32   0.124   0.552  vga/write_ctrl1 (vga/write_ctrl1)
+     IBUF:I->O            11   0.001   0.487  CPU_RESETN_IBUF (CPU_RESETN_IBUF)
+     LUT4:I3->O            2   0.124   0.722  wb_intercon/ACK_I_M<1>1_SW1 (N40)
+     LUT6:I3->O           32   0.124   0.552  vga/write_ctrl1 (vga/write_ctrl1)
      RAM32X1D:WE               0.503          vga/Mram_line_buffer142
     ----------------------------------------
-    Total                      2.041ns (0.628ns logic, 1.413ns route)
-                                       (30.8% logic, 69.2% route)
+    Total                      2.513ns (0.752ns logic, 1.761ns route)
+                                       (29.9% logic, 70.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'vga/clk_divider/clk'
   Total number of paths / destination ports: 20 / 20
 -------------------------------------------------------------------------
-Offset:              1.677ns (Levels of Logic = 2)
+Offset:              1.657ns (Levels of Logic = 2)
   Source:            CPU_RESETN (PAD)
   Destination:       vga/line_count_9 (FF)
   Destination Clock: vga/clk_divider/clk rising
@@ -1722,12 +1731,12 @@ Offset:              1.677ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            14   0.001   0.484  CPU_RESETN_IBUF (CPU_RESETN_IBUF)
-     INV:I->O             32   0.146   0.552  wb_intercon/U08/nRST_inv1_INV_0 (vga/clk_divider/reset_inv)
+     IBUF:I->O            11   0.001   0.465  CPU_RESETN_IBUF (CPU_RESETN_IBUF)
+     INV:I->O             30   0.146   0.551  wb_intercon/U08/nRST_inv1_INV_0 (vga/clk_divider/reset_inv)
      FDCE:CLR                  0.494          vga/line_count_0
     ----------------------------------------
-    Total                      1.677ns (0.641ns logic, 1.036ns route)
-                                       (38.2% logic, 61.8% route)
+    Total                      1.657ns (0.641ns logic, 1.016ns route)
+                                       (38.7% logic, 61.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'vga/clk_divider/clk'
@@ -1779,7 +1788,7 @@ Offset:              4.540ns (Levels of Logic = 5)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 15 / 15
 -------------------------------------------------------------------------
 Delay:               0.001ns (Levels of Logic = 1)
   Source:            CLK100MHZ (PAD)
@@ -1805,9 +1814,9 @@ Clock to Setup on destination clock clock200_inst/clkout0
                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------+---------+---------+---------+---------+
-clock200_inst/clkout0                  |    6.737|         |         |         |
-vga/clk_divider/clk                    |   14.827|         |         |         |
-wb_bram_bram_select[6]_GND_69_o_Mux_6_o|         |    1.054|         |         |
+clock200_inst/clkout0                  |    6.244|         |         |         |
+vga/clk_divider/clk                    |   13.326|         |         |         |
+wb_bram_bram_select[6]_GND_67_o_Mux_6_o|         |    1.054|         |         |
 ---------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock vga/clk_divider/clk
@@ -1818,7 +1827,7 @@ Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 vga/clk_divider/clk|    4.605|         |         |         |
 -------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock wb_bram_bram_select[6]_GND_69_o_Mux_6_o
+Clock to Setup on destination clock wb_bram_bram_select[6]_GND_67_o_Mux_6_o
 -------------------------+---------+---------+---------+---------+
                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -1956,14 +1965,14 @@ wb_bram/gen1[9].bram/N0  |         |         |    4.935|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 81.00 secs
-Total CPU time to Xst completion: 80.85 secs
+Total REAL time to Xst completion: 63.00 secs
+Total CPU time to Xst completion: 63.37 secs
  
 --> 
 
-Total memory usage is 570596 kilobytes
+Total memory usage is 567716 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  271 (   0 filtered)
-Number of infos    :  155 (   0 filtered)
+Number of warnings :  317 (   0 filtered)
+Number of infos    :  150 (   0 filtered)
 
