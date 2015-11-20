@@ -7,6 +7,6 @@
 !*.vhd
 !*.vhdl
 !*.ucf
-
+!README
 # ...even if they are in subdirectories
 #!*/
