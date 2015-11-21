@@ -13,13 +13,15 @@ The FPGA used is the Nexys4DDR: http://digilentinc.com/nexys4ddr/
  used: (link here)  
 ######Temperature Sensor
 Used the onboard FPGA temperature sensor on the processor, using the XDAC interface provided by Xilinx 
-######Power supply
-used: (link here)  
 ######Serial UART
 comm chip located on the FPGA  
+######Push Buttons
+BTNU and BTND are used to increment and decrement the setpoint, these are located on the fgpa dev board
 ######VGA
 Any stanard VGA display should work fine  
-Temperature sensor used was 
+Temperature sensor used was
+######Power supply
+used: (link here)  
 
 ###Bus Info
 Module communication is handled by the Wishbone bus.  
@@ -42,6 +44,7 @@ Some connection settings:
 ###PID Control/Data Analysis Info
 All data was captured using the serial output, the python script inside the DataAnalysisSource directory converts the serial output to a more readable format(converts the mixed ascii/hex to normal integers) and saves it to a file so it can be read by MATLAB.    
 ###### Control Analysis
+Sampling rate of 10 milliseconds.
   Open loop transfer function was computed using the System Identiitfication toolbox in MATLAB using data collected with the UART module.  
   PID gains were computed using the PIDTuner toolbox in MATLAB.  
   Closed loop transfer function computed in MATLAB.  
