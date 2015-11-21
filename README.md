@@ -29,7 +29,8 @@ Some connection settings:
   (temperature) 2C (fanSpeed) A0  
   where XX is a 2 digit hex number, and 2C is ascii for a comma(,) and A0 is ascii for a newline(\n)  
 
-###PID Control Info
+###PID Control/Data Analysis Info
+All data was captured using the serial output, the python script inside the DataAnalysisSource directory converts the serial output to a more readable format(converts the mixed ascii/hex to normal integers) and saves it to a file so it can be read by MATLAB.    
   Open loop transfer function was computed using the System Identiitfication toolbox in MATLAB using data collected with the UART module.  
   PID gains were computed using the PIDTuner toolbox in MATLAB.  
   Closed loop transfer function computed in MATLAB.  
