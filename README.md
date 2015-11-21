@@ -2,14 +2,24 @@
 PID control of a DC fan for regulating FPGA processor temperature, in VHDL.
 
 ###Hardware Info
-The FPGA used here is the Nexys4DDR.  
+ 
 The desired temperature is set by two push buttons(located on the FPGA).
-The desired temperature, current temperature and PWM fan speed percent is written to bram(located on the FPGA) memory and displayed on a connected VGA display.  
-DC fan used: (link here)  
-PWM motor driver used: (link here)  
-Power supply used: (link here)  
-Serial UART comm chip: located on the FPGA  
+The desired temperature, current temperature and PWM fan speed percent is written to bram(located on the FPGA) memory and displayed on a connected VGA display. 
+######FGPA
+The FPGA used is the Nexys4DDR: http://digilentinc.com/nexys4ddr/
+######DC Fan
+ used: (link here)
+######PWM Motor Driver
+ used: (link here)  
+######Temperature Sensor
+Used the onboard FPGA temperature sensor on the processor, using the XDAC interface provided by Xilinx 
+######Power supply
+used: (link here)  
+######Serial UART
+comm chip located on the FPGA  
+######VGA
 Any stanard VGA display should work fine  
+Temperature sensor used was 
 
 ###Bus Info
 Module communication is handled by the Wishbone bus.  
@@ -31,6 +41,7 @@ Some connection settings:
 
 ###PID Control/Data Analysis Info
 All data was captured using the serial output, the python script inside the DataAnalysisSource directory converts the serial output to a more readable format(converts the mixed ascii/hex to normal integers) and saves it to a file so it can be read by MATLAB.    
+###### Control Analysis
   Open loop transfer function was computed using the System Identiitfication toolbox in MATLAB using data collected with the UART module.  
   PID gains were computed using the PIDTuner toolbox in MATLAB.  
   Closed loop transfer function computed in MATLAB.  
