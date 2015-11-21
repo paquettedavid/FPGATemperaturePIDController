@@ -8,6 +8,9 @@
 !*.vhdl
 !*.ucf
 !*.bit
+!.py
+!.txt
+!.asc
 !README.md
 # ...even if they are in subdirectories
 !*/
