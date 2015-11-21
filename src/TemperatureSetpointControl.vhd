@@ -30,13 +30,46 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity TemperatureSetpointControl is
-	Port(selectedTemperature : out integer range 0 to 100);
+	Port(clk_i : in std_logic;
+			rst_i : in std_logic;
+			incrementButton : in std_logic;
+			decrementButton : in std_logic;
+			selectedTemperature : out integer range 0 to 100);
 end TemperatureSetpointControl;
 
 architecture Behavioral of TemperatureSetpointControl is
-
+	signal setpoint : integer range 0 to 100:=37;
+	signal decrementSetpoint, incrementSetpoint : std_logic:='0';
 begin
 
+	selectedTemperature<=setpoint;
 
+	incrementSetpointButtonFilter : entity work.ButtonOnePressFilter
+		port map(
+			clk=>clk_i,
+			reset=>rst_i,
+			buttonInput=>incrementButton,
+			filteredButtonOutput=>incrementSetpoint );
+			
+	decrememntSetpointButtonFilter : entity work.ButtonOnePressFilter
+			port map(
+				clk=>clk_i,
+				reset=>rst_i,
+				buttonInput=>decrementButton,
+				filteredButtonOutput=>decrementSetpoint );
+	
+	process (clk_i, rst_i)
+	begin
+		if(rst_i='0') then
+			--
+		elsif (clk_i'event and clk_i = '1') then
+			if(decrementSetpoint='1') then
+				setpoint<= setpoint - 1;
+			end if;
+			if(incrementSetpoint='1') then
+				setpoint <= setpoint + 1;
+			end if;
+		end if;
+	end process;
 end Behavioral;
 

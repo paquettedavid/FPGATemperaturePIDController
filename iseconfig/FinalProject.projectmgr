@@ -9,18 +9,16 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/FPGAMonitor - Behavioral H:|ECE4401|FinalProject|FinalProject|src|TemperatureSensorLibrary|FPGAMonitor.vhd</ClosedNode>
          <ClosedNode>/MemoryWriter - Behavioral H:|ECE4401|FinalProject|FinalProject|src|MemoryWriter.vhd</ClosedNode>
-         <ClosedNode>/TemperatureControlProject - Behavioral H:|ECE4401|FinalProject|FinalProject|src|TemperatureControlProject.vhd/temperatureControlMaster - TemperatureControlMaster - Behavioral/dcFanInterface - DCFanInterface - Behavioral</ClosedNode>
          <ClosedNode>/TemperatureControlProject - Behavioral H:|ECE4401|FinalProject|FinalProject|src|TemperatureControlProject.vhd/temperatureControlMaster - TemperatureControlMaster - Behavioral/memoryWriter - MemoryWriter - Behavioral</ClosedNode>
-         <ClosedNode>/TemperatureControlProject - Behavioral H:|ECE4401|FinalProject|FinalProject|src|TemperatureControlProject.vhd/temperatureControlMaster - TemperatureControlMaster - Behavioral/serialController - ValuesToSerial - RTL</ClosedNode>
-         <ClosedNode>/TemperatureControlProject - Behavioral H:|ECE4401|FinalProject|FinalProject|src|TemperatureControlProject.vhd/temperatureControlMaster - TemperatureControlMaster - Behavioral/temperatureSensor - TemperatureSensorInterface - Behavioral/Inst_FPGAMonitor - FPGAMonitor - Behavioral</ClosedNode>
          <ClosedNode>/TemperatureControlProject - Behavioral H:|ECE4401|FinalProject|FinalProject|src|TemperatureControlProject.vhd/wb_intercon - wb_intercon - ICN0002a1</ClosedNode>
+         <ClosedNode>/wb_vga640x480 - Behavioral H:|ECE4401|FinalProject|FinalProject|src|VGALibrary|wb_vga640x480.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>TemperatureControlProject - Behavioral (H:/ECE4401/FinalProject/FinalProject/src/TemperatureControlProject.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000246000000020000000000000000000000000200000064ffffffff000000810000000300000002000002460000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000026a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000026a0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>TemperatureControlProject - Behavioral (H:/ECE4401/FinalProject/FinalProject/src/TemperatureControlProject.vhd)</CurrentItem>
    </ItemView>
@@ -45,9 +43,9 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000100000000000000000000000000000000000001ad000000040101000100000000000000000000000064ffffffff000000810000000000000004000000bf0000000100000000000000240000000100000000000000660000000100000000000000640000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000010000000000000000000000000000000000000251000000040101000100000000000000000000000064ffffffff000000810000000000000004000000bf0000000100000000000000240000000100000000000000660000000100000000000001080000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>wb_vga640x480.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -85,13 +83,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f6000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f60000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000040100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>

@@ -34,9 +34,11 @@ entity TemperatureControlProject is
 --    		 VGA_B  : out std_logic_vector(3 downto 0);
 --          VGA_HS : out std_logic;
 --          VGA_VS : out std_logic;
-			 uart_rxd_out : out std_logic;
-			 uart_txd_in :  in std_logic;
 
+			uart_rxd_out : out std_logic;
+			uart_txd_in :  in std_logic;
+			btnd : in std_logic;
+			btnu : in std_logic;
 			CPU_RESETN : in std_logic;
 			CLK100MHZ : in std_logic
 			);
@@ -103,7 +105,8 @@ begin
 		port map ( clk_i => sys_clk, rst_i => sys_rst, 
 					  adr_o => adr_o_m0, dat_i => drd, dat_o => dat_o_m0,
 					  ack_i => ack_i_m(0), cyc_o => cyc_o_m(0), stb_o => stb_o_m(0), 
-					  we_o => we_o_m(0), tx_in=>uart_txd_in, rx_out=>uart_rxd_out);
+					  we_o => we_o_m(0), tx_in=>uart_txd_in, rx_out=>uart_rxd_out,
+					  incrementSetpointButton=>btnu, decrememntSetpointButton=>btnd);
 
 --	vga : entity work.wb_vga640x480 
 --		port map ( clk_i => sys_clk, rst_i => sys_rst, 

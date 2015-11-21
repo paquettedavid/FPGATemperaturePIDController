@@ -38,7 +38,9 @@ entity TemperatureControlMaster is
           stb_o : out std_logic;
           we_o  : out std_logic;
 			 rx_out : out std_logic;
-			 tx_in :  in std_logic
+			 tx_in :  in std_logic;
+			 incrementSetpointButton : in std_logic;
+			 decrememntSetpointButton : in std_logic
 		);
 end TemperatureControlMaster;
 
@@ -50,13 +52,20 @@ architecture Behavioral of TemperatureControlMaster is
 	signal pidProportionalGain : integer range 0 to 10:=1;
 	signal pidIntegralGain: integer range 0 to 10:=1;
 	signal pidDerivativeGain: integer range 0 to 10:=1;
-	signal tx, rx, rx_sync, reset, reset_sync,tx_sig : std_logic;
+	signal tx, rx, rx_sync, reset, reset_sync,tx_sig,onemsec_clk : std_logic;
 	
 	signal eightBitBuffer : std_logic_vector(7 downto 0):=(others=>'0');
 begin
 
-
-				
+		tx_sig <= tx_in;
+		
+		onemsec_clk_divider : entity work.clock_divider
+			generic map ( divisor => 100000 )
+			port map ( 
+				clk_in => clk_i, 
+				reset => rst_i, 
+				clk_out => onemsec_clk 
+			);	
 --	memoryWriter : entity work.MemoryWriter
 --		port map ( clk_i => clk_i, rst_i => rst_i , 
 --		  adr_o => adr_o, dat_i => dat_i, dat_o => dat_o,
@@ -66,17 +75,22 @@ begin
 --		  fanSpeedPercent=> fanSpeedPercent
 --		);
 
-
---	pidController : entity work.PIDController
---		port map( proportionalGain=>pidProportionalGain,
---				integralGain=>pidIntegralGain,
---				derivativeGain=>pidDerivativeGain,
---				setpoint=>desiredTemperature,
---				sensorFeedbackValue=>currentTemperature,
---				controlOutput =>fanSpeedPercent );
---			
---	temperatureSetPointControl : entity work.TemperatureSetpointControl
---		port map(selectedTemperature=>desiredTemperature);
+	pidController : entity work.PIDController
+		port map( samplingRateClock=>onemsec_clk,
+				reset=>rst_i,
+				proportionalGain=>pidProportionalGain,
+				integralGain=>pidIntegralGain,
+				derivativeGain=>pidDerivativeGain,
+				setpoint=>desiredTemperature,
+				sensorFeedbackValue=>currentTemperature,
+				controlOutput =>fanSpeedPercent );
+			
+	temperatureSetPointControl : entity work.TemperatureSetpointControl
+		port map(clk_i=>onemsec_clk,
+					rst_i=>rst_i,
+					incrementButton=>incrementSetpointButton,
+					decrementButton=>decrememntSetpointButton,
+					selectedTemperature=>desiredTemperature);
 		
 	temperatureSensor : entity work.TemperatureSensorInterface
 		port map ( clk_i=>clk_i,
@@ -86,7 +100,6 @@ begin
 	dcFanInterface: entity work.dcFanInterface
 		port map(fanSpeed=>fanSpeedPercent);
 		
-	tx_sig <= tx_in;
 	serialController : entity work.ValuesToSerial
 	port map  (  
 			CLOCK       => clk_i,
@@ -94,7 +107,8 @@ begin
 			RX          => rx,
 			TX          => tx,
 		   temperatureIn => eightBitBuffer+currentTemperature,
-		   fanSpeedIn => eightBitBuffer+fanSpeedPercent
+		   --fanSpeedIn => eightBitBuffer+fanSpeedPercent
+		   fanSpeedIn => eightBitBuffer+desiredTemperature
 	);
 
 	process (clk_i, rst_i)
