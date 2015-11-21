@@ -29,11 +29,11 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity TemperatureControlProject is
     Port (
-    		 VGA_R  : out std_logic_vector(3 downto 0);
-    		 VGA_G  : out std_logic_vector(3 downto 0);
-    		 VGA_B  : out std_logic_vector(3 downto 0);
-          VGA_HS : out std_logic;
-          VGA_VS : out std_logic;
+--    		 VGA_R  : out std_logic_vector(3 downto 0);
+--    		 VGA_G  : out std_logic_vector(3 downto 0);
+--    		 VGA_B  : out std_logic_vector(3 downto 0);
+--          VGA_HS : out std_logic;
+--          VGA_VS : out std_logic;
 			 uart_rxd_out : out std_logic;
 			 uart_txd_in :  in std_logic;
 
@@ -105,17 +105,17 @@ begin
 					  ack_i => ack_i_m(0), cyc_o => cyc_o_m(0), stb_o => stb_o_m(0), 
 					  we_o => we_o_m(0), tx_in=>uart_txd_in, rx_out=>uart_rxd_out);
 
-	vga : entity work.wb_vga640x480 
-		port map ( clk_i => sys_clk, rst_i => sys_rst, 
-					  adr_o => adr_o_m1, dat_i => drd, dat_o => dat_o_m1,
-					  ack_i => ack_i_m(1), cyc_o => cyc_o_m(1), stb_o => stb_o_m(1), 
-					  we_o => we_o_m(1),
- 					  red => vga_r, green => vga_g, blue => vga_b, hsync => vga_hs, vsync => vga_vs);
+--	vga : entity work.wb_vga640x480 
+--		port map ( clk_i => sys_clk, rst_i => sys_rst, 
+--					  adr_o => adr_o_m1, dat_i => drd, dat_o => dat_o_m1,
+--					  ack_i => ack_i_m(1), cyc_o => cyc_o_m(1), stb_o => stb_o_m(1), 
+--					  we_o => we_o_m(1),
+-- 					  red => vga_r, green => vga_g, blue => vga_b, hsync => vga_hs, vsync => vga_vs);
 
-	wb_bram : entity work.wb_bram
-		port map ( clk_i => sys_clk, rst_i => sys_rst, 
-					  adr_i => adr_i_s, dat_i => dwr, dat_o => dat_o_s0,
-					  ack_o => ack_o_s(0), stb_i => stb_i_s(0), we_i => we );
+--	wb_bram : entity work.wb_bram
+--		port map ( clk_i => sys_clk, rst_i => sys_rst, 
+--					  adr_i => adr_i_s, dat_i => dwr, dat_o => dat_o_s0,
+--					  ack_o => ack_o_s(0), stb_i => stb_i_s(0), we_i => we );
 
 	
 	cyc_o_m(3) <= '0';

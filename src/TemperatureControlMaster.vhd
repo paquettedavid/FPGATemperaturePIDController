@@ -55,6 +55,18 @@ architecture Behavioral of TemperatureControlMaster is
 	signal eightBitBuffer : std_logic_vector(7 downto 0):=(others=>'0');
 begin
 
+
+				
+--	memoryWriter : entity work.MemoryWriter
+--		port map ( clk_i => clk_i, rst_i => rst_i , 
+--		  adr_o => adr_o, dat_i => dat_i, dat_o => dat_o,
+--		  ack_i => ack_i, cyc_o => cyc_o, stb_o => stb_o, 
+--		  we_o => we_o, currentTemperature=> currentTemperature,
+--		  desiredTemperature=> desiredTemperature,
+--		  fanSpeedPercent=> fanSpeedPercent
+--		);
+
+
 --	pidController : entity work.PIDController
 --		port map( proportionalGain=>pidProportionalGain,
 --				integralGain=>pidIntegralGain,
@@ -62,22 +74,15 @@ begin
 --				setpoint=>desiredTemperature,
 --				sensorFeedbackValue=>currentTemperature,
 --				controlOutput =>fanSpeedPercent );
-				
-	memoryWriter : entity work.MemoryWriter
-		port map ( clk_i => clk_i, rst_i => rst_i , 
-		  adr_o => adr_o, dat_i => dat_i, dat_o => dat_o,
-		  ack_i => ack_i, cyc_o => cyc_o, stb_o => stb_o, 
-		  we_o => we_o, currentTemperature=> currentTemperature,
-		  desiredTemperature=> desiredTemperature,
-		  fanSpeedPercent=> fanSpeedPercent
-		);
-			
+--			
 --	temperatureSetPointControl : entity work.TemperatureSetpointControl
 --		port map(selectedTemperature=>desiredTemperature);
---		
---	temperatureSensor : entity work.TemperatureSensorInterface
---		port map (temperatureCelcius=>currentTemperature);
---		
+		
+	temperatureSensor : entity work.TemperatureSensorInterface
+		port map ( clk_i=>clk_i,
+						rst_i=>rst_i,
+					temperatureCelcius=>currentTemperature);
+
 	dcFanInterface: entity work.dcFanInterface
 		port map(fanSpeed=>fanSpeedPercent);
 		

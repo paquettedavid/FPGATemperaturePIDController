@@ -123,7 +123,8 @@ begin
 				when waitForOneSecondTick =>
 					uart_data_in_stb<='0';
 					oneSecondCounter <= oneSecondCounter + 1;
-					if(oneSecondCounter >= 100000000) then
+					--if(oneSecondCounter >= 100000000) then
+					if(oneSecondCounter >= 10000000) then
 						state<=start;
 					end if;
 			end case;
