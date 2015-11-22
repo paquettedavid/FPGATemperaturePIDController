@@ -35,9 +35,6 @@
 <msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureSensorLibrary\FPGAMonitor.vhd" Line 218: <arg fmt="%s" index="1">x_drdy_r</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureSensorInterface.vhd" Line 102: Assignment to <arg fmt="%s" index="1">temp_xad_px_scaled</arg> ignored, since the identifier is never used
-</msg>
-
 <msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\hnas.engr.uconn.edu\engruser\users\dep11007\private_home\ECE4401\FinalProject\FinalProject\src\TemperatureControlProject.vhd" Line 50: Net &lt;<arg fmt="%s" index="1">ACK_O_S[3]</arg>&gt; does not have a driver.
 </msg>
 
@@ -233,97 +230,19 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_scaled_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">temperatureSensor</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">temperatureSensor</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">temperatureSensor</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">temperatureSensor</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">temperatureSensor</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">temperatureSensor</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">temperatureSensor</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">temperatureSensor</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">temperatureSensor</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">temperatureSensor</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">temperatureSensor</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">temperatureSensor</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">temperatureSensor</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">temperatureSensor</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">temperatureSensor</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">temperatureSensor</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">temperatureSensor</arg>&gt;.
 </msg>
 
 <msg type="info" file="Xst" num="2385" delta="old" >HDL ADVISOR - You can improve the performance of the multiplier <arg fmt="%s" index="1">Mmult_temp_sync[11]_PWR_23_o_MuLt_1_OUT</arg> by adding <arg fmt="%d" index="2">1</arg> register level(s).
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureSensorInterface</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureSensorInterface</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureSensorInterface</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureSensorInterface</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureSensorInterface</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureSensorInterface</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureSensorInterface</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureSensorInterface</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureSensorInterface</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureSensorInterface</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureSensorInterface</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureSensorInterface</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureSensorInterface</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureSensorInterface</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureSensorInterface</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureSensorInterface</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">LGNT1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_arbiter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.

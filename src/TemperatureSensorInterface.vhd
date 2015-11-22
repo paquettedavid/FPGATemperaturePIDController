@@ -54,24 +54,14 @@ architecture Behavioral of TemperatureSensorInterface is
 	signal clk : std_logic;
 	
 	
-	-- Used as starting point for the Temperature level size
-	-- The Temperature level size is according to the value of the temperature displayed
-	constant TEMP_OFFSET : std_logic_vector (11 downto 0) := "001000100110"; --550
-
-	constant TEMP_BOTTOM : natural := Y_TMP_V_LOC + Y_TMP_COL_HEIGHT + 1;
 	-- Maximum temperature
 	constant TEMP_MAX	: std_logic_vector (23 downto 0) := X"000500"; -- 80C * 16
-	-- Convert Celsius to pixels such as 0C = 0 pixels, 80C = 480pixels
-	constant CELSIUS_TO_PIXELS : std_logic_vector(2 downto 0) := "110"; --6 = 480/(80-0)
 
 	-- Scale incoming XADC temperature data, according to the XADC datasheet
 	constant XADC_TMP_SCALE : std_logic_vector(17 downto 0) := "111110111" & "111110011"; --503.975 (18bit)
 	constant thirtyTwobuffer : std_logic_vector(30 downto 0):=(others=>'0');
 	-- Convert Kelvin to Celsius
 	constant XADC_TMP_OFFSET : std_logic_vector(30 downto 0) := thirtyTwobuffer+integer(round(273.15)*4096.0);
-
-	-- Converted and scaled temperature value
-	signal temp_value 		: std_logic_vector(9 downto 0);
 
 	-- Synchronize incoming temperature to the clock
 	signal temp_sync0, temp_sync : std_logic_vector(temperature'range);
@@ -84,13 +74,13 @@ architecture Behavioral of TemperatureSensorInterface is
 	signal temp_xad_celsius : std_logic_vector(temp_xad_offset'length-8-1 downto 0); --23bit
 	-- Signal storing the FPGA temperature limited to between 0C and 80C * 16
 	signal temp_xad_capped : std_logic_vector(temp_xad_celsius'high-1 downto 0); --no sign bit
-	-- The temperature scaled to pixels
-	signal temp_xad_px_scaled : std_logic_vector(temp_xad_capped'high+CELSIUS_TO_PIXELS'high+1 downto temp_xad_capped'low);
+	
+	signal temp : std_logic_vector(7 downto 0);
 begin
 	clk<=clk_i;
 	reset<=rst_i;
 	
-	temperatureCelcius<=to_integer(signed(temp_xad_capped));
+	temperatureCelcius<=to_integer(unsigned(temp));
 	
 	Inst_FPGAMonitor: entity work.FPGAMonitor PORT MAP(
 		CLK_I          => clk,
@@ -120,8 +110,8 @@ begin
 				temp_xad_capped <= temp_xad_celsius(temp_xad_celsius'high-1 downto 0); --get rid of the sign bit
 			end if;
 			
-			temp_xad_px_scaled <= temp_xad_capped * CELSIUS_TO_PIXELS; --scale to pixels
-	end if;
+			temp<=temp_xad_capped(11 downto 4); -- remove all data under 0C (decimals)
+		end if;
 end process;
 end Behavioral;
 
