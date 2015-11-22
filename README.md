@@ -23,6 +23,14 @@ Temperature sensor used was
 ######Power supply
 used: (link here)  
 
+###PWM Control Signal Info
+PWM output is configured on JA pin 1 (ja(0)).  
+0 to 100% duty cycle modulation with 6-bit resolution. 0 to 3.3VDC.  
+External circuit needed to power the dc motor.  
+
+##Motor Driver Circuit
+3.3VDC to 5.0VDC logic shifter for pwm dc motor control.   
+
 ###Bus Info
 Module communication is handled by the Wishbone bus.  
 TemperatureControlMaster, wb_vga are Wishbone masters  
