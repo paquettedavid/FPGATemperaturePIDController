@@ -53,7 +53,7 @@ architecture Behavioral of TemperatureControlMaster is
 	signal pidProportionalGain : integer range 0 to 10:=1;
 	signal pidIntegralGain: integer range 0 to 10:=1;
 	signal pidDerivativeGain: integer range 0 to 10:=1;
-	signal tx, rx, rx_sync, reset, reset_sync,tx_sig,onemsec_clk : std_logic;
+	signal tx, rx, rx_sync, reset, reset_sync,tx_sig,onemsec_clk,pwm_clk : std_logic;
 	
 	signal eightBitBuffer : std_logic_vector(7 downto 0):=(others=>'0');
 begin
@@ -67,6 +67,15 @@ begin
 				reset => rst_i, 
 				clk_out => onemsec_clk 
 			);	
+			
+			
+		pwmFreqClock : entity work.clock_divider
+			generic map ( divisor => 10000 )
+			port map ( 
+				clk_in => clk_i, 
+				reset => rst_i, 
+				clk_out => pwm_clk 
+			);
 --	memoryWriter : entity work.MemoryWriter
 --		port map ( clk_i => clk_i, rst_i => rst_i , 
 --		  adr_o => adr_o, dat_i => dat_i, dat_o => dat_o,
@@ -102,7 +111,7 @@ begin
 		port map(--fanSpeed=>fanSpeedPercent,
 					fanSpeed=>desiredTemperature,
 					pwmPinOut=>pwmOut,
-					clk_i=>clk_i);
+					clk_i=>onemsec_clk);
 		
 	serialController : entity work.ValuesToSerial
 	port map  (  

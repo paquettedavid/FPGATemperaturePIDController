@@ -8,7 +8,67 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/ButtonDebounceLibrary/ButtonDebouncer.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/ButtonDebounceLibrary/ButtonOnePressFilter.vhd&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/DCFanInterface.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/MemoryWriter.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/PIDController.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/TemperatureControlMaster.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/TemperatureControlProject.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/TemperatureSensorInterface.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/TemperatureSensorLibrary/FPGAMonitor.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/TemperatureSensorLibrary/LocalRst.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/TemperatureSetpointControl.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/UARTSerialLibrary/ValuesToSerial.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/UARTSerialLibrary/uart.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/VGALibrary/char8x12_lookup_table.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/VGALibrary/clock_divider_skeleton.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/VGALibrary/scancode2ascii.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/VGALibrary/wb_bram.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/VGALibrary/wb_vga640x480.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/WishboneLibrary/wb_arbiter.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/WishboneLibrary/wb_intercon.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;H:/ECE4401/FinalProject/FinalProject/src/clk200.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
