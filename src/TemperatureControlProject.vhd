@@ -39,6 +39,7 @@ entity TemperatureControlProject is
 			uart_txd_in :  in std_logic;
 			btnd : in std_logic;
 			btnu : in std_logic;
+			ja : out std_logic_vector(7 downto 0);
 			CPU_RESETN : in std_logic;
 			CLK100MHZ : in std_logic
 			);
@@ -79,14 +80,13 @@ architecture Behavioral of TemperatureControlProject is
 
 	signal sys_clk, sys_rst : std_logic;
 	signal clk200	 : std_logic;
-
-
+	signal pmod : std_logic_vector(7 downto 0):=(others=>'0');
 
 
 begin
 
  	sys_rst <= cpu_resetn;
-
+	ja<=pmod;
 
 	clock200_inst : entity work.clk200
 		port map ( clk_in1 => clk100mhz, clk_out1 => sys_clk, clk_out2 => clk200 ); 
@@ -106,7 +106,8 @@ begin
 					  adr_o => adr_o_m0, dat_i => drd, dat_o => dat_o_m0,
 					  ack_i => ack_i_m(0), cyc_o => cyc_o_m(0), stb_o => stb_o_m(0), 
 					  we_o => we_o_m(0), tx_in=>uart_txd_in, rx_out=>uart_rxd_out,
-					  incrementSetpointButton=>btnu, decrememntSetpointButton=>btnd);
+					  incrementSetpointButton=>btnu, decrememntSetpointButton=>btnd,
+					  pwmOut=>pmod(0));
 
 --	vga : entity work.wb_vga640x480 
 --		port map ( clk_i => sys_clk, rst_i => sys_rst, 
@@ -123,6 +124,6 @@ begin
 	
 	cyc_o_m(3) <= '0';
 	cyc_o_m(2) <= '0';
-	
+	--pmod(7 downto 1)<=(others=>'0');
 	
 end Behavioral;

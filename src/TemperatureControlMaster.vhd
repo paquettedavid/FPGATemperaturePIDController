@@ -40,6 +40,7 @@ entity TemperatureControlMaster is
 			 rx_out : out std_logic;
 			 tx_in :  in std_logic;
 			 incrementSetpointButton : in std_logic;
+			 pwmOut : out std_logic;
 			 decrememntSetpointButton : in std_logic
 		);
 end TemperatureControlMaster;
@@ -98,7 +99,10 @@ begin
 					temperatureCelcius=>currentTemperature);
 
 	dcFanInterface: entity work.dcFanInterface
-		port map(fanSpeed=>fanSpeedPercent);
+		port map(--fanSpeed=>fanSpeedPercent,
+					fanSpeed=>desiredTemperature,
+					pwmPinOut=>pwmOut,
+					clk_i=>clk_i);
 		
 	serialController : entity work.ValuesToSerial
 	port map  (  

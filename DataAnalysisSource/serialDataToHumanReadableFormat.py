@@ -1,7 +1,7 @@
 # David Paquette
 # Nov 21, 2015
 # ~ 1 AM
-f = open('d.asc')
+f = open('OpenLoopTests/test2/data.asc')
 file = open('DATA.txt', 'w')
 for line in iter(f):
     #print line

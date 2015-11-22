@@ -19,7 +19,8 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE ieee.numeric_std.ALL;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -30,13 +31,33 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity DCFanInterface is
-	Port(fanSpeed : in integer range 0 to 100);
+	Port(fanSpeed : in integer range 0 to 100;
+			pwmPinOut: out std_logic;
+			clk_i : in std_logic);
 end DCFanInterface;
 
 architecture Behavioral of DCFanInterface is
-
+	signal cnt : std_logic_vector(6 downto 0);
+	signal t : std_logic:='0';
 begin
-	pwmControl : entity work.PWMControl;
-
+	--pwmPinOut <= '1';
+	--pwmPinOut <= data(0);
+	pwmPinOut <= t;
+	
+   process(clk_i)
+   begin
+      if rising_edge(clk_i) then
+         cnt <= cnt + '1';
+      end if;
+   end process;
+   
+   process(fanSpeed, cnt)
+   begin
+      if unsigned(cnt) < fanSpeed then
+         t <= '1';
+      else
+         t <= '0';
+      end if;
+   end process;
 end Behavioral;
 

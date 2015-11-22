@@ -8,9 +8,6 @@
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">uart_txd_in_IBUF</arg> has no load.
 </msg>
 
-<msg type="warning" file="MapLib" num="328" delta="old" >Block <arg fmt="%s" index="1">temperatureControlMaster/dcFanInterface/pwmControl</arg> is not a recognized logical block. The mapper will continue to process the design but there may be design problems if this block does not get trimmed.
-</msg>
-
 <msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
 </msg>
 
