@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.numeric_std.all; 
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -32,9 +33,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity PIDController is
 	Port ( 	samplingRateClock : in std_logic;
 				reset : in std_logic;
-				proportionalGain : in integer range 0 to 10;
-				integralGain: in integer range 0 to 10;
-				derivativeGain: in integer range 0 to 10;
 				setpoint: in integer range 0 to 100;
 				sensorFeedbackValue : in integer range 0 to 100;
 				controlOutput : out integer range 0 to 100
@@ -43,13 +41,17 @@ end PIDController;
 
 architecture Behavioral of PIDController is
 	signal controllerOutput : integer range 0 to 100:=0;
+	constant kp : integer range -100 to 0:=-30;
+	constant ki : integer range -100 to 0:=-12;
+	constant kd : integer range -100 to 0:=0;
 begin
 
 	process(samplingRateClock)
-		variable error : integer range 0 to 100:=0;
-		variable previousError : integer range 0 to 100:=0;
-		variable errorSum: integer range 0 to 100:=0;
-		variable errorChange : integer range 0 to 100:=0; 
+		variable error :  integer range -100 to 100:=0;
+		variable previousError : integer range -100 to 100:=0;
+		variable errorSum:  integer range -100 to 100:=0;
+		variable errorChange:  integer range -100 to 100:=0;
+		variable output:  integer range -1000 to 1000:=0;
 	begin
 		if(reset='0') then
 			error:=0;
@@ -57,15 +59,23 @@ begin
 			errorSum:=0;
 			errorChange:=0;
 		elsif(samplingRateClock'event and samplingRateClock='1') then
-			error := setpoint - sensorFeedbackValue;
+			error := (setpoint - sensorFeedbackValue);
 			errorSum	:= errorSum + error;
 			if(errorSum > 90) then
 				errorSum := 90;
+			elsif(errorSum < -90) then
+				errorSum := -90;
 			end if;
 			errorChange := error - previousError;
-			controllerOutput <= proportionalGain*error + integralGain*errorSum
-										+ derivativeGain*errorChange;
+			output := (integer(kp*error + ki*errorSum
+										+ kd*errorChange))/10;
 			previousError := error;
+			if(output>100) then
+				output := 100;
+			elsif(output<0)then
+			output:=0;
+			end if;
+			controllerOutput<= output;
 		end if;
 	end process;
 end Behavioral;

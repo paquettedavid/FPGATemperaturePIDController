@@ -50,9 +50,6 @@ architecture Behavioral of TemperatureControlMaster is
 	signal desiredTemperature : integer range 0 to 100:=37;
 	signal fanSpeedPercent : integer range 0 to 100:=23;
 	
-	signal pidProportionalGain : integer range 0 to 10:=1;
-	signal pidIntegralGain: integer range 0 to 10:=1;
-	signal pidDerivativeGain: integer range 0 to 10:=1;
 	signal tx, rx, rx_sync, reset, reset_sync,tx_sig,onemsec_clk,pwm_clk : std_logic;
 	
 	signal eightBitBuffer : std_logic_vector(7 downto 0):=(others=>'0');
@@ -88,9 +85,6 @@ begin
 	pidController : entity work.PIDController
 		port map( samplingRateClock=>onemsec_clk,
 				reset=>rst_i,
-				proportionalGain=>pidProportionalGain,
-				integralGain=>pidIntegralGain,
-				derivativeGain=>pidDerivativeGain,
 				setpoint=>desiredTemperature,
 				sensorFeedbackValue=>currentTemperature,
 				controlOutput =>fanSpeedPercent );
