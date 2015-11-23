@@ -52,7 +52,23 @@ Some connection settings:
 ###PID Control/Data Analysis Info
 All data was captured using the serial output, the python script inside the DataAnalysisSource directory converts the serial output to a more readable format(converts the mixed ascii/hex to normal integers) and saves it to a file so it can be read by MATLAB.    
 ###### Control Analysis
-Sampling rate of 10 milliseconds.
+Sampling rate of 0.01 seconds (10 milliseconds)
+
+
+System model:
+
+G(s)=K/(1+Tp1*s)
+where,
+K=-4.7251
+Tp1=-4.4746
+
+Controller:      
+1 
+Kp + Ki*(1/s)
+where,
+Kp=-0.303
+Ki=-0.123
+
   Open loop transfer function was computed using the System Identiitfication toolbox in MATLAB using data collected with the UART module.  
   PID gains were computed using the PIDTuner toolbox in MATLAB.  
   Closed loop transfer function computed in MATLAB.  
