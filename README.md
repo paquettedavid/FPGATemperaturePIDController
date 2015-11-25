@@ -9,6 +9,8 @@ The desired temperature, current temperature and PWM fan speed percent is writte
 The FPGA used is the Nexys4DDR: http://digilentinc.com/nexys4ddr/
 ######DC Fan
  used: (link here)
+ Deadzone from 0 to 20% duty cycle, using power source of 5VDC.
+ PWM frequency tested from 300 to 600Hz.
 ######PWM Motor Driver
  used: (link here)  
 ######Temperature Sensor
