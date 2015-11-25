@@ -67,7 +67,7 @@ begin
 			
 			
 		pwmFreqClock : entity work.clock_divider
-			generic map ( divisor => 10000 )
+			generic map ( divisor => 2000 )
 			port map ( 
 				clk_in => clk_i, 
 				reset => rst_i, 
@@ -105,7 +105,7 @@ begin
 		port map(--fanSpeed=>fanSpeedPercent,
 					fanSpeed=>desiredTemperature,
 					pwmPinOut=>pwmOut,
-					clk_i=>onemsec_clk);
+					clk_i=>pwm_clk);
 		
 	serialController : entity work.ValuesToSerial
 	port map  (  

@@ -29,7 +29,7 @@ end clock_divider;
 
 architecture Behavioral of clock_divider is
 	signal clk : std_logic:='0';
-	signal counter : unsigned(15 downto 0):=(others=>'0');
+	signal counter : unsigned(31 downto 0):=(others=>'0');
 begin													 
 	-- create a process that counts up to divisor/2 and sets the output clock to 1 
 	-- and then counts again to set the output clock to 0 and continue.
@@ -37,12 +37,12 @@ begin
 	process(clk_in,reset)
 	begin
 		if(reset = '0') then
-			counter <= "0000000000000000";
+			counter <= (others=>'0');
 		elsif(clk_in'event and clk_in='1') then
 			counter <= counter + 1;
 			if(counter >= divisor/2) then
 				clk <= not clk;
-				counter <= "0000000000000000";
+				counter <= (others=>'0');
 			end if;
 		else
 			---
