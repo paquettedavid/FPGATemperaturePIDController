@@ -12,7 +12,8 @@ The FPGA used is the Nexys4DDR: http://digilentinc.com/nexys4ddr/
  Deadzone from 0 to 20% duty cycle, using power source of 5VDC.
  PWM frequency tested from 300 to 600Hz.
 ######PWM Motor Driver
- used: (link here)  
+ Used a single power nMOSFET for driving an external 5VDC signal using the onboard 3.3VDC signal.    
+ nMOSFET (Vth(max)=2.35V): https://www.adafruit.com/products/355     
 ######Temperature Sensor
 Used the onboard FPGA temperature sensor on the processor, using the XDAC interface provided by Xilinx 
 ######Serial UART
@@ -23,7 +24,9 @@ BTNU and BTND are used to increment and decrement the setpoint, these are locate
 Any stanard VGA display should work fine  
 Temperature sensor used was
 ######Power supply
-used: (link here)  
+used: (link here)     
+Currently using the built in usb ports on my laptop.
+
 
 ###PWM Control Signal Info
 PWM output is configured on JA pin 1 (ja(0)).  
