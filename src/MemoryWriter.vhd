@@ -58,6 +58,7 @@ architecture Behavioral of MemoryWriter is
 	signal state : StateType := initialzeMemoryState;
 	signal memoryInitilizationComplete : std_logic:='0';
 	signal row, column, line : integer range 0 to 100:=0;
+	signal currentTemperatureTEXT : std_logic_vector(39 downto 0):=x"54656d7020"; --"Temp "
 
 begin
 

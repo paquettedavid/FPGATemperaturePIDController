@@ -81,13 +81,14 @@ architecture Behavioral of TemperatureControlProject is
 	signal sys_clk, sys_rst : std_logic;
 	signal clk200	 : std_logic;
 	signal pmod : std_logic_vector(7 downto 0):=(others=>'0');
-
+	signal hOut :std_logic :='0';
 
 begin
 
  	sys_rst <= cpu_resetn;
 	ja<=pmod;
-
+	pmod(7)<=hOut;
+	
 	clock200_inst : entity work.clk200
 		port map ( clk_in1 => clk100mhz, clk_out1 => sys_clk, clk_out2 => clk200 ); 
 
@@ -115,12 +116,14 @@ begin
 --					  ack_i => ack_i_m(1), cyc_o => cyc_o_m(1), stb_o => stb_o_m(1), 
 --					  we_o => we_o_m(1),
 -- 					  red => vga_r, green => vga_g, blue => vga_b, hsync => vga_hs, vsync => vga_vs);
-
+--
 --	wb_bram : entity work.wb_bram
 --		port map ( clk_i => sys_clk, rst_i => sys_rst, 
 --					  adr_i => adr_i_s, dat_i => dwr, dat_o => dat_o_s0,
 --					  ack_o => ack_o_s(0), stb_i => stb_i_s(0), we_i => we );
-
+					  
+	heater : entity work.GenerateHeat
+		port map ( clk=>sys_clk, reset=>sys_rst, output=>hOut);
 	
 	cyc_o_m(3) <= '0';
 	cyc_o_m(2) <= '0';

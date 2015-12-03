@@ -46,7 +46,7 @@ architecture Behavioral of PIDController is
 	constant kd : integer range -100 to 0:=0;
 begin
 
-	process(samplingRateClock)
+	process(samplingRateClock, reset)
 		variable error :  integer range -100 to 100:=0;
 		variable previousError : integer range -100 to 100:=0;
 		variable errorSum:  integer range -100 to 100:=0;
