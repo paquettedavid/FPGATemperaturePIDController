@@ -55,7 +55,7 @@ architecture Behavioral of TemperatureControlMaster is
 	signal eightBitBuffer : std_logic_vector(7 downto 0):=(others=>'0');
 begin
 
-		--tx_sig <= tx_in;
+		tx_sig <= tx_in;
 		
 		onemsec_clk_divider : entity work.clock_divider
 			generic map ( divisor => 100000 )
@@ -65,30 +65,31 @@ begin
 				clk_out => onemsec_clk 
 			);	
 			
---			
---		pwmFreqClock : entity work.clock_divider
---			generic map ( divisor => 2000 )
---			port map ( 
---				clk_in => clk_i, 
---				reset => rst_i, 
---				clk_out => pwm_clk 
---			);
-	memoryWriter : entity work.MemoryWriter
-		port map ( clk_i => clk_i, rst_i => rst_i , 
-		  adr_o => adr_o, dat_i => dat_i, dat_o => dat_o,
-		  ack_i => ack_i, cyc_o => cyc_o, stb_o => stb_o, 
-		  we_o => we_o, currentTemperature=> currentTemperature,
-		  desiredTemperature=> desiredTemperature,
-		  fanSpeedPercent=> fanSpeedPercent
+			
+	pwmFreqClock : entity work.clock_divider
+			generic map ( divisor => 2000 )
+			port map ( 
+				clk_in => clk_i, 
+				reset => rst_i, 
+				clk_out => pwm_clk 
 		);
+			
+--	memoryWriter : entity work.MemoryWriter
+--		port map ( clk_i => clk_i, rst_i => rst_i , 
+--		  adr_o => adr_o, dat_i => dat_i, dat_o => dat_o,
+--		  ack_i => ack_i, cyc_o => cyc_o, stb_o => stb_o, 
+--		  we_o => we_o, currentTemperature=> currentTemperature,
+--		  desiredTemperature=> desiredTemperature,
+--		  fanSpeedPercent=> fanSpeedPercent
+--		);
 
---	pidController : entity work.PIDController
---		port map( samplingRateClock=>onemsec_clk,
---				reset=>rst_i,
---				setpoint=>desiredTemperature,
---				sensorFeedbackValue=>currentTemperature,
---				controlOutput =>fanSpeedPercent );
---			
+	pidController : entity work.PIDController
+		port map( samplingRateClock=>onemsec_clk,
+				reset=>rst_i,
+				setpoint=>desiredTemperature,
+				sensorFeedbackValue=>currentTemperature,
+				controlOutput =>fanSpeedPercent );
+			
 	temperatureSetPointControl : entity work.TemperatureSetpointControl
 		port map(clk_i=>onemsec_clk,
 					rst_i=>rst_i,
@@ -101,34 +102,33 @@ begin
 						rst_i=>rst_i,
 					temperatureCelcius=>currentTemperature);
 
---	dcFanInterface: entity work.dcFanInterface
---		port map(--fanSpeed=>fanSpeedPercent,
---					fanSpeed=>desiredTemperature,
---					pwmPinOut=>pwmOut,
---					clk_i=>pwm_clk);
---		
---	serialController : entity work.ValuesToSerial
---	port map  (  
---			CLOCK       => clk_i,
---			RESET       => reset, 
---			RX          => rx,
---			TX          => tx,
---		   temperatureIn => eightBitBuffer+currentTemperature,
---		   --fanSpeedIn => eightBitBuffer+fanSpeedPercent
---		   fanSpeedIn => eightBitBuffer+desiredTemperature
---	);
---
---	process (clk_i, rst_i)
---		begin
---			if(rst_i='0') then
---				reset <= '1'; -- the nexys4ddr is active low, so invert reset to use with this serial lib
---			elsif (clk_i'event and clk_i = '1') then
---				reset <='0';
---				rx_sync <= tx_sig; -- the perspective of the tx and rx is reversed for the nexys
---				rx   <= rx_sync;
---				rx_out <= tx;
---			end if;
---	end process;
-rx_out<='0'; --remove these
-tx<=tx_in; --remove these
+	dcFanInterface: entity work.dcFanInterface
+		port map(--fanSpeed=>fanSpeedPercent,
+					fanSpeed=>desiredTemperature,
+					pwmPinOut=>pwmOut,
+					clk_i=>pwm_clk);
+		
+	serialController : entity work.ValuesToSerial
+	port map  (  
+			CLOCK       => clk_i,
+			RESET       => reset, 
+			RX          => rx,
+			TX          => tx,
+		   temperatureIn => eightBitBuffer+currentTemperature,
+		   --fanSpeedIn => eightBitBuffer+fanSpeedPercent
+		   fanSpeedIn => eightBitBuffer+desiredTemperature
+	);
+
+	process (clk_i, rst_i)
+		begin
+			if(rst_i='0') then
+				reset <= '1'; -- the nexys4ddr is active low, so invert reset to use with this serial lib
+			elsif (clk_i'event and clk_i = '1') then
+				reset <='0';
+				rx_sync <= tx_sig; -- the perspective of the tx and rx is reversed for the nexys
+				rx   <= rx_sync;
+				rx_out <= tx;
+			end if;
+	end process;
+
 end Behavioral;
