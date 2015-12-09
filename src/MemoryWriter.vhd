@@ -21,6 +21,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use ieee.numeric_std.all;
 
 ---- Uncomment the following library declaration if instantiating
 ---- any Xilinx primitives in this code.
@@ -54,12 +55,16 @@ architecture Behavioral of MemoryWriter is
 	signal pixels : std_logic_vector(7 downto 0);
 
 	type StateType is (initialzeMemoryState, writeIntialMemoryState, startState, 
-		writePixelToMemory, getPixelData);
+		writePixelToMemory, getPixelData, waitState);
 	signal state : StateType := initialzeMemoryState;
 	signal memoryInitilizationComplete : std_logic:='0';
 	signal row, column, line : integer range 0 to 100:=0;
-	signal currentTemperatureTEXT : std_logic_vector(39 downto 0):=x"54656d7020"; --"Temp "
-
+	signal cletter : std_logic_vector(7 downto 0):=x"63"; --"c"
+	signal dletter : std_logic_vector(7 downto 0):=x"64"; --"d"
+	signal Tletter : std_logic_vector(7 downto 0):=x"54"; --"T"
+	signal equalletter : std_logic_vector(7 downto 0):=x"3d"; --"="
+	signal twoDigitAscii : std_logic_vector(15 downto 0);
+	signal number : integer range 0 to 99:=0;
 begin
 
 	rst_p <= not rst_i;
@@ -70,8 +75,17 @@ begin
 --	 available only at the next clock cycle
 	lut : entity work.char8x12_lookup_table
 		port map( clk => clk_i, reset => rst_p, ascii => ascii, line => line, pixels => pixels );
-		
+	
+	-- two digit int to ascii
+	process(number)
+	begin 
+		twoDigitAscii(15 downto 8)<= x"30" + std_logic_vector(to_unsigned((number-(number mod 10))/10, 8));
+		twoDigitAscii(7 downto 0)<= x"30" + std_logic_vector(to_unsigned((number mod 10), 8));
+	end process;
+	
+	
 	process( clk_i, rst_i, state)
+		variable textCounter : std_logic_vector(15 downto 0):=(others=>'0');
 	begin
 		if ( rst_i = '0' ) then
 			state <= initialzeMemoryState;
@@ -113,27 +127,78 @@ begin
 						state<= initialzeMemoryState;
 					end if;
 				when startState=>
-					column <= 0;
-					line <= 0;
+					column <= 40;
+					line <= 20;
 					row <= 0;
 					stb_o<='0';
 					cyc_o<='0';
+					state<=getPixelData;
 				when getPixelData=>
 					line <= line + 1;
-						if(line >= 11) then
-							--state<=waitForKeyBoardInterrupt;
-								column <= column + 1;
-								line <= 0;
-							if(column>=79) then
-								row <= row + 1;
-								column <=0;
-								if(row >= 39) then
-									row<= 0;
-								end if;
-							end if;
-						else
-							state<=writePixelToMemory;
+					stb_o<='0';
+					cyc_o<='0';
+					if(textCounter=0) then
+					--print c
+						ascii <= cletter;
+						number <= 23; -- queue up current temp for ascii conversion
+					elsif(textCounter=1) then
+					--print T
+						ascii <= Tletter;
+					elsif(textCounter=2) then
+					--print =
+						ascii <= equalletter;
+					elsif(textCounter=3) then
+					--print first digit of current temp
+						ascii <= twoDigitAscii(15 downto 8);
+					elsif(textCounter=4) then
+					--print second digit of current temp
+						ascii <= twoDigitAscii(7 downto 0);
+					elsif(textCounter=5) then
+					--print d
+						ascii <= dletter;
+						number <= 54; --queue up desired temp for ascii conversion
+					elsif(textCounter=6) then
+					--print T
+						ascii <= Tletter;
+					elsif(textCounter=7) then
+					--print =
+						ascii <= equalletter;
+					elsif(textCounter=8) then
+					--print first digit of desired temp
+						ascii <= twoDigitAscii(15 downto 8);
+					elsif(textCounter=9) then
+						ascii <= twoDigitAscii(7 downto 0);
+					end if;
+					if(line >= 11) then
+						column <= column + 1;
+						line <= 0;
+						textCounter := textCounter + 1;
+						if(textCounter = 0 )then
+						elsif(textCounter = 1) then
+							column <= column + 1;
+						elsif(textCounter = 2) then
+							column <= column + 1;
+						elsif(textCounter = 3) then
+							column <= column + 1;
+						elsif(textCounter = 4) then
+							row <= row + 1;
+							column <= 40;
+						elsif(textCounter = 5) then
+						elsif(textCounter = 6) then
+							column <= column + 1;
+						elsif(textCounter = 7) then
+							column <= column + 1;
+						elsif(textCounter = 8) then
+							column <= column + 1;
+						elsif(textCounter = 9) then
+							column <= column + 1;
+						elsif(textCounter > 9) then
+							column <= 40;
+							row <=20;
 						end if;
+					else
+						state<=writePixelToMemory;
+					end if;
 				when writePixelToMemory=>
 					stb_o<='1';
 					we_o <='1';
@@ -150,6 +215,8 @@ begin
 					if(ack_i='1') then
 						state<=getPixelData;
 					end if;
+				when waitState=>
+
 			end case;
 		end if;
 	end process;
