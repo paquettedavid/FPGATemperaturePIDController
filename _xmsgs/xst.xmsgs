@@ -731,4 +731,829 @@
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">bram_addr_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_bram</arg>&gt;.
 </msg>
 
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">adr_o</arg>&lt;<arg fmt="%d" index="2">31</arg>:<arg fmt="%d" index="3">22</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">MemoryWriter</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">bram_addr</arg>&lt;<arg fmt="%d" index="2">15</arg>:<arg fmt="%d" index="3">9</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_bram</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2385" delta="new" >HDL ADVISOR - You can improve the performance of the multiplier <arg fmt="%s" index="1">Mmult_temp_sync[11]_PWR_30_o_MuLt_1_OUT</arg> by adding <arg fmt="%d" index="2">1</arg> register level(s).
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_bram_select[6]_GND_71_o_Mux_6_o</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_line_buffer</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">temp_xad_capped_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureSensorInterface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">temp_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureSensorInterface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">adr_o_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">adr_o_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">LGNT2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_arbiter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">LGNT3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_arbiter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">LMAS1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_arbiter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dat_o_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dat_o_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dat_o_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dat_o_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dat_o_16</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dat_o_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dat_o_24</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dat_o_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">lut/bram2</arg> in unit <arg fmt="%s" index="2">lut/bram2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">lut/bram1</arg> in unit <arg fmt="%s" index="2">lut/bram1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[0].bram</arg> in unit <arg fmt="%s" index="2">gen1[0].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[1].bram</arg> in unit <arg fmt="%s" index="2">gen1[1].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[2].bram</arg> in unit <arg fmt="%s" index="2">gen1[2].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[3].bram</arg> in unit <arg fmt="%s" index="2">gen1[3].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[4].bram</arg> in unit <arg fmt="%s" index="2">gen1[4].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[5].bram</arg> in unit <arg fmt="%s" index="2">gen1[5].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[6].bram</arg> in unit <arg fmt="%s" index="2">gen1[6].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[7].bram</arg> in unit <arg fmt="%s" index="2">gen1[7].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[8].bram</arg> in unit <arg fmt="%s" index="2">gen1[8].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[9].bram</arg> in unit <arg fmt="%s" index="2">gen1[9].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[10].bram</arg> in unit <arg fmt="%s" index="2">gen1[10].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[11].bram</arg> in unit <arg fmt="%s" index="2">gen1[11].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[12].bram</arg> in unit <arg fmt="%s" index="2">gen1[12].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[13].bram</arg> in unit <arg fmt="%s" index="2">gen1[13].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[14].bram</arg> in unit <arg fmt="%s" index="2">gen1[14].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[15].bram</arg> in unit <arg fmt="%s" index="2">gen1[15].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[16].bram</arg> in unit <arg fmt="%s" index="2">gen1[16].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[17].bram</arg> in unit <arg fmt="%s" index="2">gen1[17].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[18].bram</arg> in unit <arg fmt="%s" index="2">gen1[18].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[19].bram</arg> in unit <arg fmt="%s" index="2">gen1[19].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[20].bram</arg> in unit <arg fmt="%s" index="2">gen1[20].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[21].bram</arg> in unit <arg fmt="%s" index="2">gen1[21].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[22].bram</arg> in unit <arg fmt="%s" index="2">gen1[22].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[23].bram</arg> in unit <arg fmt="%s" index="2">gen1[23].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[24].bram</arg> in unit <arg fmt="%s" index="2">gen1[24].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[25].bram</arg> in unit <arg fmt="%s" index="2">gen1[25].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[26].bram</arg> in unit <arg fmt="%s" index="2">gen1[26].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[27].bram</arg> in unit <arg fmt="%s" index="2">gen1[27].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[28].bram</arg> in unit <arg fmt="%s" index="2">gen1[28].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[29].bram</arg> in unit <arg fmt="%s" index="2">gen1[29].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[30].bram</arg> in unit <arg fmt="%s" index="2">gen1[30].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[31].bram</arg> in unit <arg fmt="%s" index="2">gen1[31].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[32].bram</arg> in unit <arg fmt="%s" index="2">gen1[32].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[33].bram</arg> in unit <arg fmt="%s" index="2">gen1[33].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[34].bram</arg> in unit <arg fmt="%s" index="2">gen1[34].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[35].bram</arg> in unit <arg fmt="%s" index="2">gen1[35].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[36].bram</arg> in unit <arg fmt="%s" index="2">gen1[36].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[37].bram</arg> in unit <arg fmt="%s" index="2">gen1[37].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[38].bram</arg> in unit <arg fmt="%s" index="2">gen1[38].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[39].bram</arg> in unit <arg fmt="%s" index="2">gen1[39].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[40].bram</arg> in unit <arg fmt="%s" index="2">gen1[40].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[41].bram</arg> in unit <arg fmt="%s" index="2">gen1[41].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[42].bram</arg> in unit <arg fmt="%s" index="2">gen1[42].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[43].bram</arg> in unit <arg fmt="%s" index="2">gen1[43].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[44].bram</arg> in unit <arg fmt="%s" index="2">gen1[44].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[45].bram</arg> in unit <arg fmt="%s" index="2">gen1[45].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[46].bram</arg> in unit <arg fmt="%s" index="2">gen1[46].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[47].bram</arg> in unit <arg fmt="%s" index="2">gen1[47].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[48].bram</arg> in unit <arg fmt="%s" index="2">gen1[48].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[49].bram</arg> in unit <arg fmt="%s" index="2">gen1[49].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[50].bram</arg> in unit <arg fmt="%s" index="2">gen1[50].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[51].bram</arg> in unit <arg fmt="%s" index="2">gen1[51].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[52].bram</arg> in unit <arg fmt="%s" index="2">gen1[52].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[53].bram</arg> in unit <arg fmt="%s" index="2">gen1[53].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[54].bram</arg> in unit <arg fmt="%s" index="2">gen1[54].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[55].bram</arg> in unit <arg fmt="%s" index="2">gen1[55].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[56].bram</arg> in unit <arg fmt="%s" index="2">gen1[56].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[57].bram</arg> in unit <arg fmt="%s" index="2">gen1[57].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[58].bram</arg> in unit <arg fmt="%s" index="2">gen1[58].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[59].bram</arg> in unit <arg fmt="%s" index="2">gen1[59].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[60].bram</arg> in unit <arg fmt="%s" index="2">gen1[60].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[61].bram</arg> in unit <arg fmt="%s" index="2">gen1[61].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[62].bram</arg> in unit <arg fmt="%s" index="2">gen1[62].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[63].bram</arg> in unit <arg fmt="%s" index="2">gen1[63].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[64].bram</arg> in unit <arg fmt="%s" index="2">gen1[64].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[65].bram</arg> in unit <arg fmt="%s" index="2">gen1[65].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[66].bram</arg> in unit <arg fmt="%s" index="2">gen1[66].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[67].bram</arg> in unit <arg fmt="%s" index="2">gen1[67].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[68].bram</arg> in unit <arg fmt="%s" index="2">gen1[68].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[69].bram</arg> in unit <arg fmt="%s" index="2">gen1[69].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[70].bram</arg> in unit <arg fmt="%s" index="2">gen1[70].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[71].bram</arg> in unit <arg fmt="%s" index="2">gen1[71].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[72].bram</arg> in unit <arg fmt="%s" index="2">gen1[72].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[73].bram</arg> in unit <arg fmt="%s" index="2">gen1[73].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[74].bram</arg> in unit <arg fmt="%s" index="2">gen1[74].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[75].bram</arg> in unit <arg fmt="%s" index="2">gen1[75].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[76].bram</arg> in unit <arg fmt="%s" index="2">gen1[76].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[77].bram</arg> in unit <arg fmt="%s" index="2">gen1[77].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[78].bram</arg> in unit <arg fmt="%s" index="2">gen1[78].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[79].bram</arg> in unit <arg fmt="%s" index="2">gen1[79].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[80].bram</arg> in unit <arg fmt="%s" index="2">gen1[80].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[81].bram</arg> in unit <arg fmt="%s" index="2">gen1[81].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[82].bram</arg> in unit <arg fmt="%s" index="2">gen1[82].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[83].bram</arg> in unit <arg fmt="%s" index="2">gen1[83].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[84].bram</arg> in unit <arg fmt="%s" index="2">gen1[84].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[85].bram</arg> in unit <arg fmt="%s" index="2">gen1[85].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[86].bram</arg> in unit <arg fmt="%s" index="2">gen1[86].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[87].bram</arg> in unit <arg fmt="%s" index="2">gen1[87].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[88].bram</arg> in unit <arg fmt="%s" index="2">gen1[88].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[89].bram</arg> in unit <arg fmt="%s" index="2">gen1[89].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[90].bram</arg> in unit <arg fmt="%s" index="2">gen1[90].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[91].bram</arg> in unit <arg fmt="%s" index="2">gen1[91].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[92].bram</arg> in unit <arg fmt="%s" index="2">gen1[92].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[93].bram</arg> in unit <arg fmt="%s" index="2">gen1[93].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[94].bram</arg> in unit <arg fmt="%s" index="2">gen1[94].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[95].bram</arg> in unit <arg fmt="%s" index="2">gen1[95].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[96].bram</arg> in unit <arg fmt="%s" index="2">gen1[96].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[97].bram</arg> in unit <arg fmt="%s" index="2">gen1[97].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[98].bram</arg> in unit <arg fmt="%s" index="2">gen1[98].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[99].bram</arg> in unit <arg fmt="%s" index="2">gen1[99].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[100].bram</arg> in unit <arg fmt="%s" index="2">gen1[100].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[101].bram</arg> in unit <arg fmt="%s" index="2">gen1[101].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[102].bram</arg> in unit <arg fmt="%s" index="2">gen1[102].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[103].bram</arg> in unit <arg fmt="%s" index="2">gen1[103].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[104].bram</arg> in unit <arg fmt="%s" index="2">gen1[104].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[105].bram</arg> in unit <arg fmt="%s" index="2">gen1[105].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[106].bram</arg> in unit <arg fmt="%s" index="2">gen1[106].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[107].bram</arg> in unit <arg fmt="%s" index="2">gen1[107].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[108].bram</arg> in unit <arg fmt="%s" index="2">gen1[108].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[109].bram</arg> in unit <arg fmt="%s" index="2">gen1[109].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[110].bram</arg> in unit <arg fmt="%s" index="2">gen1[110].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[111].bram</arg> in unit <arg fmt="%s" index="2">gen1[111].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[112].bram</arg> in unit <arg fmt="%s" index="2">gen1[112].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[113].bram</arg> in unit <arg fmt="%s" index="2">gen1[113].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[114].bram</arg> in unit <arg fmt="%s" index="2">gen1[114].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[115].bram</arg> in unit <arg fmt="%s" index="2">gen1[115].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[116].bram</arg> in unit <arg fmt="%s" index="2">gen1[116].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[117].bram</arg> in unit <arg fmt="%s" index="2">gen1[117].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[118].bram</arg> in unit <arg fmt="%s" index="2">gen1[118].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[119].bram</arg> in unit <arg fmt="%s" index="2">gen1[119].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[120].bram</arg> in unit <arg fmt="%s" index="2">gen1[120].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[121].bram</arg> in unit <arg fmt="%s" index="2">gen1[121].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[122].bram</arg> in unit <arg fmt="%s" index="2">gen1[122].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[123].bram</arg> in unit <arg fmt="%s" index="2">gen1[123].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[124].bram</arg> in unit <arg fmt="%s" index="2">gen1[124].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[125].bram</arg> in unit <arg fmt="%s" index="2">gen1[125].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[126].bram</arg> in unit <arg fmt="%s" index="2">gen1[126].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">gen1[127].bram</arg> in unit <arg fmt="%s" index="2">gen1[127].bram</arg> of type <arg fmt="%s" index="3">RAMB16_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/temperatureSensor/temp_xad_offset_30</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">9 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;temperatureControlMaster/temperatureSensor/temp_xad_offset_29&gt; &lt;temperatureControlMaster/temperatureSensor/temp_xad_offset_28&gt; &lt;temperatureControlMaster/temperatureSensor/temp_xad_offset_27&gt; &lt;temperatureControlMaster/temperatureSensor/temp_xad_offset_26&gt; &lt;temperatureControlMaster/temperatureSensor/temp_xad_offset_25&gt; &lt;temperatureControlMaster/temperatureSensor/temp_xad_offset_24&gt; &lt;temperatureControlMaster/temperatureSensor/temp_xad_offset_23&gt; &lt;temperatureControlMaster/temperatureSensor/temp_xad_offset_22&gt; &lt;temperatureControlMaster/temperatureSensor/temp_xad_offset_21&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/temperatureSensor/temp_xad_celsius_22</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">9 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;temperatureControlMaster/temperatureSensor/temp_xad_celsius_21&gt; &lt;temperatureControlMaster/temperatureSensor/temp_xad_celsius_20&gt; &lt;temperatureControlMaster/temperatureSensor/temp_xad_celsius_19&gt; &lt;temperatureControlMaster/temperatureSensor/temp_xad_celsius_18&gt; &lt;temperatureControlMaster/temperatureSensor/temp_xad_celsius_17&gt; &lt;temperatureControlMaster/temperatureSensor/temp_xad_celsius_16&gt; &lt;temperatureControlMaster/temperatureSensor/temp_xad_celsius_15&gt; &lt;temperatureControlMaster/temperatureSensor/temp_xad_celsius_14&gt; &lt;temperatureControlMaster/temperatureSensor/temp_xad_celsius_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dat_o_29</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MemoryWriter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dat_o_30&gt; &lt;dat_o_31&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dat_o_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MemoryWriter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dat_o_2&gt; &lt;dat_o_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dat_o_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MemoryWriter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dat_o_6&gt; &lt;dat_o_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dat_o_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MemoryWriter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dat_o_10&gt; &lt;dat_o_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dat_o_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MemoryWriter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dat_o_14&gt; &lt;dat_o_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dat_o_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MemoryWriter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dat_o_22&gt; &lt;dat_o_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dat_o_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MemoryWriter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dat_o_18&gt; &lt;dat_o_19&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dat_o_25</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MemoryWriter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dat_o_26&gt; &lt;dat_o_27&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">textCounter_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ascii_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">MemoryWriter</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">adr_o&lt;1&gt;</arg> and <arg fmt="%s" index="3">ascii&lt;7&gt;</arg> <arg fmt="%s" index="4">ascii&lt;7&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">textCounter_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">textCounter_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">textCounter_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ascii_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MemoryWriter</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">MemoryWriter</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">adr_o&lt;1&gt;</arg> and <arg fmt="%s" index="3">ascii&lt;7&gt;</arg> <arg fmt="%s" index="4">ascii&lt;7&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/memoryWriter/adr_o_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/memoryWriter/adr_o_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/memoryWriter/adr_o_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">temperatureControlMaster/memoryWriter/adr_o_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/onemsec_clk_divider/counter_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/onemsec_clk_divider/counter_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/onemsec_clk_divider/counter_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/onemsec_clk_divider/counter_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/onemsec_clk_divider/counter_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/onemsec_clk_divider/counter_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/onemsec_clk_divider/counter_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/onemsec_clk_divider/counter_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/onemsec_clk_divider/counter_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/onemsec_clk_divider/counter_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/onemsec_clk_divider/counter_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/onemsec_clk_divider/counter_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/onemsec_clk_divider/counter_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/onemsec_clk_divider/counter_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/onemsec_clk_divider/counter_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/onemsec_clk_divider/counter_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">vga/clk_divider/counter_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TemperatureControlProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wb_bram/bram_di_10&gt; &lt;wb_bram/bram_di_9&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;11&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;10&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;10&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;10&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;9&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;9&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wb_bram/bram_di_14&gt; &lt;wb_bram/bram_di_13&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;15&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;14&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;14&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;14&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;13&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;13&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_23</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wb_bram/bram_di_22&gt; &lt;wb_bram/bram_di_21&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;23&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;22&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;22&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;22&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;21&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;21&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wb_bram/bram_di_2&gt; &lt;wb_bram/bram_di_1&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;3&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;2&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;2&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;2&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;1&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;1&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wb_bram/bram_di_18&gt; &lt;wb_bram/bram_di_17&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;19&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;18&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;18&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;18&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;17&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;17&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_31</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wb_bram/bram_di_30&gt; &lt;wb_bram/bram_di_29&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;31&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;30&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;30&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;30&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;29&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;29&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_27</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wb_bram/bram_di_26&gt; &lt;wb_bram/bram_di_25&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;27&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;26&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;26&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;26&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;25&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;25&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_di_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wb_bram/bram_di_6&gt; &lt;wb_bram/bram_di_5&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;7&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;6&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;6&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;6&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;5&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;5&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">wb_bram/bram_we</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">8 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wb_bram/bram_di_28&gt; &lt;wb_bram/bram_di_24&gt; &lt;wb_bram/bram_di_20&gt; &lt;wb_bram/bram_di_16&gt; &lt;wb_bram/bram_di_12&gt; &lt;wb_bram/bram_di_8&gt; &lt;wb_bram/bram_di_4&gt; &lt;wb_bram/bram_di_0&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_we</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;28&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;28&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;28&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;24&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;24&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;24&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;20&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;20&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;20&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;16&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;16&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;16&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;12&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;12&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;12&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;8&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;8&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;12&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;4&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;4&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">TemperatureControlProject</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">wb_bram/bram_di&lt;12&gt;</arg> and <arg fmt="%s" index="3">wb_bram/bram_di&lt;0&gt;</arg> <arg fmt="%s" index="4">wb_bram/bram_di&lt;0&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">temperatureControlMaster/memoryWriter/stb_o</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TemperatureControlProject</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;temperatureControlMaster/memoryWriter/we_o&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="741" delta="new" >HDL ADVISOR - A <arg fmt="%d" index="1">4</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">temperatureControlMaster/temperatureSensor/Inst_FPGAMonitor/Sync_Reset/RstQ_4</arg>&gt; and currently occupies <arg fmt="%d" index="3">4</arg> logic cells (<arg fmt="%d" index="4">2</arg> slices). Removing the set/reset logic would take advantage of SRL<arg fmt="%d" index="5">32</arg> (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
 </messages>
