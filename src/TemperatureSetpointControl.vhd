@@ -38,7 +38,7 @@ entity TemperatureSetpointControl is
 end TemperatureSetpointControl;
 
 architecture Behavioral of TemperatureSetpointControl is
-	signal setpoint : integer range 0 to 100:=37;
+	signal setpoint : integer range 0 to 100:=35;
 	signal decrementSetpoint, incrementSetpoint : std_logic:='0';
 begin
 
@@ -61,7 +61,7 @@ begin
 	process (clk_i, rst_i)
 	begin
 		if(rst_i='0') then
-			--
+			setpoint <= 35;
 		elsif (clk_i'event and clk_i = '1') then
 			if(decrementSetpoint='1') then
 				setpoint<= setpoint - 1;

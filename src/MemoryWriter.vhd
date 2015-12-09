@@ -127,20 +127,18 @@ begin
 						state<= initialzeMemoryState;
 					end if;
 				when startState=>
-					column <= 40;
-					line <= 20;
-					row <= 0;
+					column <= 39;
+					line <= 0;
+					row <= 19;
 					stb_o<='0';
 					cyc_o<='0';
 					state<=getPixelData;
 				when getPixelData=>
 					line <= line + 1;
-					stb_o<='0';
-					cyc_o<='0';
 					if(textCounter=0) then
 					--print c
 						ascii <= cletter;
-						number <= 23; -- queue up current temp for ascii conversion
+						number <= currentTemperature; -- queue up current temp for ascii conversion
 					elsif(textCounter=1) then
 					--print T
 						ascii <= Tletter;
@@ -156,7 +154,7 @@ begin
 					elsif(textCounter=5) then
 					--print d
 						ascii <= dletter;
-						number <= 54; --queue up desired temp for ascii conversion
+						number <= desiredTemperature; --queue up desired temp for ascii conversion
 					elsif(textCounter=6) then
 					--print T
 						ascii <= Tletter;
@@ -181,9 +179,10 @@ begin
 						elsif(textCounter = 3) then
 							column <= column + 1;
 						elsif(textCounter = 4) then
-							row <= row + 1;
-							column <= 40;
+							column <= column + 1;
 						elsif(textCounter = 5) then
+							column <= 39;
+							row <= row + 1;
 						elsif(textCounter = 6) then
 							column <= column + 1;
 						elsif(textCounter = 7) then
@@ -193,8 +192,9 @@ begin
 						elsif(textCounter = 9) then
 							column <= column + 1;
 						elsif(textCounter > 9) then
-							column <= 40;
-							row <=20;
+							column <= 39;
+							row <=19;
+							textCounter := (others=>'0');
 						end if;
 					else
 						state<=writePixelToMemory;
@@ -213,6 +213,9 @@ begin
 					if(pixels(6)='1')then dat_o(27 downto 24) <= txtcolor;else dat_o(27 downto 24) <= bgcolor;end if;
 					if(pixels(7)='1')then dat_o(31 downto 28) <= txtcolor;else dat_o(31 downto 28) <= bgcolor;end if;
 					if(ack_i='1') then
+						stb_o<='0';
+						cyc_o<='0';
+						we_o <='0';
 						state<=getPixelData;
 					end if;
 				when waitState=>

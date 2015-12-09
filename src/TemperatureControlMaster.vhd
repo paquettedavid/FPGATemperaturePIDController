@@ -57,14 +57,14 @@ begin
 
 		--tx_sig <= tx_in;
 		
---		onemsec_clk_divider : entity work.clock_divider
---			generic map ( divisor => 100000 )
---			port map ( 
---				clk_in => clk_i, 
---				reset => rst_i, 
---				clk_out => onemsec_clk 
---			);	
---			
+		onemsec_clk_divider : entity work.clock_divider
+			generic map ( divisor => 100000 )
+			port map ( 
+				clk_in => clk_i, 
+				reset => rst_i, 
+				clk_out => onemsec_clk 
+			);	
+			
 --			
 --		pwmFreqClock : entity work.clock_divider
 --			generic map ( divisor => 2000 )
@@ -89,18 +89,18 @@ begin
 --				sensorFeedbackValue=>currentTemperature,
 --				controlOutput =>fanSpeedPercent );
 --			
---	temperatureSetPointControl : entity work.TemperatureSetpointControl
---		port map(clk_i=>onemsec_clk,
---					rst_i=>rst_i,
---					incrementButton=>incrementSetpointButton,
---					decrementButton=>decrememntSetpointButton,
---					selectedTemperature=>desiredTemperature);
---		
---	temperatureSensor : entity work.TemperatureSensorInterface
---		port map ( clk_i=>clk_i,
---						rst_i=>rst_i,
---					temperatureCelcius=>currentTemperature);
---
+	temperatureSetPointControl : entity work.TemperatureSetpointControl
+		port map(clk_i=>onemsec_clk,
+					rst_i=>rst_i,
+					incrementButton=>incrementSetpointButton,
+					decrementButton=>decrememntSetpointButton,
+					selectedTemperature=>desiredTemperature);
+		
+	temperatureSensor : entity work.TemperatureSensorInterface
+		port map ( clk_i=>clk_i,
+						rst_i=>rst_i,
+					temperatureCelcius=>currentTemperature);
+
 --	dcFanInterface: entity work.dcFanInterface
 --		port map(--fanSpeed=>fanSpeedPercent,
 --					fanSpeed=>desiredTemperature,
