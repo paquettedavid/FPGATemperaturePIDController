@@ -46,15 +46,14 @@ entity TemperatureControlMaster is
 end TemperatureControlMaster;
 
 architecture Behavioral of TemperatureControlMaster is
-	signal currentTemperature : integer range 0 to 100:=45;
-	signal desiredTemperature : integer range 0 to 100:=37;
-	signal fanSpeedPercent : integer range 0 to 100:=23;
+	signal currentTemperature : integer range 0 to 100:=0;
+	signal desiredTemperature : integer range 0 to 100:=32;
+	signal fanSpeedPercent : integer range 0 to 100:=0;
 	
 	signal tx, rx, rx_sync, reset, reset_sync,tx_sig,onemsec_clk,pwm_clk : std_logic;
 	
 	signal eightBitBuffer : std_logic_vector(7 downto 0):=(others=>'0');
 begin
-
 		tx_sig <= tx_in;
 		
 		onemsec_clk_divider : entity work.clock_divider
@@ -103,8 +102,8 @@ begin
 					temperatureCelcius=>currentTemperature);
 
 	dcFanInterface: entity work.dcFanInterface
-		port map(--fanSpeed=>fanSpeedPercent,
-					fanSpeed=>desiredTemperature,
+		port map(fanSpeed=>fanSpeedPercent,
+					--fanSpeed=>desiredTemperature,
 					pwmPinOut=>pwmOut,
 					clk_i=>pwm_clk);
 		
@@ -115,8 +114,8 @@ begin
 			RX          => rx,
 			TX          => tx,
 		   temperatureIn => eightBitBuffer+currentTemperature,
-		   --fanSpeedIn => eightBitBuffer+fanSpeedPercent
-		   fanSpeedIn => eightBitBuffer+desiredTemperature
+		   fanSpeedIn => eightBitBuffer+fanSpeedPercent
+		   --fanSpeedIn => eightBitBuffer+desiredTemperature
 	);
 
 	process (clk_i, rst_i)

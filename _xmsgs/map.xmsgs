@@ -8,15 +8,6 @@
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">uart_txd_in_IBUF</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">588</arg> more times for the following (max. 5 shown):
-<arg fmt="%s" index="3">vga/Mram_line_buffer221/SPO,
-vga/Mram_line_buffer213/SPO,
-vga/Mram_line_buffer222/SPO,
-vga/Mram_line_buffer211/SPO,
-vga/Mram_line_buffer193/SPO</arg>
-To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
-</msg>
-
 <msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
 </msg>
 
@@ -33,36 +24,6 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">uart_txd_in_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">vga/Mram_line_buffer3_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">vga/Mram_line_buffer2_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">vga/Mram_line_buffer5_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">vga/Mram_line_buffer4_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">vga/Mram_line_buffer10_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">vga/Mram_line_buffer1_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">vga/Mram_line_buffer6_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">vga/Mram_line_buffer8_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">vga/Mram_line_buffer7_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">vga/Mram_line_buffer9_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
 </messages>

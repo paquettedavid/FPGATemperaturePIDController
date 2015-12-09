@@ -41,16 +41,15 @@ end PIDController;
 
 architecture Behavioral of PIDController is
 	signal controllerOutput : integer range 0 to 100:=0;
-	constant kp : integer range -100 to 0:=-30;
-	constant ki : integer range -100 to 0:=-12;
-	constant kd : integer range -100 to 0:=0;
+	constant kp : integer range -1000 to 0:=-300;
+	constant ki : integer range -1000 to 0:=-2;
+	constant kd : integer range -1000 to 0:=0;
 begin
-
 	process(samplingRateClock, reset)
-		variable error :  integer range -100 to 100:=0;
-		variable previousError : integer range -100 to 100:=0;
-		variable errorSum:  integer range -100 to 100:=0;
-		variable errorChange:  integer range -100 to 100:=0;
+		variable error :  integer range -1000 to 1000:=0;
+		variable previousError : integer range -1000 to 1000:=0;
+		variable errorSum:  integer range -100000 to 100000:=0;
+		variable errorChange:  integer range -1000 to 1000:=0;
 		variable output:  integer range -1000 to 1000:=0;
 	begin
 		if(reset='0') then
@@ -58,25 +57,29 @@ begin
 			previousError:=0;
 			errorSum:=0;
 			errorChange:=0;
+			output:=0;
+			controllerOutput<= 0;
 		elsif(samplingRateClock'event and samplingRateClock='1') then
 			error := (setpoint - sensorFeedbackValue);
 			errorSum	:= errorSum + error;
-			if(errorSum > 90) then
-				errorSum := 90;
-			elsif(errorSum < -90) then
-				errorSum := -90;
+			if(errorSum > 10000) then
+				errorSum := 10000;
+			elsif(errorSum < -10000) then
+				errorSum := -10000;
 			end if;
 			errorChange := error - previousError;
-			output := (integer(kp*error + ki*errorSum
-										+ kd*errorChange))/10;
+			output := (kp*error + ki*errorSum + kd*errorChange)/100;
 			previousError := error;
 			if(output>100) then
 				output := 100;
 			elsif(output<0)then
-			output:=0;
+				output:=0;
 			end if;
 			controllerOutput<= output;
 		end if;
 	end process;
+	
+	controlOutput<=controllerOutput;
+	
 end Behavioral;
 
