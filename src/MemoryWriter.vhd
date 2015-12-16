@@ -67,7 +67,7 @@ architecture Behavioral of MemoryWriter is
 	signal equalletter : std_logic_vector(7 downto 0):=x"3d"; --"="
 	signal twoDigitAscii : std_logic_vector(15 downto 0);
 	signal MVLetters : std_logic_vector(15 downto 0):=x"4d56"; --MV
-	signal number : integer range 0 to 99:=0;
+	signal number : integer range 0 to 100:=0;
 begin
 
 	rst_p <= not rst_i;
@@ -216,13 +216,13 @@ begin
 						elsif(textCounter = 10) then
 							row <=row + 1;
 							column <= 39;
-						elsif(textCOunter=11) then
+						elsif(textCounter=11) then
 							column <= column + 1;
-						elsif(textCOunter=12) then
+						elsif(textCounter=12) then
 							column <= column + 1;
-						elsif(textCOunter=13) then
+						elsif(textCounter=13) then
 							column <= column + 1;
-						elsif(textCOunter=14) then
+						elsif(textCounter=14) then
 							column <= column + 1;
 						elsif(textCounter > 14) then
 							column <= 39;

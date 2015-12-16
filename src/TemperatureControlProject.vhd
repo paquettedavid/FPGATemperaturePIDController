@@ -29,12 +29,11 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity TemperatureControlProject is
     Port (
-    		 VGA_R  : out std_logic_vector(3 downto 0);
-    		 VGA_G  : out std_logic_vector(3 downto 0);
-    		 VGA_B  : out std_logic_vector(3 downto 0);
-          VGA_HS : out std_logic;
-          VGA_VS : out std_logic;
-
+    		VGA_R  : out std_logic_vector(3 downto 0);
+    		VGA_G  : out std_logic_vector(3 downto 0);
+    		VGA_B  : out std_logic_vector(3 downto 0);
+         VGA_HS : out std_logic;
+         VGA_VS : out std_logic;
 			uart_rxd_out : out std_logic;
 			uart_txd_in :  in std_logic;
 			btnd : in std_logic;
@@ -42,7 +41,7 @@ entity TemperatureControlProject is
 			ja : out std_logic_vector(7 downto 0);
 			CPU_RESETN : in std_logic;
 			CLK100MHZ : in std_logic
-			);
+	);
 end TemperatureControlProject;
 
 architecture Behavioral of TemperatureControlProject is
@@ -122,11 +121,10 @@ begin
 					  adr_i => adr_i_s, dat_i => dwr, dat_o => dat_o_s0,
 					  ack_o => ack_o_s(0), stb_i => stb_i_s(0), we_i => we );
 					  
-	--heater : entity work.GenerateHeat
-	--	port map ( clk=>sys_clk, reset=>sys_rst, output=>hOut);
+	heater : entity work.GenerateHeat
+		port map ( clk=>sys_clk, reset=>sys_rst, output=>hOut);
 	
 	cyc_o_m(3) <= '0';
 	cyc_o_m(2) <= '0';
-	--pmod(7 downto 1)<=(others=>'0');
 	
 end Behavioral;
