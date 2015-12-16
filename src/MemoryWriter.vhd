@@ -61,9 +61,12 @@ architecture Behavioral of MemoryWriter is
 	signal row, column, line : integer range 0 to 100:=0;
 	signal cletter : std_logic_vector(7 downto 0):=x"63"; --"c"
 	signal dletter : std_logic_vector(7 downto 0):=x"64"; --"d"
+	signal fletter : std_logic_vector(7 downto 0):=x"66"; --"f"
+	signal Sletter : std_logic_vector(7 downto 0):=x"53"; --"S"
 	signal Tletter : std_logic_vector(7 downto 0):=x"54"; --"T"
 	signal equalletter : std_logic_vector(7 downto 0):=x"3d"; --"="
 	signal twoDigitAscii : std_logic_vector(15 downto 0);
+	signal MVLetters : std_logic_vector(15 downto 0):=x"4d56"; --MV
 	signal number : integer range 0 to 99:=0;
 begin
 
@@ -79,8 +82,12 @@ begin
 	-- two digit int to ascii
 	process(number)
 	begin 
-		twoDigitAscii(15 downto 8)<= x"30" + std_logic_vector(to_unsigned((number-(number mod 10))/10, 8));
-		twoDigitAscii(7 downto 0)<= x"30" + std_logic_vector(to_unsigned((number mod 10), 8));
+		if(number < 100) then
+			twoDigitAscii(15 downto 8)<= x"30" + std_logic_vector(to_unsigned((number-(number mod 10))/10, 8));
+			twoDigitAscii(7 downto 0)<= x"30" + std_logic_vector(to_unsigned((number mod 10), 8));
+		else
+			twoDigitAscii<=MVLetters;
+		end if;
 	end process;
 	
 	
@@ -166,6 +173,21 @@ begin
 						ascii <= twoDigitAscii(15 downto 8);
 					elsif(textCounter=9) then
 						ascii <= twoDigitAscii(7 downto 0);
+					elsif(textCounter=10) then
+					--print f
+						ascii <= fletter;
+						number <= fanSpeedPercent; --queue up fan speed for ascii conversion
+					elsif(textCounter=11) then
+					--print S
+						ascii <= Sletter;
+					elsif(textCounter=12) then
+					--print =
+						ascii <= equalletter;
+					elsif(textCounter=13) then
+					--print first digit of fan speed
+						ascii <= twoDigitAscii(15 downto 8);
+					elsif(textCounter=14) then
+						ascii <= twoDigitAscii(7 downto 0);
 					end if;
 					if(line >= 11) then
 						column <= column + 1;
@@ -191,7 +213,18 @@ begin
 							column <= column + 1;
 						elsif(textCounter = 9) then
 							column <= column + 1;
-						elsif(textCounter > 9) then
+						elsif(textCounter = 10) then
+							row <=row + 1;
+							column <= 39;
+						elsif(textCOunter=11) then
+							column <= column + 1;
+						elsif(textCOunter=12) then
+							column <= column + 1;
+						elsif(textCOunter=13) then
+							column <= column + 1;
+						elsif(textCOunter=14) then
+							column <= column + 1;
+						elsif(textCounter > 14) then
 							column <= 39;
 							row <=19;
 							textCounter := (others=>'0');

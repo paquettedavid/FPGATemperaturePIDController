@@ -40,6 +40,8 @@ end TemperatureSetpointControl;
 architecture Behavioral of TemperatureSetpointControl is
 	signal setpoint : integer range 0 to 100:=32;
 	signal decrementSetpoint, incrementSetpoint : std_logic:='0';
+	signal minValue : integer range 0 to 100:=25;
+	signal maxValue : integer range 0 to 100:=40;
 begin
 
 	selectedTemperature<=setpoint;
@@ -63,10 +65,10 @@ begin
 		if(rst_i='0') then
 			setpoint <= 32;
 		elsif (clk_i'event and clk_i = '1') then
-			if(decrementSetpoint='1') then
+			if(decrementSetpoint='1' and setpoint > minValue) then
 				setpoint<= setpoint - 1;
 			end if;
-			if(incrementSetpoint='1') then
+			if(incrementSetpoint='1' and setpoint < maxValue) then
 				setpoint <= setpoint + 1;
 			end if;
 		end if;

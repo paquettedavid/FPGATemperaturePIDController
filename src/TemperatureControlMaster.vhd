@@ -73,14 +73,14 @@ begin
 				clk_out => pwm_clk 
 		);
 			
---	memoryWriter : entity work.MemoryWriter
---		port map ( clk_i => clk_i, rst_i => rst_i , 
---		  adr_o => adr_o, dat_i => dat_i, dat_o => dat_o,
---		  ack_i => ack_i, cyc_o => cyc_o, stb_o => stb_o, 
---		  we_o => we_o, currentTemperature=> currentTemperature,
---		  desiredTemperature=> desiredTemperature,
---		  fanSpeedPercent=> fanSpeedPercent
---		);
+	memoryWriter : entity work.MemoryWriter
+		port map ( clk_i => clk_i, rst_i => rst_i , 
+		  adr_o => adr_o, dat_i => dat_i, dat_o => dat_o,
+		  ack_i => ack_i, cyc_o => cyc_o, stb_o => stb_o, 
+		  we_o => we_o, currentTemperature=> currentTemperature,
+		  desiredTemperature=> desiredTemperature,
+		  fanSpeedPercent=> fanSpeedPercent
+		);
 
 	pidController : entity work.PIDController
 		port map( samplingRateClock=>onemsec_clk,
