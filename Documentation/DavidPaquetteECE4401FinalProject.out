@@ -1,0 +1,16 @@
+\BOOKMARK [1][-]{section.1}{Objective}{}% 1
+\BOOKMARK [1][-]{section.2}{Introduction}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{High Level Overview}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{VHDL Project Overview}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Temperature Sensor Module}{}% 5
+\BOOKMARK [1][-]{section.4}{Desired Temperature Control Module}{}% 6
+\BOOKMARK [1][-]{section.5}{DC Motor Control Module}{}% 7
+\BOOKMARK [1][-]{section.6}{UART Serial Communication Module}{}% 8
+\BOOKMARK [1][-]{section.7}{VGA BRAM Display Module}{}% 9
+\BOOKMARK [1][-]{section.8}{Digital PID Control Module}{}% 10
+\BOOKMARK [2][-]{subsection.8.1}{Discrete PID Control Background}{section.8}% 11
+\BOOKMARK [2][-]{subsection.8.2}{System Identification}{section.8}% 12
+\BOOKMARK [2][-]{subsection.8.3}{Digital PID Control System Design}{section.8}% 13
+\BOOKMARK [1][-]{section.9}{Temperature Sensor Module}{}% 14
+\BOOKMARK [1][-]{section.10}{References}{}% 15
+\BOOKMARK [1][-]{section.11}{Appendix}{}% 16
