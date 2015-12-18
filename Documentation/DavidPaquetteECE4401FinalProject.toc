@@ -4,13 +4,16 @@
 \contentsline {subsection}{\numberline {2.2}VHDL Project Overview}{2}{subsection.2.2}
 \contentsline {section}{\numberline {3}Temperature Sensor Module}{4}{section.3}
 \contentsline {section}{\numberline {4}Desired Temperature Control Module}{4}{section.4}
-\contentsline {section}{\numberline {5}DC Motor Control Module}{5}{section.5}
-\contentsline {section}{\numberline {6}UART Serial Communication Module}{5}{section.6}
-\contentsline {section}{\numberline {7}VGA BRAM Display Module}{5}{section.7}
-\contentsline {section}{\numberline {8}Digital PID Control Module}{5}{section.8}
-\contentsline {subsection}{\numberline {8.1}Discrete PID Control Background}{5}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}System Identification}{6}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Digital PID Control System Design}{6}{subsection.8.3}
-\contentsline {section}{\numberline {9}Temperature Sensor Module}{6}{section.9}
-\contentsline {section}{\numberline {10}References}{6}{section.10}
-\contentsline {section}{\numberline {11}Appendix}{6}{section.11}
+\contentsline {section}{\numberline {5}DC Motor Control Module}{4}{section.5}
+\contentsline {section}{\numberline {6}UART Serial Communication Module}{6}{section.6}
+\contentsline {subsection}{\numberline {6.1}UART Library Introduction}{6}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Using the UART Component}{6}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Data Encoding}{7}{subsection.6.3}
+\contentsline {section}{\numberline {7}VGA BRAM Display Module}{8}{section.7}
+\contentsline {section}{\numberline {8}Digital PID Control Module}{8}{section.8}
+\contentsline {subsection}{\numberline {8.1}Discrete PID Control Background}{8}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}System Identification}{8}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Digital PID Control System Design}{8}{subsection.8.3}
+\contentsline {section}{\numberline {9}Implementation Images}{9}{section.9}
+\contentsline {section}{\numberline {10}References}{9}{section.10}
+\contentsline {section}{\numberline {11}Appendix}{9}{section.11}

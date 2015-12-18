@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  17 DEC 2015 21:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  17 DEC 2015 23:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -627,90 +627,107 @@ Package gensymb Warning: Not defining \micro.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<images/Overview.png, id=94, 1019.81pt x 650.43pt>
+<images/Overview.png, id=109, 1019.81pt x 650.43pt>
 File: images/Overview.png Graphic file (type png)
  <use images/Overview.png>
 Package pdftex.def Info: images/Overview.png used on input line 50.
 (pdftex.def)             Requested size: 407.91678pt x 260.16739pt.
 
-<images/vhdl_arch.png, id=96, 1057.9525pt x 554.07pt>
+<images/vhdl_arch.png, id=111, 1057.9525pt x 554.07pt>
 File: images/vhdl_arch.png Graphic file (type png)
 
 <use images/vhdl_arch.png>
 Package pdftex.def Info: images/vhdl_arch.png used on input line 57.
 (pdftex.def)             Requested size: 370.28893pt x 193.9274pt.
  [2 <./images/Overview.png>]
-<images/internalFlow.png, id=103, 1067.99pt x 669.50125pt>
+<images/internalFlow.png, id=118, 1067.99pt x 669.50125pt>
 File: images/internalFlow.png Graphic file (type png)
 
 <use images/internalFlow.png>
 Package pdftex.def Info: images/internalFlow.png used on input line 62.
 (pdftex.def)             Requested size: 427.18845pt x 267.79576pt.
  [3 <./images/vhdl_arch.png> <./images/internalFlow.png>] <images/sensorM.png, 
-id=110, 1021.8175pt x 212.795pt>
+id=125, 1021.8175pt x 212.795pt>
 File: images/sensorM.png Graphic file (type png)
 
 <use images/sensorM.png>
 Package pdftex.def Info: images/sensorM.png used on input line 80.
-(pdftex.def)             Requested size: 510.9075pt x 106.39723pt.
+(pdftex.def)             Requested size: 408.71976pt x 85.11649pt.
 
-Overfull \hbox (41.15248pt too wide) in paragraph at lines 80--80
- [] 
- []
-
-<images/nopressMachine.png, id=111, 555.07375pt x 197.73875pt>
+<images/nopressMachine.png, id=126, 555.07375pt x 197.73875pt>
 File: images/nopressMachine.png Graphic file (type png)
 
 <use images/nopressMachine.png>
-Package pdftex.def Info: images/nopressMachine.png used on input line 85.
+Package pdftex.def Info: images/nopressMachine.png used on input line 86.
 (pdftex.def)             Requested size: 277.53618pt x 98.86913pt.
+ [4 <./images/sensorM.png> <./images/nopressMachine.png>] <images/dutyPWM.png, 
+id=135, 339.2675pt x 651.43375pt>
+File: images/dutyPWM.png Graphic file (type png)
 
-<images/pwmSchematic-nowords.png, id=112, 737.27444pt x 453.25336pt>
+<use images/dutyPWM.png>
+Package pdftex.def Info: images/dutyPWM.png used on input line 92.
+(pdftex.def)             Requested size: 135.70459pt x 260.56888pt.
+
+<images/pwmSchematic-nowords.png, id=136, 737.27444pt x 453.25336pt>
 File: images/pwmSchematic-nowords.png Graphic file (type png)
 
 <use images/pwmSchematic-nowords.png>
-Package pdftex.def Info: images/pwmSchematic-nowords.png used on input line 90.
+Package pdftex.def Info: images/pwmSchematic-nowords.png used on input line 99.
 
 (pdftex.def)             Requested size: 368.63632pt x 226.62611pt.
- [4 <./images/sensorM.png> <./images/nopressMachine.png>] [5 <./images/pwmSchem
-atic-nowords.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
+ [5 <./images/dutyPWM.png> <./images/pwmSchematic-nowords.png>] <images/uartIO.
+png, id=145, 780.9175pt x 311.1625pt>
+File: images/uartIO.png Graphic file (type png)
 
-(./DavidPaquetteECE4401FinalProject.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
+<use images/uartIO.png>
+Package pdftex.def Info: images/uartIO.png used on input line 106.
+(pdftex.def)             Requested size: 312.36147pt x 124.46278pt.
+
+<images/uartState.png, id=146, 551.05875pt x 576.1525pt>
+File: images/uartState.png Graphic file (type png)
+
+<use images/uartState.png>
+Package pdftex.def Info: images/uartState.png used on input line 111.
+(pdftex.def)             Requested size: 192.87344pt x 201.65639pt.
+ [6 <./images/uartIO.png> <./images/uartState.png>]
+[7] [8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 209.
+ [9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 209.
+ (./DavidPaquetteECE4401FinalProject.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 209.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 209.
 Package rerunfilecheck Info: File `DavidPaquetteECE4401FinalProject.out' has no
 t changed.
-(rerunfilecheck)             Checksum: F212A23596947E98A1B81B0E31533B13;991.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
+(rerunfilecheck)             Checksum: 4FA17B0F846716201D802551806C400C;1199.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 209.
  ) 
 Here is how much of TeX's memory you used:
- 8223 strings out of 493089
- 116692 string characters out of 6134842
- 253799 words of memory out of 5000000
- 11563 multiletter control sequences out of 15000+600000
+ 8283 strings out of 493089
+ 117531 string characters out of 6134842
+ 258799 words of memory out of 5000000
+ 11600 multiletter control sequences out of 15000+600000
  12413 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,14n,40p,1040b,1933s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,14n,40p,1041b,1218s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on DavidPaquetteECE4401FinalProject.pdf (6 pages, 1787252 bytes)
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on DavidPaquetteECE4401FinalProject.pdf (9 pages, 2092730 bytes)
 .
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 174 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 159 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 266 PDF objects out of 1000 (max. 8388607)
+ 221 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,11 +6,14 @@
 \BOOKMARK [1][-]{section.4}{Desired Temperature Control Module}{}% 6
 \BOOKMARK [1][-]{section.5}{DC Motor Control Module}{}% 7
 \BOOKMARK [1][-]{section.6}{UART Serial Communication Module}{}% 8
-\BOOKMARK [1][-]{section.7}{VGA BRAM Display Module}{}% 9
-\BOOKMARK [1][-]{section.8}{Digital PID Control Module}{}% 10
-\BOOKMARK [2][-]{subsection.8.1}{Discrete PID Control Background}{section.8}% 11
-\BOOKMARK [2][-]{subsection.8.2}{System Identification}{section.8}% 12
-\BOOKMARK [2][-]{subsection.8.3}{Digital PID Control System Design}{section.8}% 13
-\BOOKMARK [1][-]{section.9}{Temperature Sensor Module}{}% 14
-\BOOKMARK [1][-]{section.10}{References}{}% 15
-\BOOKMARK [1][-]{section.11}{Appendix}{}% 16
+\BOOKMARK [2][-]{subsection.6.1}{UART Library Introduction}{section.6}% 9
+\BOOKMARK [2][-]{subsection.6.2}{Using the UART Component}{section.6}% 10
+\BOOKMARK [2][-]{subsection.6.3}{Data Encoding}{section.6}% 11
+\BOOKMARK [1][-]{section.7}{VGA BRAM Display Module}{}% 12
+\BOOKMARK [1][-]{section.8}{Digital PID Control Module}{}% 13
+\BOOKMARK [2][-]{subsection.8.1}{Discrete PID Control Background}{section.8}% 14
+\BOOKMARK [2][-]{subsection.8.2}{System Identification}{section.8}% 15
+\BOOKMARK [2][-]{subsection.8.3}{Digital PID Control System Design}{section.8}% 16
+\BOOKMARK [1][-]{section.9}{Implementation Images}{}% 17
+\BOOKMARK [1][-]{section.10}{References}{}% 18
+\BOOKMARK [1][-]{section.11}{Appendix}{}% 19
