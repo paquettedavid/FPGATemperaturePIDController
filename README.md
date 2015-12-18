@@ -2,7 +2,7 @@
 PID control of a DC fan for regulating FPGA processor temperature, in VHDL.     
    
 Detailed documentation can be found here:
-https://github.com/paquettedavid/FPGATemperaturePIDController/blob/master/Documentation/DavidPaquetteECE4401FinalProject.pdf      
+https://github.com/paquettedavid/FPGATemperaturePIDController/blob/master/Documentation/FinalProjectReportDavidPaquette.pdf     
    
 Complete project overview can be seen here: https://github.com/paquettedavid/FPGATemperaturePIDController/blob/master/Documentation/DesignPresentation.pdf    
 
