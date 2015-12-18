@@ -9,11 +9,13 @@
 \contentsline {subsection}{\numberline {6.1}UART Library Introduction}{6}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Using the UART Component}{6}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Data Encoding}{7}{subsection.6.3}
-\contentsline {section}{\numberline {7}VGA BRAM Display Module}{8}{section.7}
-\contentsline {section}{\numberline {8}Digital PID Control Module}{8}{section.8}
-\contentsline {subsection}{\numberline {8.1}Discrete PID Control Background}{8}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}System Identification}{8}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Digital PID Control System Design}{8}{subsection.8.3}
-\contentsline {section}{\numberline {9}Implementation Images}{9}{section.9}
-\contentsline {section}{\numberline {10}References}{9}{section.10}
-\contentsline {section}{\numberline {11}Appendix}{9}{section.11}
+\contentsline {section}{\numberline {7}VGA BRAM Display Module}{7}{section.7}
+\contentsline {subsection}{\numberline {7.1}VGA Display Overview}{7}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}BRAM Module}{8}{subsection.7.2}
+\contentsline {section}{\numberline {8}Digital PID Control Module}{9}{section.8}
+\contentsline {subsection}{\numberline {8.1}Brief PID Control Theory}{9}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}System Identification}{9}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Digital PID Controller Design}{10}{subsection.8.3}
+\contentsline {section}{\numberline {9}Implementation Images}{12}{section.9}
+\contentsline {section}{\numberline {10}References}{13}{section.10}
+\contentsline {section}{\numberline {11}Appendix}{13}{section.11}

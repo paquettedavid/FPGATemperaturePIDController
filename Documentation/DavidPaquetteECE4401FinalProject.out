@@ -10,10 +10,12 @@
 \BOOKMARK [2][-]{subsection.6.2}{Using the UART Component}{section.6}% 10
 \BOOKMARK [2][-]{subsection.6.3}{Data Encoding}{section.6}% 11
 \BOOKMARK [1][-]{section.7}{VGA BRAM Display Module}{}% 12
-\BOOKMARK [1][-]{section.8}{Digital PID Control Module}{}% 13
-\BOOKMARK [2][-]{subsection.8.1}{Discrete PID Control Background}{section.8}% 14
-\BOOKMARK [2][-]{subsection.8.2}{System Identification}{section.8}% 15
-\BOOKMARK [2][-]{subsection.8.3}{Digital PID Control System Design}{section.8}% 16
-\BOOKMARK [1][-]{section.9}{Implementation Images}{}% 17
-\BOOKMARK [1][-]{section.10}{References}{}% 18
-\BOOKMARK [1][-]{section.11}{Appendix}{}% 19
+\BOOKMARK [2][-]{subsection.7.1}{VGA Display Overview}{section.7}% 13
+\BOOKMARK [2][-]{subsection.7.2}{BRAM Module}{section.7}% 14
+\BOOKMARK [1][-]{section.8}{Digital PID Control Module}{}% 15
+\BOOKMARK [2][-]{subsection.8.1}{Brief PID Control Theory}{section.8}% 16
+\BOOKMARK [2][-]{subsection.8.2}{System Identification}{section.8}% 17
+\BOOKMARK [2][-]{subsection.8.3}{Digital PID Controller Design}{section.8}% 18
+\BOOKMARK [1][-]{section.9}{Implementation Images}{}% 19
+\BOOKMARK [1][-]{section.10}{References}{}% 20
+\BOOKMARK [1][-]{section.11}{Appendix}{}% 21
